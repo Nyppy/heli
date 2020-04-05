@@ -523,7 +523,7 @@ class Main extends React.Component {
                                 постановки диагноза, назначения лечения и не заменяет прием врача.
                             </span>
 
-                            <div style={{display: 'flex', flexDirection: 'column', textAlign: 'center'}}>
+                            <div style={{display: 'flex', flexDirection: 'column', textAlign: 'left'}}>
                                 <span style={{marginBottom: '1vh'}}>При поддержке:</span>
                                 <img src={js_logo}/>
                             </div>

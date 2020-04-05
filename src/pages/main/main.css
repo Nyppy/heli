@@ -143,7 +143,6 @@ a {
     display: flex;
     min-width: 20vw;
     background-color: #ffffff;
-    opacity: 0.7;
     border-radius: 10px;
     padding: 4vh;
 }
@@ -180,7 +179,7 @@ a {
 
 .block-price-1 {
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;;
     height: 42vh;
 }
 
@@ -259,7 +258,7 @@ a {
 }
 
 .elem-block-3 {
-    width: 30vw;
+    width: 22vw;
     border: 1px solid #0000001a;
     border-radius: 10px;
     padding: 2vh;
@@ -432,7 +431,7 @@ a {
 }
 
 .input-form-7 {
-    border: 2px solid #707070;
+    border: 1px solid #707070;
     border-radius: 39px;
     outline: none;
     padding: 1.4vh 4vh 1.4vh 1vh;
@@ -480,7 +479,7 @@ a {
 }
 
 .footer img {
-    width: 2vw;
+    width: 2.5vw;
 }
 
 .footer-elem-1 {
@@ -509,6 +508,9 @@ a {
     margin-bottom: 2vh;
     align-items: center;
     color: #31383D;
+}
+.footer-elem-3 img {
+    width: 8vw;
 }
 
 .imageBox {
@@ -630,6 +632,7 @@ a {
     .block-price-1, .block-price-2, .block-price-3 {
         width: 80vw;
         height: 55vh;
+        justify-content: space-between;
         margin-bottom: 16px;
     }
 
@@ -805,15 +808,16 @@ a {
     }
 
     .footer img {
+        width: 9vw;
+    }
+    .footer-elem-3 {
+        align-items: left;
+    }
+    .footer-elem-3 {
         width: 8vw;
     }
-
     .footer-elem-3 {
         width: 90vw;
-    }
-
-    .footer img {
-        width: 8vw;
     }
 
     .footer-elem-1 {
@@ -823,6 +827,9 @@ a {
     .footer-elem-2 {
         width: 80vw;
         font-size: 2.1vw;
+    }
+    .footer-elem-3 img {
+        width: 17vw;
     }
 
 
