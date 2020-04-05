@@ -41,6 +41,27 @@ a {
     flex-direction: column;
 }
 
+.info-main-block-1-h-text {
+    margin-top: 2vh;
+    font-size: 3.5vh;
+    color: rgb(86, 90, 94);
+    font-weight: 500;
+}
+
+.info-main-block-1-text {
+    color: rgb(86, 90, 94);
+    margin-top: 1vh;
+    font-size: 2.2vh;
+}
+
+.info-main-block-1-text {
+    margin-top: 2vh;
+    text-align: justify;
+    font-size: 3.1vh;
+    color: #565A5E;
+    font-weight: 500;
+}
+
 .info-main-block-1 span {
     font-size: 3vh;
 }
@@ -77,17 +98,23 @@ a {
 
 .content-main-block-2 {
     display: flex;
+    background-image: url('https://storge.pic2.me/c/1360x800/385/5e5e77f35275f.jpg');
+    background-size: 100%;
+    background-size: cover;
+    /*background-repeat: no-repeat;*/
     /* background-image: url("~@/assets/img/"); */
     width: 100vw;
     min-height: 100vh;
     flex-direction: column;
     align-items: center;
-    background-color: #707070;
+    /*background-color: #707070;*/
 
 }
 
 .text-block-2 {
     display: flex;
+    color: #fff;
+    font-size: 1.8vh;
     flex-direction: column;
     text-align: center;
 }
@@ -109,51 +136,76 @@ a {
     width: 74vw;
     align-items: center;
     justify-content: space-between;
-    margin-top: 6vh;
+    margin: 6vh auto;
 }
-
 
 .block-price-elem {
+    display: flex;
     min-width: 20vw;
     background-color: #ffffff;
+    opacity: 0.7;
     border-radius: 10px;
+    padding: 4vh;
 }
 
+.blockHeader {
+    color: #FF0020;
+    font-size: 3.5vh
+}
+
+.blockPriceInfo {
+    color: #000;
+    font-size: 5vh;
+}
+
+.blockPrice {
+    font-size: 2vw;
+}
+
+.blockPriceText {
+    font-size: 1vw;
+}
+
+.blockPriceText2 {
+    margin: 1.2vw 0 1.2vw 0;
+    font-size: 1vw;
+}
+
+.blockTermsInfo {
+    color: #707070;
+    font-size: 2.5vh;
+    border-bottom: 1px solid #707070;
+    padding-bottom: 1vw;
+}
 
 .block-price-1 {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     height: 42vh;
-    padding: 4vh;
 }
 
 .block-price-2 {
-    display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     height: 46vh;
-    margin-left: 1.5vw;
-    margin-right: 1.5vw;
-    padding: 4vh;
+    margin-left: 3.5vw;
+    margin-right: 3.5vw;
 }
 
 .block-price-3 {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     height: 42vh;
-    padding: 4vh;
 }
 
 .button-shop {
     background-color: #31383D;
+    opacity: 0.7;
     padding: 1vh 3.5vh 1vh 3.5vh;
     border-radius: 20px;
     color: #fff;
     font-size: 3vh;
     border: none;
-    margin-top: 2vw;
+    margin-top: 1vw;
     cursor: pointer;
 }
 
@@ -199,6 +251,7 @@ a {
 
 .main-elem-block-3 {
     width: 75vw;
+    font-size: 1vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -234,6 +287,7 @@ a {
 
 .elem-block-3-1 {
     width: 10vw;
+    font-size: 1vw;
     border: 1px solid #0000001a;
     border-radius: 10px;
     padding: 2vh;
@@ -245,6 +299,20 @@ a {
 .elem-block-3-1 img {
     width: 3vw;
     margin-bottom: 1vh;
+}
+
+.content-main-block-3-h-text {
+    font-size: 3.3vh;
+    padding: 10px;
+    color: #31383D;
+    margin: 3vh 0 1vh 0;
+}
+
+.content-main-block-3-text {
+    padding: 10px;
+    font-size: 1vw;
+    text-align: justify;
+    color: #31383D;
 }
 
 .content-main-block-4 {
@@ -273,6 +341,13 @@ a {
     width: 60vw;
 }
 
+.blockLogoHeli {
+    position: absolute;
+    width: 20vw;
+    margin-top: -28vh;
+    margin-left: 110vh;
+}
+
 .content-main-block-5 {
     display: flex;
     width: 100vw;
@@ -280,6 +355,20 @@ a {
     flex-direction: column;
     align-items: center;
     margin-top: 25vh;
+}
+.block5Button {
+    width: 20vw;
+    margin-left: -37.5vw;
+}
+
+.content-main-block-5-text {
+    font-size: 2.2vh;
+}
+
+.content-main-block-5-button {
+    background-color: #FF0020;
+    padding: 1vh 4vh 1vh 4vh;
+    font-size: 3vh;
 }
 
 .main-elem-block-5-1 {
@@ -289,7 +378,6 @@ a {
     /* justify-content: space-between; */
     align-items: center;
     margin-top: 6vh;
-    margin-bottom: 8vh;
 }
 
 .main-elem-block-5-2 {
@@ -315,6 +403,18 @@ a {
     justify-content: center;
 }
 
+.block6-h-text {
+    font-size: 3.6vh;
+    color: rgb(255, 255, 255);
+}
+
+.block6-text {
+    font-size: 2.4vh;
+    color: rgb(255, 255, 255);
+    width: 40vw;
+    text-align: center;
+}
+
 .content-main-block-7 {
     width: 100vw;
     height: 45vh;
@@ -332,8 +432,9 @@ a {
 }
 
 .input-form-7 {
-    border: 1px solid #707070;
-    border-radius: 20px;
+    border: 2px solid #707070;
+    border-radius: 39px;
+    outline: none;
     padding: 1.4vh 4vh 1.4vh 1vh;
     color: #707070;
     font-size: 2.4vh;
@@ -370,11 +471,16 @@ a {
 
 .footer {
     display: flex;
+    font-size: 0.7vw;
     flex-direction: column;
     border-top: 1px solid #707070;
     width: 100vw;
     align-items: center;
     margin-top: 4vh;
+}
+
+.footer img {
+    width: 2vw;
 }
 
 .footer-elem-1 {
@@ -403,4 +509,321 @@ a {
     margin-bottom: 2vh;
     align-items: center;
     color: #31383D;
+}
+
+.imageBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.imageBoxText {
+    width: 22vw;
+    color: rgb(112, 112, 112);
+    font-size: 2vh;
+    margin-top: 2vh;
+}
+
+.imageBox img {
+    width: 5vw;
+}
+
+.content-main-block-7-h-text {
+    color: #31383D;
+    font-size: 4.2vh;
+}
+
+.content-main-block-7-text {
+    color: #31383D;
+    font-size: 2vh;
+    width: 50vw;
+    text-align: center;
+}
+
+.blockConditions {
+    position: absolute;
+    margin-top: 6vh;
+    margin-left: 22vh;
+    color: #31383D;
+    font-size: 2vh;
+    width: 50vw;
+    text-align: left;
+}
+
+@media screen and (max-width: 991px) {
+
+    header-menu-elem:nth-child(2) {
+        margin-right: 4vh !important;
+    }
+
+    .main-img-doctor img {
+        width: 70vw;
+    }
+
+    .main-content-button {
+        width: 80vw;
+    }
+
+    .content-main-block-1 {
+        flex-direction: column;
+    }
+
+    .info-main-block-1-h-text {
+        margin-top: 2vh;
+        font-size: 3.1vh;
+        color: rgb(86, 90, 94);
+        font-weight: 500;
+    }
+
+    .info-main-block-1-text {
+        color: rgb(86, 90, 94);
+        margin-top: 1vh;
+        font-size: 2.7vh;
+    }
+
+    .info-main-block-1 span {
+        font-size: 2.6vh;
+    }
+
+    .img-app-main {
+        width: 36vw;
+    }
+
+    .main-content-button-app {
+        width: 63vw;
+        justify-content: space-between;
+    }
+
+    blockConditions {
+        position: absolute;
+        margin-top: 24vh;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .block-price {
+        flex-direction: column;
+    }
+    .blockPrice {
+        font-size: 7vw;
+        margin: 4vw 0;
+    }
+    .blockPriceText {
+        font-size: 5vw;
+    }
+    .blockTermsInfo {
+        font-size: 5vw;
+    }
+    .blockPriceText2 {
+        font-size: 4vw;
+    }
+    .button-shop {
+        margin-top: 9vw;
+    }
+
+    .capabilities {
+        color: rgb(255, 0, 32);
+        font-size: 3vh;
+        margin-bottom: 2vh;
+    }
+
+    .block-price-1, .block-price-2, .block-price-3 {
+        width: 80vw;
+        height: 55vh;
+        margin-bottom: 16px;
+    }
+
+    .block-price-2 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .text-block-2 {
+        font-size: 2.7vh;
+    }
+
+    .main-elem-block-3 {
+        flex-direction: column;
+        width: 96vw;
+        margin-top: 0;
+    }
+    .content-main-block-3-text {
+        font-size: 4vw;
+    }
+    .main-elem-block-3 {
+        font-size: 4vw;
+    }
+    .elem-block-3-1 {
+        font-size: 4vw;
+    }
+
+    .main-elem-block-3-1 {
+        width: 94vw;
+        flex-wrap: wrap;
+    }
+
+    .elem-block-3-1 {
+        width: 11vw;
+    }
+
+    .elem-block-3 {
+        width: 88vw;
+        margin-top: 10px;
+    }
+
+    .content-main-block-5-text {
+        width: 90vw;
+    }
+
+    .content-main-block-5-button {
+        width: 90vw;
+    }
+    .content-main-block-5 {
+        margin-top: 0;
+    }
+
+    .block5Button {
+        width: 90vw;
+        margin-left: -1.5vw;
+    }
+    .main-elem-block-5-1 {
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .main-elem-block-5-2 {
+        flex-direction: column;
+    }
+
+    .info-main-block-1 {
+        width: 90vw;
+        padding: 10px;
+    }
+
+    .content-main-block-6 {
+        padding: 15px;
+        width: auto;
+        height: auto;
+    }
+
+    .block6-h-text {
+        font-size: 3.1vh;
+    }
+
+    .block6-text {
+        font-size: 2.4vh;
+        color: rgb(255, 255, 255);
+        width: 90vw;
+        text-align: center;
+    }
+
+    .review-block {
+        width: 95vw;
+        flex-wrap: wrap;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .review-elem-name {
+        display: flex;
+        margin-left: 7vh;
+        flex-direction: column;
+    }
+
+    .reviewBlock {
+        width: 95vw;
+    }
+
+    .reviewBlockText {
+        width: 100vw;
+        color: #707070;
+        font-size: 2vh;
+        margin-top: 2vh;
+    }
+
+    .imageBox {
+        display: flex;
+        width: 100vw;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 2vw;
+    }
+
+    .imageBoxText {
+        width: 95vw;
+        color: rgb(112, 112, 112);
+        font-size: 2vh;
+        margin-top: 2vh;
+    }
+
+    .imageBox img {
+        width: 20vw;
+    }
+
+    .content-main-block-7 {
+        margin-top: 20px;
+    }
+
+    .content-main-block-7-h-text {
+        font-size: 4.1vh;
+    }
+
+    .content-main-block-7-text {
+        width: 90vw;
+        text-align: center;
+    }
+
+    .input-form-7 {
+        width: 75vw;
+        margin-top: 10px;
+    }
+
+    .form-elem-7 {
+        flex-direction: column;
+    }
+
+    .blockConditions {
+        position: absolute;
+        margin: 24vh 0 0;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .content-main-block-8 {
+        margin-top: 8vh;
+    }
+
+    .logo-content-block-3 {
+        width: 30vw;
+    }
+    .input-form-7 {
+        border: 1px solid;
+    }
+    .footer {
+        font-size: 2vw;
+        width: 95vw;
+    }
+
+    .footer img {
+        width: 8vw;
+    }
+
+    .footer-elem-3 {
+        width: 90vw;
+    }
+
+    .footer img {
+        width: 8vw;
+    }
+
+    .footer-elem-1 {
+        width: 80vw
+    }
+
+    .footer-elem-2 {
+        width: 80vw;
+        font-size: 2.1vw;
+    }
+
+
 }

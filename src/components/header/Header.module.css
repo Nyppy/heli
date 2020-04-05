@@ -1,51 +1,57 @@
-.header-wrapper {
+.headerWrapper {
     width: 100vw;
     padding-bottom: 1vw;
     border-bottom: 1px solid #EDEDED;
 }
 
-.header-content {
+.headerContent {
     width: 74vw;
     display: flex;
     margin: 1vw auto 0;
     height: 8vh;
 }
 
-.header-logo-div {
+.headerLogoDiv {
     width: 50vw;
     display: flex;
     align-items: center;
 }
 
-.header-logo-div img {
+.headerLogoDiv img {
     width: 8vw;
     height: auto;
 }
 
-.header-menu {
+.headerMenu {
     width: 50vw;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.header-menu-elem {
+.headerMenuElem {
     outline: none;
     text-decoration: none;
-    margin-right: 2vw;
+    margin-right: 5vw;
     color: #31383D;
     font-size: 3vh;
 }
 
-.header-menu-elem:nth-child(2) {
-    margin-right: 8vh !important;
+.headerMenuElem:nth-child(2) {
+    /*margin-right: 8vh !important;*/
 }
 
-.header-button {
+.headerButton {
     border: 1px solid #FF0020;
     border-radius: 20px;
     padding: 1.5vh 3.2vh 1.5vh 3.2vh;
     color: #FF0020;
     font-size: 2vh;
     cursor: pointer;
+}
+@media screen and (max-width: 991px) {
+
+    .headerContent {
+        width: 90vw;
+    }
 }
