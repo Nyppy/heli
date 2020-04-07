@@ -32,7 +32,7 @@ import facebook from "../../assets/img/facebook.png"
 import twitter from "../../assets/img/twitter.png"
 import vk from "../../assets/img/vk.png"
 import js_logo from "../../assets/img/js-logo.png"
-
+import jscorplogos from "../../assets/img/jscorplogos.png"
 
 class Main extends React.Component {
     constructor(props) {
@@ -98,12 +98,12 @@ class Main extends React.Component {
                 <div className="content-main-block-2">
                     <div className="text-block-2">
                         <span className="text-head-block-2">Поликлиника в кармане</span>
-                        <span>
-                            Круглосуточное наблюдение за вашими показателями<br/>
-                            организма специалистами сервиса. 
-                        </span>
+                        <div className="contentMainBlock2Text">
+                            Круглосуточное наблюдение за вашими<br/>
+                            показателями организма с&nbsp;использованием<br/>
+                            исскуственного интеллекта.
+                        </div>
                     </div>
-
                     <div className="block-price">
                         <div className="block-price-elem block-price-1">
                             <span className="blockHeader">Популярный тариф!</span>
@@ -202,9 +202,11 @@ class Main extends React.Component {
                         <div className="elem-block-3">
                             <div>
                                 <img src={sos} alt=""/>
-                                <span>Нужен текст</span>
+                                <span>Экстренный вызов</span>
                             </div>
-                            <span>Нужно описание
+                            <span>Ваши родственники или врач
+                                получат уведомление о том, что
+                                с вашим здоровьем что-то не так.
                             </span>
                         </div>
                     </div>
@@ -497,7 +499,7 @@ class Main extends React.Component {
 
                     <div className="footer">
                         <div className="footer-elem-1">
-                            <img style={{width: '14vh'}} src={logo} alt=""/>
+                            <img className="footerLogo" src={logo} alt=""/>
 
                             <div style={{display: 'flex', flexDirection: 'row'}}>
                                 <img src={vk} alt=""/>
@@ -520,15 +522,15 @@ class Main extends React.Component {
                         </div>
 
                         <div className="footer-elem-3">
-                            <span style={{}}>© {new Date().getFullYear()} HELI technology ltd.</span>
-                            <span style={{color: '#31383D', width: '40vw'}}>
+                            <span className="footer-elem-3-item">© {new Date().getFullYear()} HELI technology ltd.</span>
+                            <span className="footer-elem-3-item" style={{color: '#31383D', width: '40vw'}}>
                                 Информация, представленная на сайте, не может быть использована для 
                                 постановки диагноза, назначения лечения и не заменяет прием врача.
                             </span>
 
                             <div style={{display: 'flex', flexDirection: 'column', textAlign: 'left'}}>
                                 <span style={{marginBottom: '1vh'}}>При поддержке:</span>
-                                <img src={js_logo}/>
+                                <a><img className="footer-elem-3-logo" src={jscorplogos}/></a>
                             </div>
                         </div>
                     </div>
