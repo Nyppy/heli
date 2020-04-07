@@ -237,7 +237,8 @@ class Main extends React.Component {
                     </div>
                 </div>
 
-                <div className="content-main-block-4">
+                {/* Закоментил на время, пока не разберемся с фото */}
+                {/* <div className="content-main-block-4">
                     <div className='content-block-4-text'>
                         <span style={{fontSize: '5.5vh', color: '#FF0020'}}>HELI BAND</span>
                         <span style={{color: '#31383D', fontSize: '3vh', marginBottom: '2vh'}}>Пользуйтесь где вам удобно</span>
@@ -272,12 +273,14 @@ class Main extends React.Component {
                         </div>
 
                     </div>
-                        <span style={{position: 'absolute', margin: '90vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>Когда вы работаете</span>
-                        <img src={wokr} style={{width: '45vw', height: '40vh', marginTop: '-40.3vh'}} alt=""/>
+                    
+                    <span style={{position: 'absolute', margin: '90vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>Когда вы работаете</span>
+                    <img src={wokr} style={{width: '45vw', height: '40vh', marginTop: '-40.3vh'}} alt=""/>
+                    
                     <div>
-                    <img className="blockLogoHeli" src={logo} alt=""/>
+                        <img className="blockLogoHeli" src={logo} alt=""/>
                     </div>
-                    </div>
+                </div> */}
 
 
                 <div className="content-main-block-5">
