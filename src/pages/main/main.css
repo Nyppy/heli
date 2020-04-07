@@ -114,7 +114,7 @@ a {
 .text-block-2 {
     display: flex;
     color: #fff;
-    font-size: 1.8vh;
+    font-size: 2.3vh;
     flex-direction: column;
     text-align: center;
 }
@@ -128,6 +128,10 @@ a {
     margin-bottom: 1vw;
     margin-top: 6vw;
     text-align: center;
+}
+
+.text-block-2 p {
+    margin: 5px 0;
 }
 
 .block-price {
@@ -478,8 +482,8 @@ a {
     margin-top: 4vh;
 }
 
-.footer img {
-    width: 2.5vw;
+.footerLogo {
+    width: 5.5vw;
 }
 
 .footer-elem-1 {
@@ -501,16 +505,29 @@ a {
 
 .footer-elem-3 {
     display: flex;
+    position: relative;
     flex-direction: row;
-    justify-content: space-between;
     width: 75vw;
     margin-top: 4vh;
     margin-bottom: 2vh;
     align-items: center;
     color: #31383D;
 }
-.footer-elem-3 img {
-    width: 8vw;
+.footer-elem-3-logo {
+    background: #00A7CF;
+    outline: none;
+    width: 70px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: all .3s ease;
+}
+.footer-elem-3-logo:hover {
+    height: 90px;
+}
+.footer-elem-3-item {
+    margin-right: 77px;
 }
 
 .imageBox {
@@ -643,6 +660,9 @@ a {
 
     .text-block-2 {
         font-size: 2.7vh;
+    }
+    .text-block-2 p {
+        margin: 10px;
     }
 
     .main-elem-block-3 {
@@ -807,7 +827,7 @@ a {
         width: 95vw;
     }
 
-    .footer img {
+    .footerLogo {
         width: 9vw;
     }
     .footer-elem-3 {
