@@ -74,7 +74,7 @@ class Main extends React.Component {
                         </div>
 
                         <div className="info-main-block-1">
-                            <p className="info-main-block-1-h-text">Современное решение в  истории<br/>
+                            <p className="info-main-block-1-h-text">Современное решение в истории<br/>
                                 <span style={{color: '#FF0017', fontSize: '3.5vh'}}>homecare</span> девайсов
                             </p>
                             <div>
@@ -140,7 +140,7 @@ class Main extends React.Component {
                             <span className="blockPriceText2"> <span style={{color: '#FF0020'}}>*</span> Входит стоимость браслета</span>
 
 
-                            <button className="button-shop" >Приобрести</button>
+                            <button className="button-shop">Приобрести</button>
                         </div>
 
                         <div className="block-price-elem block-price-3">
@@ -308,12 +308,12 @@ class Main extends React.Component {
                         <img style={{width: '40vw'}} src={pc} alt=""/>
                     </div>
                     <div className="">
-                    <button className="button-shop block5Button" style={{
-                        backgroundColor: '#FF0020',
-                        padding: '1vh 4vh 1vh 4vh',
-                        fontSize: '3vh'
-                    }}>Присоединиться
-                    </button>
+                        <button className="button-shop block5Button" style={{
+                            backgroundColor: '#FF0020',
+                            padding: '1vh 4vh 1vh 4vh',
+                            fontSize: '3vh'
+                        }}>Присоединиться
+                        </button>
                     </div>
 
                     <div className='main-elem-block-5-2'>
@@ -374,7 +374,7 @@ class Main extends React.Component {
                                    placeholder="Телефон *" defaultValue={this.state.phone} onChange={this.onChangePhone}
                                    id="phone" maskChar={null} required placeholder="Ваш телефон *"/>
                         <label className="blockConditions">
-                            <input type="checkbox" style={{fontSize: '2vh'}} required/>
+                            <input type="radio" style={{fontSize: '2vh'}} required/>
                             Принимаю условия политики конфиденциальности
                         </label>
 
@@ -522,15 +522,16 @@ class Main extends React.Component {
                         </div>
 
                         <div className="footer-elem-3">
-                            <span className="footer-elem-3-item">© {new Date().getFullYear()} HELI technology ltd.</span>
+                            <span
+                                className="footer-elem-3-item">© {new Date().getFullYear()} HELI technology ltd.</span>
                             <span className="footer-elem-3-item" style={{color: '#31383D', width: '40vw'}}>
                                 Информация, представленная на сайте, не может быть использована для 
                                 постановки диагноза, назначения лечения и не заменяет прием врача.
                             </span>
 
                             <div style={{display: 'flex', flexDirection: 'column', textAlign: 'left'}}>
-                                <span style={{marginBottom: '1vh'}}>При поддержке:</span>
-                                <a><img className="footer-elem-3-logo" src={jscorplogos}/></a>
+                                <span style={{marginBottom: '11vh'}}>При поддержке:</span>
+                                <a className="footer-elem-3-logo"><img className="footer-logojs" src={jscorplogos}/></a>
                             </div>
                         </div>
                     </div>

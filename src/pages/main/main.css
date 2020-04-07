@@ -360,6 +360,7 @@ a {
     align-items: center;
     margin-top: 25vh;
 }
+
 .block5Button {
     width: 20vw;
     margin-left: -37.5vw;
@@ -510,10 +511,11 @@ a {
     flex-direction: row;
     width: 75vw;
     margin-top: 4vh;
-    margin-bottom: 2vh;
+    /*margin-bottom: 2vh;*/
     align-items: center;
     color: #31383D;
 }
+
 .footer-elem-3-logo {
     background: #00A7CF;
     outline: none;
@@ -524,11 +526,18 @@ a {
     bottom: 0;
     transition: all .3s ease;
 }
+
 .footer-elem-3-logo:hover {
     height: 90px;
 }
+
 .footer-elem-3-item {
-    margin-right: 77px;
+    margin-right: 12px;
+}
+
+.footer-logojs {
+    width: 60px;
+    padding: 5px;
 }
 
 .imageBox {
@@ -614,7 +623,7 @@ a {
         justify-content: space-between;
     }
 
-    blockConditions {
+    .blockConditions {
         position: absolute;
         margin-top: 24vh;
         width: 100vw;
@@ -624,19 +633,24 @@ a {
     .block-price {
         flex-direction: column;
     }
+
     .blockPrice {
         font-size: 7vw;
         margin: 4vw 0;
     }
+
     .blockPriceText {
         font-size: 5vw;
     }
+
     .blockTermsInfo {
         font-size: 5vw;
     }
+
     .blockPriceText2 {
         font-size: 4vw;
     }
+
     .button-shop {
         margin-top: 9vw;
     }
@@ -662,6 +676,7 @@ a {
     .text-block-2 {
         font-size: 2.7vh;
     }
+
     .text-block-2 p {
         margin: 10px;
     }
@@ -671,12 +686,15 @@ a {
         width: 96vw;
         margin-top: 0;
     }
+
     .content-main-block-3-text {
         font-size: 4vw;
     }
+
     .main-elem-block-3 {
         font-size: 4vw;
     }
+
     .elem-block-3-1 {
         font-size: 4vw;
     }
@@ -702,6 +720,7 @@ a {
     .content-main-block-5-button {
         width: 90vw;
     }
+
     .content-main-block-5 {
         margin-top: 0;
     }
@@ -710,6 +729,7 @@ a {
         width: 90vw;
         margin-left: -1.5vw;
     }
+
     .main-elem-block-5-1 {
         flex-direction: column;
         width: 90vw;
@@ -820,23 +840,28 @@ a {
     .logo-content-block-3 {
         width: 30vw;
     }
+
     .input-form-7 {
         border: 1px solid;
     }
+
     .footer {
         font-size: 2vw;
         width: 95vw;
     }
 
     .footerLogo {
-        width: 9vw;
+        width: 18vw;
     }
+
     .footer-elem-3 {
         align-items: left;
     }
+
     .footer-elem-3 {
         width: 8vw;
     }
+
     .footer-elem-3 {
         width: 90vw;
     }
@@ -849,6 +874,7 @@ a {
         width: 80vw;
         font-size: 2.1vw;
     }
+
     .footer-elem-3 img {
         width: 17vw;
     }
