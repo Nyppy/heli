@@ -147,12 +147,14 @@ a {
 .block-price-elem {
     display: flex;
     min-width: 20vw;
+    margin: 20px;
     background-color: #ffffff;
     border-radius: 10px;
     padding: 4vh;
 }
 
 .blockHeader {
+    margin: 0;
     color: #FF0020;
     font-size: 3.5vh
 }
@@ -184,8 +186,8 @@ a {
 
 .block-price-1 {
     flex-direction: column;
-    justify-content: center;;
-    height: 42vh;
+    justify-content: space-between;
+    /*height: 42vh;*/
 }
 
 .block-price-2 {
@@ -662,7 +664,7 @@ a {
     }
 
     .block-price-1, .block-price-2, .block-price-3 {
-        width: 80vw;
+        width: 75vw;
         height: 55vh;
         justify-content: space-between;
         margin-bottom: 16px;

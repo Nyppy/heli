@@ -6,7 +6,7 @@ import "./main.css";
 
 import InputMask from 'react-input-mask';
 
-import Header from "../../components/header/Header.jsx"
+import Header from "../../components/Header/Header.jsx"
 
 import doctor_main from "../../assets/img/doctor-main.png"
 import app_store from "../../assets/img/app-store.png"
@@ -33,6 +33,7 @@ import twitter from "../../assets/img/twitter.png"
 import vk from "../../assets/img/vk.png"
 import js_logo from "../../assets/img/js-logo.png"
 import jscorplogos from "../../assets/img/jscorplogos.png"
+import Price from "../../components/Price/Price";
 
 class Main extends React.Component {
     constructor(props) {
@@ -95,81 +96,7 @@ class Main extends React.Component {
                     </div>
                 </div>
 
-                <div className="content-main-block-2">
-                    <div className="text-block-2">
-                        <span className="text-head-block-2">Поликлиника в кармане</span>
-                        <div className="contentMainBlock2Text">
-                            Круглосуточное наблюдение за вашими<br/>
-                            показателями организма с&nbsp;использованием<br/>
-                            исскуственного интеллекта.
-                        </div>
-                    </div>
-                    <div className="block-price">
-                        <div className="block-price-elem block-price-1">
-                            <span className="blockHeader">Популярный тариф!</span>
-                            <span className="blockPrice">
-                                <span>₽ </span> 
-                                <span className="blockPrice">1'499</span>
-                            </span>
-                            <span className="blockTermsInfo">1 месяц</span>
-
-                            <span style={{color: '#FF0020', fontSize: '3vh', marginBottom: '1vh'}}>Возможности:</span>
-                            <span className="blockPriceText">
-                                Все функции системыУдаленная консультация с врачом
-                                Доступ в личный кабинет<br/>
-                            </span>
-                            <span className="blockPriceText2"><span style={{color: '#FF0020'}}>*</span> Не входит стоимость браслета</span>
-
-
-                            <button className="button-shop">Приобрести</button>
-                        </div>
-
-                        <div className="block-price-elem block-price-2">
-                            <span className="blockHeader">Экономный тариф!</span>
-                            <span className="blockPrice">
-                                <span>₽ </span> 
-                                <span className="blockPrice">11'400</span>
-                            </span>
-
-                            <span className="blockTermsInfo">6 месяцев</span>
-
-                            <span style={{color: '#FF0020', fontSize: '3vh', marginBottom: '1vh'}}>Возможности:</span>
-                            <span className="blockPriceText">
-                               Все функции системыУдаленная консультация с врачемДоступ в личный кабинет<br/>
-                            </span>
-                            <span className="blockPriceText2"> <span style={{color: '#FF0020'}}>*</span> Входит стоимость браслета</span>
-
-
-                            <button className="button-shop">Приобрести</button>
-                        </div>
-
-                        <div className="block-price-elem block-price-3">
-                            <span className="blockHeader">Супер предложение!</span>
-                            <span className="blockPrice">
-                                <span>₽ </span> 
-                                <span className="blockPrice">17'100</span>
-                            </span>
-
-                            <span className="blockTermsInfo">9 месяцев</span>
-
-                            <span style={{color: '#FF0020', fontSize: '3vh', marginBottom: '1vh'}}>Возможности:</span>
-                            <span className="blockPriceText">
-                               Все функции системыУдаленная консультация с врачемДоступ в личный кабинет<br/>
-                            </span>
-                            <span className="blockPriceText2"> <span style={{color: '#FF0020'}}>*</span> Входит стоимость браслета</span>
-
-
-                            <button className="button-shop">Приобрести</button>
-                        </div>
-                    </div>
-
-
-                    <div className="text-button-block-2 text-block-2">
-                        <span>Подробнее о тарифах вы сможете узнать у&nbsp;наших консультантов.</span>
-
-                        <Link className="button-info-price" to="">Узнать подробности</Link>
-                    </div>
-                </div>
+                <Price/>
 
                 <div className="content-main-block-3">
                     <img src={logo} className="logo-content-block-3" alt=""/>
