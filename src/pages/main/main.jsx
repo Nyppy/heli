@@ -281,7 +281,7 @@ class Main extends React.Component {
                         улучшат ваше здоровье. Взгляните на мир глазами здорового человека.
                     </p>
 
-                    <button className="button-shop"
+                    <button className="button-shop button-form-6-block"
                             style={{backgroundColor: '#FF0020', padding: '1vh 4vh 1vh 4vh', fontSize: '3vh'}}>Узнать
                         подробнее
                     </button>
@@ -305,7 +305,7 @@ class Main extends React.Component {
                             Принимаю условия политики конфиденциальности
                         </label>
 
-                        <button className='input-form-7 button-form-7 ' type="submit">Присоединиться</button>
+                        <button className='input-form-7 button-form-7 button-form-7-block' type="submit">Присоединиться</button>
                     </form>
                 </div>
 

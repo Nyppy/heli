@@ -205,7 +205,7 @@ a {
 
 .button-shop {
     background-color: #31383D;
-    opacity: 0.7;
+    /*opacity: 0.7;*/
     padding: 1vh 3.5vh 1vh 3.5vh;
     border-radius: 20px;
     color: #fff;
@@ -580,6 +580,13 @@ a {
     width: 50vw;
     text-align: left;
 }
+.button-form-7-block {
+    width: 20vw;
+}
+
+.button-form-6-block {
+    width: 25vw;
+}
 
 @media screen and (max-width: 991px) {
 
@@ -879,6 +886,14 @@ a {
 
     .footer-elem-3 img {
         width: 17vw;
+    }
+
+    .button-form-6-block {
+        width: 85vw;
+    }
+
+    .button-form-7-block {
+        width: 85vw;
     }
 
 
