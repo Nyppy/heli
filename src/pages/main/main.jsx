@@ -429,12 +429,12 @@ class Main extends React.Component {
                             <img className="footerLogo" src={logo} alt=""/>
 
                             <div style={{display: 'flex', flexDirection: 'row'}}>
-                                <img src={vk} alt=""/>
-                                <img style={{margin: '0 1vh 0 1vh'}} src={twitter} alt=""/>
-                                <img src={facebook} alt=""/>
+                                <img className="footer-icon" src={vk} alt=""/>
+                                <img className="footer-icon" style={{margin: '0 1vh 0 1vh'}} src={twitter} alt=""/>
+                                <img className="footer-icon" src={facebook} alt=""/>
                             </div>
 
-                            <div style={{display: 'flex', flexDirection: 'column', color: '#31383D'}}>
+                            <div className="footer-block-text" style={{display: 'flex', flexDirection: 'column', color: '#31383D'}}>
                                 <span style={{marginBottom: '0.5vh'}}>info@heli.com</span>
                                 <span>8 (900) 000-00-00</span>
                             </div>

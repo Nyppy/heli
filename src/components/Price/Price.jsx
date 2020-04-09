@@ -17,7 +17,7 @@ const Price = (props) => {
                 <PriceItem head="Популярный тариф!" price="1499" term="1 месяц"
                            footnote="Не входит стоимость браслета"/>
                 <PriceItem head="Экономный тариф!" price="11400" term="6 месяцев"
-                           footnote="Не входит стоимость браслета" customStyle={{height: '510px'}}/>
+                           footnote="Не входит стоимость браслета" customStyle={{height: '67vh'}}/>
                 <PriceItem head="Супер предложение!" price="17100" term="9 месяцев"
                            footnote="Не входит стоимость браслета"/>
             </div>

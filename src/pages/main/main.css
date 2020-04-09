@@ -170,6 +170,10 @@ a {
 
 .blockPriceText {
     font-size: 1vw;
+    list-style-type: none;
+}
+.blockPriceText li {
+    margin: 10px 0;
 }
 
 .blockPriceText2 {
@@ -493,6 +497,7 @@ a {
 .footer-elem-1 {
     display: flex;
     flex-direction: row;
+    font-size: 16px;
     justify-content: space-between;
     width: 75vw;
     margin-top: 4vh;
@@ -502,6 +507,7 @@ a {
 .footer-elem-2 {
     display: flex;
     flex-direction: row;
+    font-size: 16px;
     width: 75vw;
     margin-top: 1vh;
     margin-bottom: 2vh;
@@ -510,6 +516,8 @@ a {
 .footer-elem-3 {
     display: flex;
     position: relative;
+    justify-content: space-between;
+    font-size: 19px;
     flex-direction: row;
     width: 75vw;
     margin-top: 4vh;
@@ -586,6 +594,13 @@ a {
 
 .button-form-6-block {
     width: 25vw;
+}
+.footer-icon {
+    width: 2.5vw;
+}
+
+.footer-block-text {
+    font-size: 17px
 }
 
 @media screen and (max-width: 991px) {
@@ -672,7 +687,7 @@ a {
 
     .block-price-1, .block-price-2, .block-price-3 {
         width: 75vw;
-        height: 55vh;
+        height: 62vh;
         justify-content: space-between;
         margin-bottom: 16px;
     }
@@ -860,7 +875,7 @@ a {
     }
 
     .footerLogo {
-        width: 18vw;
+        width: 22vw;
     }
 
     .footer-elem-3 {
@@ -872,16 +887,17 @@ a {
     }
 
     .footer-elem-3 {
-        width: 90vw;
+        width: 95vw;
+        font-size: 8px;
     }
 
     .footer-elem-1 {
-        width: 80vw
+        width: 85vw
     }
 
     .footer-elem-2 {
-        width: 80vw;
-        font-size: 2.1vw;
+        width: 85vw;
+        font-size: 8px;
     }
 
     .footer-elem-3 img {
@@ -895,6 +911,12 @@ a {
     .button-form-7-block {
         width: 85vw;
     }
+    .footer-block-text {
+        font-size: 12px
+    }
 
+    .footer-icon {
+        width: 9vw;
+    }
 
 }
