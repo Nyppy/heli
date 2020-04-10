@@ -21,6 +21,7 @@ import sleep from "../../assets/img/sleep.png"
 import stress from "../../assets/img/stress.png"
 import cardiogram from "../../assets/img/cardiogram.png"
 
+
 import run from "../../assets/img/run.png"
 import sleep_1 from "../../assets/img/sleep-1.png"
 import wokr from "../../assets/img/work.png"
@@ -34,6 +35,7 @@ import vk from "../../assets/img/vk.png"
 import js_logo from "../../assets/img/js-logo.png"
 import jscorplogos from "../../assets/img/jscorplogos.png"
 import Price from "../../components/Price/Price";
+
 
 class Main extends React.Component {
     constructor(props) {

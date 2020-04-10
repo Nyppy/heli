@@ -66,6 +66,9 @@ a {
 .info-main-block-1 span {
     font-size: 3vh;
 }
+.backImg {
+    position: absolute;
+}
 
 .main-content-button {
     border-radius: 20px;
@@ -99,7 +102,7 @@ a {
 
 .content-main-block-2 {
     display: flex;
-    background-image: url('https://storge.pic2.me/c/1360x800/385/5e5e77f35275f.jpg');
+    background-image: url('../../assets/img/fon.png');
     background-size: 100%;
     background-size: cover;
     /*background-repeat: no-repeat;*/
@@ -879,7 +882,7 @@ a {
     }
 
     .footer-elem-3 {
-        align-items: left;
+        align-items: center;
     }
 
     .footer-elem-3 {

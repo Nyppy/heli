@@ -1,6 +1,8 @@
 import {Link} from "react-router-dom";
 import React from "react";
 import PriceItem from "./PriceItem/PriceItem";
+import car from "../../assets/img/car.png";
+import back from "../../assets/img/back.png"
 
 const Price = (props) => {
     return (
@@ -13,11 +15,11 @@ const Price = (props) => {
                     исскуственного интеллекта.
                 </div>
             </div>
-            <div className="block-price">
-                <PriceItem head="Популярный тариф!" price="1499" term="1 месяц"
+            <div className="backImg" className="block-price">
+                <PriceItem head="Популярный тариф!" price="1899" term="1 месяц"
                            footnote="Не входит стоимость браслета"/>
                 <PriceItem head="Экономный тариф!" price="11400" term="6 месяцев"
-                           footnote="Не входит стоимость браслета" customStyle={{height: '67vh'}}/>
+                           footnote="Не входит стоимость браслета" customStyle={{height: '70vh'}}/>
                 <PriceItem head="Супер предложение!" price="17100" term="9 месяцев"
                            footnote="Не входит стоимость браслета"/>
             </div>
