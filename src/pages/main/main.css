@@ -130,7 +130,7 @@ a {
 .text-head-block-2 {
     font-size: 5vh;
     margin-bottom: 1vw;
-    margin-top: 6vw;
+    margin-top: 2vw;
     text-align: center;
 }
 
@@ -144,12 +144,11 @@ a {
     width: 74vw;
     align-items: center;
     justify-content: space-between;
-    margin: 6vh auto;
+    margin: 3vh auto;
 }
 
 .block-price-elem {
     display: flex;
-    min-width: 20vw;
     margin: 20px;
     background-color: #ffffff;
     border-radius: 10px;
@@ -169,6 +168,7 @@ a {
 
 .blockPrice {
     font-size: 2vw;
+    margin: 0;
 }
 
 .blockPriceText {
@@ -180,7 +180,7 @@ a {
 }
 
 .blockPriceText2 {
-    margin: 1.2vw 0 1.2vw 0;
+    /*margin: 1.2vw 0 1.2vw 0;*/
     font-size: 1vw;
 }
 
@@ -228,8 +228,8 @@ a {
 }
 
 .text-button-block-2 {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .button-info-price {
@@ -584,12 +584,10 @@ a {
 
 .blockConditions {
     position: absolute;
-    margin-top: 6vh;
-    margin-left: 22vh;
+    margin: 6vh auto;
     color: #31383D;
     font-size: 2vh;
     width: 50vw;
-    text-align: left;
 }
 .button-form-7-block {
     width: 20vw;

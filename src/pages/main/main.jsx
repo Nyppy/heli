@@ -35,6 +35,12 @@ import vk from "../../assets/img/vk.png"
 import js_logo from "../../assets/img/js-logo.png"
 import jscorplogos from "../../assets/img/jscorplogos.png"
 import Price from "../../components/Price/Price";
+import rev1 from "../../assets/img/rev1.png"
+import rev2 from "../../assets/img/rev2.png"
+import rev3 from "../../assets/img/rev3.png"
+import rev4 from "../../assets/img/rev4.png"
+import rev5 from "../../assets/img/rev5.png"
+import rev6 from "../../assets/img/rev6.png"
 
 
 class Main extends React.Component {
@@ -306,7 +312,8 @@ class Main extends React.Component {
                             <input type="radio" style={{fontSize: '2vh'}} required/>
                             Принимаю условия политики конфиденциальности
                         </label>
-
+                        <div id="modal" className="modal">
+                        </div>
                         <button className='input-form-7 button-form-7 button-form-7-block' type="submit">Присоединиться</button>
                     </form>
                 </div>
@@ -317,55 +324,50 @@ class Main extends React.Component {
                     <div className="review-block">
                         <div className="review-elem">
                             <div className="imageBox">
-                                <img src={person} alt=""/>
+                                <img src={rev1} alt=""/>
 
                                 <div style={{display: 'flex', flexDirection: 'column', marginLeft: '2vh'}}>
                                     <span style={{color: "#707070", fontSize: '2.6vh'}}>Анастасия Разумовская</span>
-                                    <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Владелец ветклиники </span>
-                                    <span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>
+                                    <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Работаю в банке</span>
+                                    {/*<span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>*/}
                                 </div>
                             </div>
 
                             <p className="imageBoxText">
-                                Мы начали сотрудничество с Clinic более года назад.
-                                Наши четвероногие пациенты теперь получают помощь
-                                оперативнее...
+                                Используя браслет HELI, я могу каждый день
+                                наблюдать за своими показателями здоровья.
                             </p>
                         </div>
 
                         <div className="review-elem">
                             <div className="imageBox">
-                                <img src={person} alt=""/>
+                                <img src={rev2} alt=""/>
 
                                 <div style={{display: 'flex', flexDirection: 'column', marginLeft: '2vh'}}>
-                                    <span style={{color: "#707070", fontSize: '2.6vh'}}>Анастасия Разумовская</span>
-                                    <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Владелец ветклиники </span>
-                                    <span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>
+                                    <span style={{color: "#707070", fontSize: '2.6vh'}}>Александр  Смирнов</span>
+                                    <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Работаю юристом</span>
+                                    {/*<span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>*/}
                                 </div>
                             </div>
 
                             <p className="imageBoxText">
-                                Мы начали сотрудничество с Clinic более года назад.
-                                Наши четвероногие пациенты теперь получают помощь
-                                оперативнее...
+                                Мое давления всегда под контролем. Теперь я могу его измерять в любой момент.
                             </p>
                         </div>
 
                         <div className="review-elem">
                             <div className="imageBox">
-                                <img src={person} alt=""/>
+                                <img src={rev3} alt=""/>
 
                                 <div style={{display: 'flex', flexDirection: 'column', marginLeft: '2vh'}}>
-                                    <span style={{color: "#707070", fontSize: '2.6vh'}}>Анастасия Разумовская</span>
-                                    <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Владелец ветклиники </span>
-                                    <span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>
+                                    <span style={{color: "#707070", fontSize: '2.6vh'}}>Олег Воронов</span>
+                                    <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Спортсмен</span>
+                                    {/*<span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>*/}
                                 </div>
                             </div>
 
                             <p className="imageBoxText">
-                                Мы начали сотрудничество с Clinic более года назад.
-                                Наши четвероногие пациенты теперь получают помощь
-                                оперативнее...
+                                Я слежу за своим пульсом во время тренировок, теперь они намного эффективнее.
                             </p>
                         </div>
                     </div>
@@ -373,55 +375,49 @@ class Main extends React.Component {
                     <div className="review-block">
                         <div className="review-elem">
                             <div className="imageBox">
-                                <img src={person} alt=""/>
+                                <img src={rev4} alt=""/>
 
                                 <div style={{display: 'flex', flexDirection: 'column', marginLeft: '2vh'}}>
-                                    <span style={{color: "#707070", fontSize: '2.6vh'}}>Анастасия Разумовская</span>
-                                    <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Владелец ветклиники </span>
-                                    <span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>
+                                    <span style={{color: "#707070", fontSize: '2.6vh'}}>Татьяна Миронова</span>
+                                    <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Работаю в рекламе</span>
+                                    {/*<span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>*/}
                                 </div>
                             </div>
 
                             <p className="imageBoxText">
-                                Мы начали сотрудничество с Clinic более года назад.
-                                Наши четвероногие пациенты теперь получают помощь
-                                оперативнее...
+                                Теперь я вижу когда уровень стресса повышается, и я могу во время прекратить работать.
                             </p>
                         </div>
 
                         <div className="review-elem">
                             <div className="imageBox">
-                                <img src={person} alt=""/>
+                                <img src={rev5} alt=""/>
 
                                 <div style={{display: 'flex', flexDirection: 'column', marginLeft: '2vh'}}>
-                                    <span style={{color: "#707070", fontSize: '2.6vh'}}>Анастасия Разумовская</span>
-                                    <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Владелец ветклиники </span>
-                                    <span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>
+                                    <span style={{color: "#707070", fontSize: '2.6vh'}}>Евгений Стародубцев</span>
+                                    <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Предприниматель</span>
+                                    {/*<span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>*/}
                                 </div>
                             </div>
 
                             <p className="imageBoxText">
-                                Мы начали сотрудничество с Clinic более года назад.
-                                Наши четвероногие пациенты теперь получают помощь
-                                оперативнее...
+                                Мне сделали операцию на сердце и благодаря HELI, я могу следить за ним всегда.
                             </p>
                         </div>
 
                         <div className="review-elem">
                             <div className="imageBox">
-                                <img src={person} alt=""/>
+                                <img src={rev6} alt=""/>
 
                                 <div style={{display: 'flex', flexDirection: 'column', marginLeft: '2vh'}}>
-                                    <span style={{color: "#707070", fontSize: '2.6vh'}}>Анастасия Разумовская</span>
-                                    <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Владелец ветклиники </span>
-                                    <span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>
+                                    <span style={{color: "#707070", fontSize: '2.6vh'}}>Мария Попова</span>
+                                    <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Работаю в строительной компании</span>
+                                    {/*<span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>*/}
                                 </div>
                             </div>
 
                             <p className="imageBoxText">
-                                Мы начали сотрудничество с Clinic более года назад.
-                                Наши четвероногие пациенты теперь получают помощь
-                                оперативнее...
+                                C HELI мой день эффективнее. Я получаю рекомендации, как улучшить свое здоровье.
                             </p>
                         </div>
                     </div>
