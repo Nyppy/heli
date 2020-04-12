@@ -57,29 +57,28 @@ class Main extends React.Component {
     }
 
     showPopup = () => {
-        const modal = document.getElementById('modal');
-        if (this.state.openPopup === false) {
-            modal.style.display = 'block';
-            this.state.openPopup = !this.state.openPopup
-        }
-        this.modal.current.style.display = "none"
+        this.setState({openPopup: true})
+    };
+
+    hidePopup = () => {
+        this.setState({openPopup: false})
     };
 
     onChangePhone = e => {
         this.setState({...this.state, phone: e.target.value});
-    }
+    };
 
     onChangeName = e => {
         this.setState({...this.state, name: e.target.value});
-    }
+    };
 
     save = e => {
-        e.preventDefault()
+        e.preventDefault();
 
-        console.log(this.state.phone, this.state.name)
+        console.log(this.state.phone, this.state.name);
 
         this.setState({...this.state, name: '', phone: ''})
-    }
+    };
 
     render() {
         return (
@@ -453,11 +452,14 @@ class Main extends React.Component {
                         </div>
 
                         <div className="footer-elem-2">
-                            <div id="modal" className="modal" ref={this.modal}>
-                                <div id="modalContent" className="modal__content"></div>
-                            </div>
-                            <Link onclick={this.showPopup} style={{color: '#31383D'}} to="#">Политика
-                                конфиденциальности</Link>
+                            {
+                                this.state.openPopup &&
+                                <div id="modal" className="modal" onClick={this.hidePopup}>
+                                    <div id="modalContent" className="modal__content"/>
+                                </div>
+                            }
+                            <button onClick={this.showPopup}>Политика
+                                конфиденциальности</button>
                             <span style={{marginRight: '1vh', marginLeft: '1vh'}}>|</span>
                             <Link style={{color: '#31383D'}} to="#">Условия использования</Link>
                             <span style={{marginRight: '1vh', marginLeft: '1vh'}}>|</span>
