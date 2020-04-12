@@ -48,12 +48,22 @@ class Main extends React.Component {
         super(props);
         this.state = {
             phone: '',
-            name: ''
-        }
-
-        this.name = React.createRef()
+            name: '',
+            openPopup: false
+        };
+        this.modal = React.createRef();
+        this.name = React.createRef();
         this.phone = React.createRef()
     }
+
+    showPopup = () => {
+        const modal = document.getElementById('modal');
+        if (this.state.openPopup === false) {
+            modal.style.display = 'block';
+            this.state.openPopup = !this.state.openPopup
+        }
+        this.modal.current.style.display = "none"
+    };
 
     onChangePhone = e => {
         this.setState({...this.state, phone: e.target.value});
@@ -312,9 +322,9 @@ class Main extends React.Component {
                             <input type="radio" style={{fontSize: '2vh'}} required/>
                             Принимаю условия политики конфиденциальности
                         </label>
-                        <div id="modal" className="modal">
-                        </div>
-                        <button className='input-form-7 button-form-7 button-form-7-block' type="submit">Присоединиться</button>
+                        <button className='input-form-7 button-form-7 button-form-7-block'
+                                type="submit">Присоединиться
+                        </button>
                     </form>
                 </div>
 
@@ -326,7 +336,7 @@ class Main extends React.Component {
                             <div className="imageBox">
                                 <img src={rev1} alt=""/>
 
-                                <div style={{display: 'flex', flexDirection: 'column', marginLeft: '2vh'}}>
+                                <div className="reviewDesc">
                                     <span style={{color: "#707070", fontSize: '2.6vh'}}>Анастасия Разумовская</span>
                                     <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Работаю в банке</span>
                                     {/*<span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>*/}
@@ -343,7 +353,7 @@ class Main extends React.Component {
                             <div className="imageBox">
                                 <img src={rev2} alt=""/>
 
-                                <div style={{display: 'flex', flexDirection: 'column', marginLeft: '2vh'}}>
+                                <div className="reviewDesc">
                                     <span style={{color: "#707070", fontSize: '2.6vh'}}>Александр  Смирнов</span>
                                     <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Работаю юристом</span>
                                     {/*<span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>*/}
@@ -359,7 +369,7 @@ class Main extends React.Component {
                             <div className="imageBox">
                                 <img src={rev3} alt=""/>
 
-                                <div style={{display: 'flex', flexDirection: 'column', marginLeft: '2vh'}}>
+                                <div className="reviewDesc">
                                     <span style={{color: "#707070", fontSize: '2.6vh'}}>Олег Воронов</span>
                                     <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Спортсмен</span>
                                     {/*<span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>*/}
@@ -377,7 +387,7 @@ class Main extends React.Component {
                             <div className="imageBox">
                                 <img src={rev4} alt=""/>
 
-                                <div style={{display: 'flex', flexDirection: 'column', marginLeft: '2vh'}}>
+                                <div className="reviewDesc">
                                     <span style={{color: "#707070", fontSize: '2.6vh'}}>Татьяна Миронова</span>
                                     <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Работаю в рекламе</span>
                                     {/*<span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>*/}
@@ -393,7 +403,7 @@ class Main extends React.Component {
                             <div className="imageBox">
                                 <img src={rev5} alt=""/>
 
-                                <div style={{display: 'flex', flexDirection: 'column', marginLeft: '2vh'}}>
+                                <div className="reviewDesc">
                                     <span style={{color: "#707070", fontSize: '2.6vh'}}>Евгений Стародубцев</span>
                                     <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Предприниматель</span>
                                     {/*<span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>*/}
@@ -409,9 +419,12 @@ class Main extends React.Component {
                             <div className="imageBox">
                                 <img src={rev6} alt=""/>
 
-                                <div style={{display: 'flex', flexDirection: 'column', marginLeft: '2vh'}}>
+                                <div className="reviewDesc">
                                     <span style={{color: "#707070", fontSize: '2.6vh'}}>Мария Попова</span>
-                                    <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Работаю в строительной компании</span>
+                                    <span style={{
+                                        color: '#A2A2A2',
+                                        fontSize: '1.8vh'
+                                    }}>Работаю в строительной компании</span>
                                     {/*<span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>*/}
                                 </div>
                             </div>
@@ -432,14 +445,19 @@ class Main extends React.Component {
                                 <img className="footer-icon" src={facebook} alt=""/>
                             </div>
 
-                            <div className="footer-block-text" style={{display: 'flex', flexDirection: 'column', color: '#31383D'}}>
+                            <div className="footer-block-text"
+                                 style={{display: 'flex', flexDirection: 'column', color: '#31383D'}}>
                                 <span style={{marginBottom: '0.5vh'}}>info@heli.com</span>
                                 <span>8 (900) 000-00-00</span>
                             </div>
                         </div>
 
                         <div className="footer-elem-2">
-                            <Link style={{color: '#31383D'}} to="#">Политика конфиденциальности</Link>
+                            <div id="modal" className="modal" ref={this.modal}>
+                                <div id="modalContent" className="modal__content"></div>
+                            </div>
+                            <Link onclick={this.showPopup} style={{color: '#31383D'}} to="#">Политика
+                                конфиденциальности</Link>
                             <span style={{marginRight: '1vh', marginLeft: '1vh'}}>|</span>
                             <Link style={{color: '#31383D'}} to="#">Условия использования</Link>
                             <span style={{marginRight: '1vh', marginLeft: '1vh'}}>|</span>
