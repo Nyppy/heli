@@ -47,12 +47,8 @@ class Main extends React.Component {
             phone: '',
             name: '',
             openPopup: false,
-<<<<<<< HEAD
-            modal: 'modal',
-=======
             text_send_message: '',
             send: false,
->>>>>>> 4085d6b4bf1bea1fefa9c0681af1bc71b8c978f9
         };
 
         this.modal = React.createRef();
