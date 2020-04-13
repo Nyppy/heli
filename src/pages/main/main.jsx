@@ -214,7 +214,7 @@ class Main extends React.Component {
                     </div>
                 </div>
 
-                <input type="button" onClick={this.sendEmail} value="Send" />
+                {/*<input type="button" onClick={this.sendEmail} value="Send" />*/}
 
                 {/* Закоментил на время, пока не разберемся с фото */}
                 {/* <div className="content-main-block-4">
