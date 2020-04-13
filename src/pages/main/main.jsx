@@ -49,7 +49,8 @@ class Main extends React.Component {
         this.state = {
             phone: '',
             name: '',
-            openPopup: false
+            openPopup: false,
+            modal: 'modal',
         };
         this.modal = React.createRef();
         this.name = React.createRef();
@@ -60,7 +61,8 @@ class Main extends React.Component {
         this.setState({openPopup: true})
     };
 
-    hidePopup = () => {
+    hidePopup = (e) => {
+        if (e.target.id === 'modalContent') return;
         this.setState({openPopup: false})
     };
 
