@@ -62,7 +62,7 @@ class Main extends React.Component {
     };
 
     hidePopup = (e) => {
-        if (e.target.id === 'modalContent') return;
+        if (e.target.id === 'modal')
         this.setState({openPopup: false})
     };
 
@@ -458,6 +458,7 @@ class Main extends React.Component {
                                 this.state.openPopup &&
                                 <div id="modal" className="modal" onClick={this.hidePopup}>
                                     <div id="modalContent" className="modal__content"/>
+                                    <div><span className="modal__close" id="close">&times;</span></div>
                                 </div>
                             }
                             <button onClick={this.showPopup}>Политика
