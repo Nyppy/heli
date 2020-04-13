@@ -2,6 +2,8 @@ import React from "react";
 
 import {withRouter, Link} from "react-router-dom";
 
+import axios from 'axios'
+
 import "./main.css";
 
 import InputMask from 'react-input-mask';
@@ -21,18 +23,11 @@ import sleep from "../../assets/img/sleep.png"
 import stress from "../../assets/img/stress.png"
 import cardiogram from "../../assets/img/cardiogram.png"
 
-
-import run from "../../assets/img/run.png"
-import sleep_1 from "../../assets/img/sleep-1.png"
-import wokr from "../../assets/img/work.png"
-import bol from "../../assets/img/bol.png"
 import pc from "../../assets/img/pc.png"
 import car from "../../assets/img/car.png"
-import person from "../../assets/img/person.png"
 import facebook from "../../assets/img/facebook.png"
 import twitter from "../../assets/img/twitter.png"
 import vk from "../../assets/img/vk.png"
-import js_logo from "../../assets/img/js-logo.png"
 import jscorplogos from "../../assets/img/jscorplogos.png"
 import Price from "../../components/Price/Price";
 import rev1 from "../../assets/img/rev1.png"
@@ -42,6 +37,8 @@ import rev4 from "../../assets/img/rev4.png"
 import rev5 from "../../assets/img/rev5.png"
 import rev6 from "../../assets/img/rev6.png"
 
+import emailjs from 'emailjs-com';
+
 
 class Main extends React.Component {
     constructor(props) {
@@ -49,11 +46,16 @@ class Main extends React.Component {
         this.state = {
             phone: '',
             name: '',
-            openPopup: false
+            openPopup: false,
+            text_send_message: '',
+            send: false,
         };
+
         this.modal = React.createRef();
         this.name = React.createRef();
         this.phone = React.createRef()
+        this.button_submit = React.createRef()
+        this.message_send = React.createRef()
     }
 
     showPopup = () => {
@@ -75,10 +77,38 @@ class Main extends React.Component {
     save = e => {
         e.preventDefault();
 
-        console.log(this.state.phone, this.state.name);
-
+        this.sendEmail('Присоедениться')
         this.setState({...this.state, name: '', phone: ''})
     };
+
+    sendEmail(type) {
+        let data = {
+            service_id: 'yandex',
+            template_id: '1',
+            user_id: 'user_uuAvsNRqtA75Exr9r8uiU',
+            template_params: {
+                name: this.state.name,
+                phone: this.state.phone,
+                type: type
+            }
+        }
+        this.button_submit.current.id = 'hide-button'
+        axios.post('https://api.emailjs.com/api/v1.0/email/send', data)
+          .then((result) => {
+              console.log(result);
+              this.state.text_send_message = 'Ваша заявка отправлена!'
+              this.message_send.current.style.display = 'block'
+              this.button_submit.current.id = ''
+          }, (error) => {
+                this.message_send.current.style.display = 'block'
+                this.state.text_send_message = 'Ваша заявка не отправлена! Повторите попытку позже!'
+              console.log(error);
+          });
+
+        setTimeout(()=> {
+            this.message_send.current.style.display = 'none'
+          }, 3000)
+      }
 
     render() {
         return (
@@ -182,6 +212,8 @@ class Main extends React.Component {
                         </div>
                     </div>
                 </div>
+
+                <input type="button" onClick={this.sendEmail} value="Send" />
 
                 {/* Закоментил на время, пока не разберемся с фото */}
                 {/* <div className="content-main-block-4">
@@ -310,7 +342,8 @@ class Main extends React.Component {
                     <p className="content-main-block-7-text">Равным образом
                         консультация с широким активом позволяет выполнять важные задания по разработке дальнейших
                         направлений развития. </p>
-
+                    
+                    <span ref={this.message_send} style={{margin: '10px 0 10px 0', display: 'none'}}>Заявка отправлена!</span>
                     <form onSubmit={this.save} className="form-elem-7">
                         <input className='input-form-7' defaultValue={this.state.name} required
                                onChange={this.onChangeName} placeholder="Имя *" type="text"/>
@@ -322,7 +355,9 @@ class Main extends React.Component {
                             Принимаю условия политики конфиденциальности
                         </label>
                         <button className='input-form-7 button-form-7 button-form-7-block'
-                                type="submit">Присоединиться
+                                type="submit"
+                                ref={this.button_submit}
+                        >Присоединиться
                         </button>
                     </form>
                 </div>
