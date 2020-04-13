@@ -977,3 +977,9 @@ a {
     }
 
 }
+
+#hide-button {
+    background-color: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    opacity: 0.4;
+}
