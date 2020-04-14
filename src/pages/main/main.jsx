@@ -13,7 +13,7 @@ import Header from "../../components/Header/Header.jsx"
 import doctor_main from "../../assets/img/doctor-main.png"
 import app_store from "../../assets/img/app-store.png"
 import app_google from "../../assets/img/app-google.png"
-import logo from "../../assets/img/logo-header.png"
+import logo1 from "../../assets/img/logo1.png"
 import doctor from "../../assets/img/doctor.png"
 import heart from "../../assets/img/heart.png"
 import sos from "../../assets/img/sos.png"
@@ -24,10 +24,10 @@ import stress from "../../assets/img/stress.png"
 import cardiogram from "../../assets/img/cardiogram.png"
 
 import pc from "../../assets/img/pc.png"
-import car from "../../assets/img/car.png"
-import facebook from "../../assets/img/facebook.png"
-import twitter from "../../assets/img/twitter.png"
-import vk from "../../assets/img/vk.png"
+import medhelp from "../../assets/img/medhelp.png"
+import facebook2 from "../../assets/img/facebook2.png"
+import twitter2 from "../../assets/img/twitter2.png"
+import vk2 from "../../assets/img/vk2.png"
 import jscorplogos from "../../assets/img/jscorplogos.png"
 import Price from "../../components/Price/Price";
 import rev1 from "../../assets/img/rev1.png"
@@ -147,7 +147,7 @@ class Main extends React.Component {
                 <Price/>
 
                 <div className="content-main-block-3">
-                    <img src={logo} className="logo-content-block-3" alt=""/>
+                    <img src={logo1} className="logo-content-block-3" alt=""/>
                     <span className="content-main-block-3-h-text">Персональное ЭКГ с 1 отведением</span>
                     <span className="content-main-block-3-text">Равным образом консультация с широким активом позволяет выполнять важные задания по разработке дальнейших направлений развития. </span>
 
@@ -265,13 +265,13 @@ class Main extends React.Component {
                 <div className="content-main-block-5">
                     <div className='main-elem-block-5-1'>
                         <div className="block-5-1">
-                            <p style={{marginBottom: '2vw', fontSize: '3vh'}}>
+                            <p className="block-5-1-h">
                                 Новый способ превратить свободное
                                 время в положительный результат
                                 и доход для вашей практики.
                             </p>
 
-                            <p style={{fontSize: '2.2vh'}}>
+                            <p className="block-5-1-text">
                                 HELI уникальная разработка для удаленного мониторинга
                                 пациентов. Следите за первичными показателями пациентов
                                 на расстоянии, ведите карту,назначайте лечение или
@@ -288,26 +288,27 @@ class Main extends React.Component {
                         <button className="button-shop block5Button" style={{
                             backgroundColor: '#FF0020',
                             padding: '1vh 4vh 1vh 4vh',
-                            fontSize: '3vh'
+                            fontSize: '20px'
                         }}>Присоединиться
                         </button>
                     </div>
 
                     <div className='main-elem-block-5-2'>
-                        <img style={{width: '70vw'}} src={car} alt=""/>
+                        <img style={{width: '70vw'}} src={medhelp} alt=""/>
 
                         <div className="block-5-1">
                             <div style={{
                                 display: 'flex',
+                                width: '96vw',
                                 flexDirection: 'row',
                                 marginBottom: '2vw',
                                 alignItems: 'center'
                             }}>
-                                <p style={{fontSize: '3vh'}}>
+                                <p style={{fontSize: '30px'}}>
                                     Cнижаем риск повторной<br/> госпитализации на
                                 </p>
 
-                                <span style={{fontSize: '7vh', color: '#FF0020', marginLeft: '4vh'}}>76%</span>
+                                <span style={{fontSize: '60px', color: '#FF0020', marginLeft: '4vh'}}>76%</span>
                             </div>
 
 
@@ -318,7 +319,7 @@ class Main extends React.Component {
                                 направлений развития.
                             </p>
 
-                            <button className="button-shop content-main-block-5-button">Узнать подробнее
+                            <button style={{fontSize: '18px'}} className="button-shop content-main-block-5-button">Узнать подробнее
                             </button>
                         </div>
                     </div>
@@ -472,12 +473,12 @@ class Main extends React.Component {
 
                     <div className="footer">
                         <div className="footer-elem-1">
-                            <img className="footerLogo" src={logo} alt=""/>
+                            <img className="footerLogo" src={logo1} alt=""/>
 
                             <div style={{display: 'flex', flexDirection: 'row'}}>
-                                <img className="footer-icon" src={vk} alt=""/>
-                                <img className="footer-icon" style={{margin: '0 1vh 0 1vh'}} src={twitter} alt=""/>
-                                <img className="footer-icon" src={facebook} alt=""/>
+                                <img className="footer-icon" src={vk2} alt=""/>
+                                <img className="footer-icon" style={{margin: '0 1vh 0 1vh'}} src={twitter2} alt=""/>
+                                <img className="footer-icon" src={facebook2} alt=""/>
                             </div>
 
                             <div className="footer-block-text"

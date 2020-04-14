@@ -55,3 +55,9 @@
         width: 90vw;
     }
 }
+
+.headerMenuElem {
+    margin-right: 3vw;
+    color: #31383D;
+    font-size: 12px;
+}

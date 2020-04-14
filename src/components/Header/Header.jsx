@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {Link } from "react-router-dom";
-import logo_header from "../../assets/img/logo-header.png"
+import logo1h from "../../assets/img/logo1h.png"
 import s from "./Header.module.css"
 
 class Header extends React.Component {
@@ -9,10 +9,11 @@ class Header extends React.Component {
             <div className={s.headerWrapper}>
                 <div className={s.headerContent}>
                     <div className={s.headerLogoDiv}>
-                        <img src={logo_header} alt="Логотип"/>
+                        <img src={logo1h} alt="Логотип"/>
                     </div>
                     <div className={s.headerMenu}>
                         <Link className={s.headerMenuElem} to="">Для&nbsp;вас</Link>
+                        <Link className={s.headerMenuElem} to="">Для&nbsp;врачей</Link>
                         <Link className={s.headerMenuElem} to="">Продукты</Link>
                         <span className={s.headerButton}>Войти</span>
                     </div>
