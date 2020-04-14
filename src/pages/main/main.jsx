@@ -135,11 +135,11 @@ class Main extends React.Component {
                             </span>
                             </div>
                             <span className="main-content-button">Узнать подробности</span>
-                            <div className="main-content-button-app">
-                                <Link to=""><img className="img-app-main" src={app_store} alt=""/></Link>
-                                <Link to=""><img className="img-app-main" src={app_google} alt=""/></Link>
-                            </div>
-                            <span className="blockTextApp">Установи приложение на свой телефон</span>
+                            {/*<div className="main-content-button-app">*/}
+                            {/*    <Link to=""><img className="img-app-main" src={app_store} alt=""/></Link>*/}
+                            {/*    <Link to=""><img className="img-app-main" src={app_google} alt=""/></Link>*/}
+                            {/*</div>*/}
+                            {/*<span className="blockTextApp">Установи приложение на свой телефон</span>*/}
                         </div>
                     </div>
                 </div>
@@ -299,13 +299,13 @@ class Main extends React.Component {
                         <div className="block-5-1">
                             <div style={{
                                 display: 'flex',
-                                width: '96vw',
+                                width: '93vw',
                                 flexDirection: 'row',
                                 marginBottom: '2vw',
                                 alignItems: 'center'
                             }}>
                                 <p style={{fontSize: '30px'}}>
-                                    Cнижаем риск повторной<br/> госпитализации на
+                                    Снижаем риск повторной<br/> госпитализации на
                                 </p>
 
                                 <span style={{fontSize: '60px', color: '#FF0020', marginLeft: '4vh'}}>76%</span>

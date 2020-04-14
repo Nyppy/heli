@@ -18,8 +18,8 @@
 }
 
 .headerLogoDiv img {
-    width: 8vw;
-    height: auto;
+    width: 151px;
+    height: 56px;
 }
 
 .headerMenu {
@@ -34,7 +34,7 @@
     text-decoration: none;
     margin-right: 5vw;
     color: #31383D;
-    font-size: 3vh;
+    font-size: 24px;
 }
 
 .headerMenuElem:nth-child(2) {
@@ -54,10 +54,17 @@
     .headerContent {
         width: 90vw;
     }
+
+    .headerMenuElem {
+        margin-right: 3vw;
+        color: #31383D;
+        font-size: 12px;
+    }
+
+    .headerLogoDiv img {
+        width: 8vw;
+        height: auto;
+    }
+
 }
 
-.headerMenuElem {
-    margin-right: 3vw;
-    color: #31383D;
-    font-size: 12px;
-}
