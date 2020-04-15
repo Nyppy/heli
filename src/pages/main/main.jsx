@@ -2,11 +2,13 @@ import React from "react";
 
 import {withRouter, Link} from "react-router-dom";
 
+import axios from 'axios'
+
 import "./main.css";
 
 import InputMask from 'react-input-mask';
 
-import Header from "../../components/header/Header.jsx"
+import Header from "../../components/Header/Header.jsx"
 
 import doctor_main from "../../assets/img/doctor-main.png"
 import app_store from "../../assets/img/app-store.png"
@@ -21,17 +23,21 @@ import sleep from "../../assets/img/sleep.png"
 import stress from "../../assets/img/stress.png"
 import cardiogram from "../../assets/img/cardiogram.png"
 
-import run from "../../assets/img/run.png"
-import sleep_1 from "../../assets/img/sleep-1.png"
-import wokr from "../../assets/img/work.png"
-import bol from "../../assets/img/bol.png"
 import pc from "../../assets/img/pc.png"
 import car from "../../assets/img/car.png"
-import person from "../../assets/img/person.png"
 import facebook from "../../assets/img/facebook.png"
 import twitter from "../../assets/img/twitter.png"
 import vk from "../../assets/img/vk.png"
-import js_logo from "../../assets/img/js-logo.png"
+import jscorplogos from "../../assets/img/jscorplogos.png"
+import Price from "../../components/Price/Price";
+import rev1 from "../../assets/img/rev1.png"
+import rev2 from "../../assets/img/rev2.png"
+import rev3 from "../../assets/img/rev3.png"
+import rev4 from "../../assets/img/rev4.png"
+import rev5 from "../../assets/img/rev5.png"
+import rev6 from "../../assets/img/rev6.png"
+
+import emailjs from 'emailjs-com';
 
 
 class Main extends React.Component {
@@ -39,28 +45,71 @@ class Main extends React.Component {
         super(props);
         this.state = {
             phone: '',
-            name: ''
-        }
+            name: '',
+            openPopup: false,
+            text_send_message: '',
+            send: false,
+        };
 
-        this.name = React.createRef()
+        this.modal = React.createRef();
+        this.name = React.createRef();
         this.phone = React.createRef()
+        this.button_submit = React.createRef()
+        this.message_send = React.createRef()
     }
+
+    showPopup = () => {
+        this.setState({openPopup: true})
+    };
+
+    hidePopup = (e) => {
+        if (e.target.id === 'modal')
+        this.setState({openPopup: false})
+    };
 
     onChangePhone = e => {
         this.setState({...this.state, phone: e.target.value});
-    }
+    };
 
     onChangeName = e => {
         this.setState({...this.state, name: e.target.value});
-    }
+    };
 
     save = e => {
-        e.preventDefault()
+        e.preventDefault();
 
-        console.log(this.state.phone, this.state.name)
-
+        this.sendEmail('Присоедениться')
         this.setState({...this.state, name: '', phone: ''})
-    }
+    };
+
+    sendEmail(type) {
+        let data = {
+            service_id: 'yandex',
+            template_id: '1',
+            user_id: 'user_uuAvsNRqtA75Exr9r8uiU',
+            template_params: {
+                name: this.state.name,
+                phone: this.state.phone,
+                type: type
+            }
+        }
+        this.button_submit.current.id = 'hide-button'
+        axios.post('https://api.emailjs.com/api/v1.0/email/send', data)
+          .then((result) => {
+              console.log(result);
+              this.state.text_send_message = 'Ваша заявка отправлена!'
+              this.message_send.current.style.display = 'block'
+              this.button_submit.current.id = ''
+          }, (error) => {
+                this.message_send.current.style.display = 'block'
+                this.state.text_send_message = 'Ваша заявка не отправлена! Повторите попытку позже!'
+              console.log(error);
+          });
+
+        setTimeout(()=> {
+            this.message_send.current.style.display = 'none'
+          }, 3000)
+      }
 
     render() {
         return (
@@ -74,7 +123,7 @@ class Main extends React.Component {
                         </div>
 
                         <div className="info-main-block-1">
-                            <p className="info-main-block-1-h-text">Современное решение в  истории<br/>
+                            <p className="info-main-block-1-h-text">Современное решение в истории<br/>
                                 <span style={{color: '#FF0017', fontSize: '3.5vh'}}>homecare</span> девайсов
                             </p>
                             <div>
@@ -95,81 +144,7 @@ class Main extends React.Component {
                     </div>
                 </div>
 
-                <div className="content-main-block-2">
-                    <div className="text-block-2">
-                        <span className="text-head-block-2">Поликлиника в кармане</span>
-                        <span>
-                            Круглосуточное наблюдение за вашими показателями<br/>
-                            организма специалистами сервиса. 
-                        </span>
-                    </div>
-
-                    <div className="block-price">
-                        <div className="block-price-elem block-price-1">
-                            <span className="blockHeader">Популярный тариф!</span>
-                            <span className="blockPrice">
-                                <span>₽ </span> 
-                                <span className="blockPrice">1'499</span>
-                            </span>
-                            <span className="blockTermsInfo">1 месяц</span>
-
-                            <span style={{color: '#FF0020', fontSize: '3vh', marginBottom: '1vh'}}>Возможности:</span>
-                            <span className="blockPriceText">
-                                Все функции системыУдаленная консультация с врачом
-                                Доступ в личный кабинет<br/>
-                            </span>
-                            <span className="blockPriceText2"><span style={{color: '#FF0020'}}>*</span> Не входит стоимость браслета</span>
-
-
-                            <button className="button-shop">Приобрести</button>
-                        </div>
-
-                        <div className="block-price-elem block-price-2">
-                            <span className="blockHeader">Экономный тариф!</span>
-                            <span className="blockPrice">
-                                <span>₽ </span> 
-                                <span className="blockPrice">11'400</span>
-                            </span>
-
-                            <span className="blockTermsInfo">6 месяцев</span>
-
-                            <span style={{color: '#FF0020', fontSize: '3vh', marginBottom: '1vh'}}>Возможности:</span>
-                            <span className="blockPriceText">
-                               Все функции системыУдаленная консультация с врачемДоступ в личный кабинет<br/>
-                            </span>
-                            <span className="blockPriceText2"> <span style={{color: '#FF0020'}}>*</span> Входит стоимость браслета</span>
-
-
-                            <button className="button-shop" >Приобрести</button>
-                        </div>
-
-                        <div className="block-price-elem block-price-3">
-                            <span className="blockHeader">Супер предложение!</span>
-                            <span className="blockPrice">
-                                <span>₽ </span> 
-                                <span className="blockPrice">17'100</span>
-                            </span>
-
-                            <span className="blockTermsInfo">9 месяцев</span>
-
-                            <span style={{color: '#FF0020', fontSize: '3vh', marginBottom: '1vh'}}>Возможности:</span>
-                            <span className="blockPriceText">
-                               Все функции системыУдаленная консультация с врачемДоступ в личный кабинет<br/>
-                            </span>
-                            <span className="blockPriceText2"> <span style={{color: '#FF0020'}}>*</span> Входит стоимость браслета</span>
-
-
-                            <button className="button-shop">Приобрести</button>
-                        </div>
-                    </div>
-
-
-                    <div className="text-button-block-2 text-block-2">
-                        <span>Подробнее о тарифах вы сможете узнать у&nbsp;наших консультантов.</span>
-
-                        <Link className="button-info-price" to="">Узнать подробности</Link>
-                    </div>
-                </div>
+                <Price/>
 
                 <div className="content-main-block-3">
                     <img src={logo} className="logo-content-block-3" alt=""/>
@@ -202,9 +177,11 @@ class Main extends React.Component {
                         <div className="elem-block-3">
                             <div>
                                 <img src={sos} alt=""/>
-                                <span>Нужен текст</span>
+                                <span>Экстренный вызов</span>
                             </div>
-                            <span>Нужно описание
+                            <span>Ваши родственники или врач
+                                получат уведомление о том, что
+                                с вашим здоровьем что-то не так.
                             </span>
                         </div>
                     </div>
@@ -236,6 +213,8 @@ class Main extends React.Component {
                         </div>
                     </div>
                 </div>
+
+                <input type="button" onClick={this.sendEmail} value="Send" />
 
                 {/* Закоментил на время, пока не разберемся с фото */}
                 {/* <div className="content-main-block-4">
@@ -306,12 +285,12 @@ class Main extends React.Component {
                         <img style={{width: '40vw'}} src={pc} alt=""/>
                     </div>
                     <div className="">
-                    <button className="button-shop block5Button" style={{
-                        backgroundColor: '#FF0020',
-                        padding: '1vh 4vh 1vh 4vh',
-                        fontSize: '3vh'
-                    }}>Присоединиться
-                    </button>
+                        <button className="button-shop block5Button" style={{
+                            backgroundColor: '#FF0020',
+                            padding: '1vh 4vh 1vh 4vh',
+                            fontSize: '3vh'
+                        }}>Присоединиться
+                        </button>
                     </div>
 
                     <div className='main-elem-block-5-2'>
@@ -352,7 +331,7 @@ class Main extends React.Component {
                         улучшат ваше здоровье. Взгляните на мир глазами здорового человека.
                     </p>
 
-                    <button className="button-shop"
+                    <button className="button-shop button-form-6-block"
                             style={{backgroundColor: '#FF0020', padding: '1vh 4vh 1vh 4vh', fontSize: '3vh'}}>Узнать
                         подробнее
                     </button>
@@ -364,7 +343,8 @@ class Main extends React.Component {
                     <p className="content-main-block-7-text">Равным образом
                         консультация с широким активом позволяет выполнять важные задания по разработке дальнейших
                         направлений развития. </p>
-
+                    
+                    <span ref={this.message_send} style={{margin: '10px 0 10px 0', display: 'none'}}>Заявка отправлена!</span>
                     <form onSubmit={this.save} className="form-elem-7">
                         <input className='input-form-7' defaultValue={this.state.name} required
                                onChange={this.onChangeName} placeholder="Имя *" type="text"/>
@@ -372,11 +352,14 @@ class Main extends React.Component {
                                    placeholder="Телефон *" defaultValue={this.state.phone} onChange={this.onChangePhone}
                                    id="phone" maskChar={null} required placeholder="Ваш телефон *"/>
                         <label className="blockConditions">
-                            <input type="checkbox" style={{fontSize: '2vh'}} required/>
+                            <input type="radio" style={{fontSize: '2vh'}} required/>
                             Принимаю условия политики конфиденциальности
                         </label>
-
-                        <button className='input-form-7 button-form-7 ' type="submit">Присоединиться</button>
+                        <button className='input-form-7 button-form-7 button-form-7-block'
+                                type="submit"
+                                ref={this.button_submit}
+                        >Присоединиться
+                        </button>
                     </form>
                 </div>
 
@@ -386,55 +369,50 @@ class Main extends React.Component {
                     <div className="review-block">
                         <div className="review-elem">
                             <div className="imageBox">
-                                <img src={person} alt=""/>
+                                <img src={rev1} alt=""/>
 
-                                <div style={{display: 'flex', flexDirection: 'column', marginLeft: '2vh'}}>
+                                <div className="reviewDesc">
                                     <span style={{color: "#707070", fontSize: '2.6vh'}}>Анастасия Разумовская</span>
-                                    <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Владелец ветклиники </span>
-                                    <span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>
+                                    <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Работаю в банке</span>
+                                    {/*<span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>*/}
                                 </div>
                             </div>
 
                             <p className="imageBoxText">
-                                Мы начали сотрудничество с Clinic более года назад.
-                                Наши четвероногие пациенты теперь получают помощь
-                                оперативнее...
+                                Используя браслет HELI, я могу каждый день
+                                наблюдать за своими показателями здоровья.
                             </p>
                         </div>
 
                         <div className="review-elem">
                             <div className="imageBox">
-                                <img src={person} alt=""/>
+                                <img src={rev2} alt=""/>
 
-                                <div style={{display: 'flex', flexDirection: 'column', marginLeft: '2vh'}}>
-                                    <span style={{color: "#707070", fontSize: '2.6vh'}}>Анастасия Разумовская</span>
-                                    <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Владелец ветклиники </span>
-                                    <span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>
+                                <div className="reviewDesc">
+                                    <span style={{color: "#707070", fontSize: '2.6vh'}}>Александр  Смирнов</span>
+                                    <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Работаю юристом</span>
+                                    {/*<span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>*/}
                                 </div>
                             </div>
 
                             <p className="imageBoxText">
-                                Мы начали сотрудничество с Clinic более года назад.
-                                Наши четвероногие пациенты теперь получают помощь
-                                оперативнее...
+                                Мое давления всегда под контролем. Теперь я могу его измерять в любой момент.
                             </p>
                         </div>
 
                         <div className="review-elem">
                             <div className="imageBox">
-                                <img src={person} alt=""/>
+                                <img src={rev3} alt=""/>
 
-                                <div style={{display: 'flex', flexDirection: 'column', marginLeft: '2vh'}}>
-                                    <span style={{color: "#707070", fontSize: '2.6vh'}}>Анастасия Разумовская</span>
-                                    <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Владелец ветклиники </span>
-                                    <span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>
+                                <div className="reviewDesc">
+                                    <span style={{color: "#707070", fontSize: '2.6vh'}}>Олег Воронов</span>
+                                    <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Спортсмен</span>
+                                    {/*<span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>*/}
                                 </div>
                             </div>
 
                             <p className="imageBoxText">
-                                Мы начали сотрудничество с Clinic более года назад.
-                                Наши четвероногие пациенты теперь получают помощь
-                                оперативнее...
+                                Я слежу за своим пульсом во время тренировок, теперь они намного эффективнее.
                             </p>
                         </div>
                     </div>
@@ -442,77 +420,83 @@ class Main extends React.Component {
                     <div className="review-block">
                         <div className="review-elem">
                             <div className="imageBox">
-                                <img src={person} alt=""/>
+                                <img src={rev4} alt=""/>
 
-                                <div style={{display: 'flex', flexDirection: 'column', marginLeft: '2vh'}}>
-                                    <span style={{color: "#707070", fontSize: '2.6vh'}}>Анастасия Разумовская</span>
-                                    <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Владелец ветклиники </span>
-                                    <span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>
+                                <div className="reviewDesc">
+                                    <span style={{color: "#707070", fontSize: '2.6vh'}}>Татьяна Миронова</span>
+                                    <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Работаю в рекламе</span>
+                                    {/*<span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>*/}
                                 </div>
                             </div>
 
                             <p className="imageBoxText">
-                                Мы начали сотрудничество с Clinic более года назад.
-                                Наши четвероногие пациенты теперь получают помощь
-                                оперативнее...
+                                Теперь я вижу когда уровень стресса повышается, и я могу во время прекратить работать.
                             </p>
                         </div>
 
                         <div className="review-elem">
                             <div className="imageBox">
-                                <img src={person} alt=""/>
+                                <img src={rev5} alt=""/>
 
-                                <div style={{display: 'flex', flexDirection: 'column', marginLeft: '2vh'}}>
-                                    <span style={{color: "#707070", fontSize: '2.6vh'}}>Анастасия Разумовская</span>
-                                    <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Владелец ветклиники </span>
-                                    <span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>
+                                <div className="reviewDesc">
+                                    <span style={{color: "#707070", fontSize: '2.6vh'}}>Евгений Стародубцев</span>
+                                    <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Предприниматель</span>
+                                    {/*<span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>*/}
                                 </div>
                             </div>
 
                             <p className="imageBoxText">
-                                Мы начали сотрудничество с Clinic более года назад.
-                                Наши четвероногие пациенты теперь получают помощь
-                                оперативнее...
+                                Мне сделали операцию на сердце и благодаря HELI, я могу следить за ним всегда.
                             </p>
                         </div>
 
                         <div className="review-elem">
                             <div className="imageBox">
-                                <img src={person} alt=""/>
+                                <img src={rev6} alt=""/>
 
-                                <div style={{display: 'flex', flexDirection: 'column', marginLeft: '2vh'}}>
-                                    <span style={{color: "#707070", fontSize: '2.6vh'}}>Анастасия Разумовская</span>
-                                    <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Владелец ветклиники </span>
-                                    <span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>
+                                <div className="reviewDesc">
+                                    <span style={{color: "#707070", fontSize: '2.6vh'}}>Мария Попова</span>
+                                    <span style={{
+                                        color: '#A2A2A2',
+                                        fontSize: '1.8vh'
+                                    }}>Работаю в строительной компании</span>
+                                    {/*<span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>*/}
                                 </div>
                             </div>
 
                             <p className="imageBoxText">
-                                Мы начали сотрудничество с Clinic более года назад.
-                                Наши четвероногие пациенты теперь получают помощь
-                                оперативнее...
+                                C HELI мой день эффективнее. Я получаю рекомендации, как улучшить свое здоровье.
                             </p>
                         </div>
                     </div>
 
                     <div className="footer">
                         <div className="footer-elem-1">
-                            <img style={{width: '14vh'}} src={logo} alt=""/>
+                            <img className="footerLogo" src={logo} alt=""/>
 
                             <div style={{display: 'flex', flexDirection: 'row'}}>
-                                <img src={vk} alt=""/>
-                                <img style={{margin: '0 1vh 0 1vh'}} src={twitter} alt=""/>
-                                <img src={facebook} alt=""/>
+                                <img className="footer-icon" src={vk} alt=""/>
+                                <img className="footer-icon" style={{margin: '0 1vh 0 1vh'}} src={twitter} alt=""/>
+                                <img className="footer-icon" src={facebook} alt=""/>
                             </div>
 
-                            <div style={{display: 'flex', flexDirection: 'column', color: '#31383D'}}>
+                            <div className="footer-block-text"
+                                 style={{display: 'flex', flexDirection: 'column', color: '#31383D'}}>
                                 <span style={{marginBottom: '0.5vh'}}>info@heli.com</span>
                                 <span>8 (900) 000-00-00</span>
                             </div>
                         </div>
 
                         <div className="footer-elem-2">
-                            <Link style={{color: '#31383D'}} to="#">Политика конфиденциальности</Link>
+                            {
+                                this.state.openPopup &&
+                                <div id="modal" className="modal" onClick={this.hidePopup}>
+                                    <div id="modalContent" className="modal__content"/>
+                                    <div><span className="modal__close" id="close">&times;</span></div>
+                                </div>
+                            }
+                            <button onClick={this.showPopup}>Политика
+                                конфиденциальности</button>
                             <span style={{marginRight: '1vh', marginLeft: '1vh'}}>|</span>
                             <Link style={{color: '#31383D'}} to="#">Условия использования</Link>
                             <span style={{marginRight: '1vh', marginLeft: '1vh'}}>|</span>
@@ -520,15 +504,16 @@ class Main extends React.Component {
                         </div>
 
                         <div className="footer-elem-3">
-                            <span style={{}}>© {new Date().getFullYear()} HELI technology ltd.</span>
-                            <span style={{color: '#31383D', width: '40vw'}}>
+                            <span
+                                className="footer-elem-3-item">© {new Date().getFullYear()} HELI technology ltd.</span>
+                            <span className="footer-elem-3-item" style={{color: '#31383D', width: '40vw'}}>
                                 Информация, представленная на сайте, не может быть использована для 
                                 постановки диагноза, назначения лечения и не заменяет прием врача.
                             </span>
 
                             <div style={{display: 'flex', flexDirection: 'column', textAlign: 'left'}}>
-                                <span style={{marginBottom: '1vh'}}>При поддержке:</span>
-                                <img src={js_logo}/>
+                                <span style={{marginBottom: '11vh'}}>При поддержке:</span>
+                                <a className="footer-elem-3-logo"><img className="footer-logojs" src={jscorplogos}/></a>
                             </div>
                         </div>
                     </div>
