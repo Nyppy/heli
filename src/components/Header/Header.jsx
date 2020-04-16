@@ -15,7 +15,7 @@ class Header extends React.Component {
                         <Link className={s.headerMenuElem} to="">Для&nbsp;вас</Link>
                         <Link className={s.headerMenuElem} to="">Для&nbsp;врачей</Link>
                         <Link className={s.headerMenuElem} to="">Продукты</Link>
-                        <span className={s.headerButton}>Войти</span>
+                        <span className={s.headerButton}>КУПИТЬ</span>
                     </div>
                 </div>
             </div>

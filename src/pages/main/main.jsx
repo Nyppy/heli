@@ -64,7 +64,7 @@ class Main extends React.Component {
 
     hidePopup = (e) => {
         if (e.target.id === 'modal')
-        this.setState({openPopup: false})
+            this.setState({openPopup: false})
     };
 
     onChangePhone = e => {
@@ -78,7 +78,7 @@ class Main extends React.Component {
     save = e => {
         e.preventDefault();
 
-        this.sendEmail('Присоедениться')
+        this.sendEmail('Присоединиться')
         this.setState({...this.state, name: '', phone: ''})
     };
 
@@ -95,21 +95,21 @@ class Main extends React.Component {
         }
         this.button_submit.current.id = 'hide-button'
         axios.post('https://api.emailjs.com/api/v1.0/email/send', data)
-          .then((result) => {
-              console.log(result);
-              this.state.text_send_message = 'Ваша заявка отправлена!'
-              this.message_send.current.style.display = 'block'
-              this.button_submit.current.id = ''
-          }, (error) => {
+            .then((result) => {
+                console.log(result);
+                this.state.text_send_message = 'Ваша заявка отправлена!'
+                this.message_send.current.style.display = 'block'
+                this.button_submit.current.id = ''
+            }, (error) => {
                 this.message_send.current.style.display = 'block'
                 this.state.text_send_message = 'Ваша заявка не отправлена! Повторите попытку позже!'
-              console.log(error);
-          });
+                console.log(error);
+            });
 
-        setTimeout(()=> {
+        setTimeout(() => {
             this.message_send.current.style.display = 'none'
-          }, 3000)
-      }
+        }, 3000)
+    }
 
     render() {
         return (
@@ -123,18 +123,19 @@ class Main extends React.Component {
                         </div>
 
                         <div className="info-main-block-1">
-                            <p className="info-main-block-1-h-text">Современное решение в истории<br/>
-                                <span style={{color: '#FF0017', fontSize: '3.5vh'}}>homecare</span> девайсов
+                            <p className="info-main-block-1-h-text">Современное решение в&nbsp;истории ранней
+                                диагностики
+                                <span style={{color: '#FF0017', fontSize: '49px'}}> COVID-19</span> и мониторинга
+                                состояния здоровья
                             </p>
-                            <div>
-                            <span style={{marginTop: '3vh', fontSize: '2.2vh', color: '#565A5E'}}>
+                            <div className="infoblock1">
+                            <span className="infoblock1_text">
                                 Вы можете контролировать свое здоровье, зная, что их данные
-                                автоматически передаются медицинским работникам. Не нужно
-                                лишний раз ходить к врачу c HELI врач будет с вами всегда
-                                на связи.
+                                автоматически передаются искусственному интеллекту или медицинскому работнику по вашему выбору. Не нужно
+                                лишний раз ходить к врачу, искусственный интеллект HELI сделает анализ вашего здоровья самостоятельно.
                             </span>
                             </div>
-                            <span className="main-content-button">Узнать подробности</span>
+                            <span className="main-content-button">ОФОРМИТЬ ПРЕДЗАКАЗ</span>
                             {/*<div className="main-content-button-app">*/}
                             {/*    <Link to=""><img className="img-app-main" src={app_store} alt=""/></Link>*/}
                             {/*    <Link to=""><img className="img-app-main" src={app_google} alt=""/></Link>*/}
@@ -147,17 +148,20 @@ class Main extends React.Component {
                 <Price/>
 
                 <div className="content-main-block-3">
-                    <img src={logo1} className="logo-content-block-3" alt=""/>
-                    <span className="content-main-block-3-h-text">Персональное ЭКГ с 1 отведением</span>
-                    <span className="content-main-block-3-text">Равным образом консультация с широким активом позволяет выполнять важные задания по разработке дальнейших направлений развития. </span>
-
+                    <div className="main-elem-block-3-1p">
+                        <div className="main-elem-block-3-1p-text">
+                            <p className="content-main-block-3-text">Персональное ЭКГ с 1 отведением, а также с возможностью мониторинга
+                                внутренних органов, <span style={{color: '#FF0020'}}>включая легкие</span>!</p>
+                        </div>
+                        <img src={logo1} className="logo-content-block-3" alt=""/>
+                    </div>
                     <div className="main-elem-block-3">
                         <div className="elem-block-3">
                             <div>
                                 <img src={doctor} alt=""/>
                                 <span>После операции</span>
                             </div>
-                            <span>HELI - это удобный способ 
+                            <span>HELI - это удобный способ
                                 контролировать рецидив AFib 
                                 после операции на сердце.
                             </span>
@@ -168,7 +172,7 @@ class Main extends React.Component {
                                 <img src={heart} alt=""/>
                                 <span>Качество жизни</span>
                             </div>
-                            <span>Самоконтроль с HELI улучшает 
+                            <span>Самоконтроль с HELI улучшает
                                 обнаружение AFib и самооценку 
                                 качества жизни.
                             </span>
@@ -266,13 +270,13 @@ class Main extends React.Component {
                     <div className='main-elem-block-5-1'>
                         <div className="block-5-1">
                             <p className="block-5-1-h">
-                                Новый способ превратить свободное
-                                время в положительный результат
+                                <span style={{color: '#FF0020'}}>Новый способ</span> превратить свободное
+                                время в <span style={{color: '#FF0020'}}>положительный</span> результат
                                 и доход для вашей практики.
                             </p>
 
                             <p className="block-5-1-text">
-                                HELI уникальная разработка для удаленного мониторинга
+                                <span style={{color: '#FF0020'}}>HELI</span> уникальная разработка для удаленного мониторинга
                                 пациентов. Следите за первичными показателями пациентов
                                 на расстоянии, ведите карту,назначайте лечение или
                                 онлайн консультацию, когда вам это удобно. Теперь
@@ -282,7 +286,7 @@ class Main extends React.Component {
 
                         </div>
 
-                        <img style={{width: '40vw'}} src={pc} alt=""/>
+                        <img src={pc} alt=""/>
                     </div>
                     <div className="">
                         <button className="button-shop block5Button" style={{
@@ -297,13 +301,7 @@ class Main extends React.Component {
                         <img style={{width: '70vw'}} src={medhelp} alt=""/>
 
                         <div className="block-5-1">
-                            <div style={{
-                                display: 'flex',
-                                width: '93vw',
-                                flexDirection: 'row',
-                                marginBottom: '2vw',
-                                alignItems: 'center'
-                            }}>
+                            <div className="block5-1-h">
                                 <p style={{fontSize: '30px'}}>
                                     Снижаем риск повторной<br/> госпитализации на
                                 </p>
@@ -319,7 +317,8 @@ class Main extends React.Component {
                                 направлений развития.
                             </p>
 
-                            <button style={{fontSize: '18px'}} className="button-shop content-main-block-5-button">Узнать подробнее
+                            <button style={{fontSize: '18px'}}
+                                    className="button-shop content-main-block-5-button">Узнать подробнее
                             </button>
                         </div>
                     </div>
@@ -344,13 +343,15 @@ class Main extends React.Component {
                     <p className="content-main-block-7-text">Равным образом
                         консультация с широким активом позволяет выполнять важные задания по разработке дальнейших
                         направлений развития. </p>
-                    
-                    <span ref={this.message_send} style={{margin: '10px 0 10px 0', display: 'none'}}>Заявка отправлена!</span>
+
+                    <span ref={this.message_send}
+                          style={{margin: '10px 0 10px 0', display: 'none'}}>Заявка отправлена!</span>
                     <form onSubmit={this.save} className="form-elem-7">
                         <input className='input-form-7' defaultValue={this.state.name} required
                                onChange={this.onChangeName} placeholder="Имя *" type="text"/>
                         <InputMask className='input-form-7' mask="8(999)999-99-99" ref={this.phone}
-                                   placeholder="Телефон *" defaultValue={this.state.phone} onChange={this.onChangePhone}
+                                   placeholder="Телефон *" defaultValue={this.state.phone}
+                                   onChange={this.onChangePhone}
                                    id="phone" maskChar={null} required placeholder="Ваш телефон *"/>
                         <label className="blockConditions">
                             <input type="radio" style={{fontSize: '2vh'}} required/>
@@ -431,7 +432,8 @@ class Main extends React.Component {
                             </div>
 
                             <p className="imageBoxText">
-                                Теперь я вижу когда уровень стресса повышается, и я могу во время прекратить работать.
+                                Теперь я вижу когда уровень стресса повышается, и я могу во время прекратить
+                                работать.
                             </p>
                         </div>
 
@@ -497,7 +499,8 @@ class Main extends React.Component {
                                 </div>
                             }
                             <button onClick={this.showPopup}>Политика
-                                конфиденциальности</button>
+                                конфиденциальности
+                            </button>
                             <span style={{marginRight: '1vh', marginLeft: '1vh'}}>|</span>
                             <Link style={{color: '#31383D'}} to="#">Условия использования</Link>
                             <span style={{marginRight: '1vh', marginLeft: '1vh'}}>|</span>

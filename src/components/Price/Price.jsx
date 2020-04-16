@@ -10,17 +10,17 @@ const Price = (props) => {
             <div className="text-block-2">
                 <h2 className="text-head-block-2">Поликлиника в кармане</h2>
                 <div className="contentMainBlock2Text">
-                    Круглосуточное наблюдение за вашими<br/>
-                    показателями организма с&nbsp;использованием<br/>
-                    исскуственного интеллекта.
+                    Круглосуточый мониторинг состояния здоровья<br/>
+                    с&nbsp;использованием рекомендаций исскуственного интеллекта.<br/>
+                    +30% к вашему здоровью с экосистемой HELI
                 </div>
             </div>
             <div className="backImg" className="block-price">
-                <PriceItem head="Популярный тариф!" price="1899" term="1 месяц"
+                <PriceItem head="Популярный тариф!" price="12'000" term="4 месяца"
                            footnote="Не входит стоимость браслета"/>
-                <PriceItem head="Экономный тариф!" price="11400" term="6 месяцев"
-                           footnote="Не входит стоимость браслета" customStyle={{height: '435px'}}/>
-                <PriceItem head="Супер предложение!" price="17100" term="9 месяцев"
+                <PriceItem head="Экономный тариф!" price="20'000" term="8 месяцев"
+                           footnote="Не входит стоимость браслета" customStyle={{width: '398px', height: '460px'}}/>
+                <PriceItem head="Супер предложение!" price="24'000" term="12 месяцев"
                            footnote="Не входит стоимость браслета"/>
             </div>
             <div className="text-button-block-2 text-block-2">
