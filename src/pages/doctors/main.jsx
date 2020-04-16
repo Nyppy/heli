@@ -45,21 +45,21 @@ class Doctors extends Component {
                             </div>
                         </div>
                 </section>
-                <div className={"content-block-3"} >
+                <div className={"content-block-3 content-block-3__option"} >
                     <div className={"container"}>
                         <div className="content-block-3__inner">
                             <div className={"content-block-3__step1"}>
                                 <div className={"content-block-3__title"}>ШАГ 1</div>
                                 <div className={"content-block-3__subtitle"}>РЕГИСТРАЦИЯ</div>
                                 <form action="" className={"content-block-3__form"}>
-                                    <input type="text" placeholder={"Имя"}/>
-                                    <input type="text" placeholder={"Фамилия"}/>
-                                    <input type="Email" placeholder={"Email"}/>
-                                    <input type="text" placeholder={"Специализация"}/>
-                                    <input type="text" placeholder={"Город"}/>
-                                    <input type="text" placeholder={"Откуда узнали о HELI?"}/>
-                                    <input type="checkbox"/> принимаю условия <span>политики конфиденциальности</span>
-                                    <a href={"#"} className="main-content-button">Присоединиться</a>
+                                    <input className={"content-block-3__input"} type="text" placeholder={"Имя"}/>
+                                    <input className={"content-block-3__input"} type="text" placeholder={"Фамилия"}/>
+                                    <input className={"content-block-3__input"} type="Email" placeholder={"Email"}/>
+                                    <input className={"content-block-3__input"} type="text" placeholder={"Специализация"}/>
+                                    <input className={"content-block-3__input"} type="text" placeholder={"Город"}/>
+                                    <input className={"content-block-3__input"} type="text" placeholder={"Откуда узнали о HELI?"}/>
+                                    <input className={"content-block-3__input"} type="checkbox"/> принимаю условия <span>политики конфиденциальности</span>
+                                    <a href={"#"} className="main-content-button content-block-3__button">Присоединиться</a>
                                 </form>
                             </div>
                             <div className={"content-block-3__step2"}>
