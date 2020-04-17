@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React from "react";
 import {Link } from "react-router-dom";
 import logo_header from "../../assets/img/logo-header.png"
 import s from "./Header.module.css"

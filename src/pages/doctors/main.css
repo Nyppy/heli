@@ -82,6 +82,11 @@ a {
     color: #fff;
     float: left;
     cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+.main-content-button:hover {
+    background-color: #DB0520;
+
 }
 
 .main-content-button-app {
@@ -112,7 +117,7 @@ a {
 
 .container {
     width: 100%;
-    max-width: 1600px;
+    max-width: 1750px;
     margin: 0 auto;
 }
 
@@ -121,6 +126,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 .content-block-2__title {
     max-width: 500px;
@@ -144,17 +150,21 @@ a {
     color: #4B4B4B;
 }
 
-/*block-4*/
+/*block-3*/
 .content-block-3__option {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 .content-block-3__inner {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 15px;
 }
 
 .content-block-3__step1 {
+    width: 100%;
+    max-width: 397px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -170,6 +180,10 @@ a {
     font-weight: 700;
     margin-bottom: 33px;
 }
+.content-block-3__steps2 {
+    margin-bottom: 130px;
+    text-align: center;
+}
 
 .content-block-3__subtitle {
     font-size: 36px;
@@ -178,28 +192,147 @@ a {
     text-transform: uppercase;
     color: #4B4B4B;
     font-weight: 700;
-    margin-bottom: 33px;
+    margin-bottom: 48px;
 }
 
-.content-block-3__form {
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 646px;
+    height: 646px;
+}
+.input {
+    max-width: 320px;
+    width: 100%;
+    margin-bottom: 30px;
+    border:1px solid #707070;
+   border-radius: 15px 15px 15px 15px;
+    padding: 12px 12px 12px 12px;
+}
+
+/*checkbox*/
+.content-checkbox {
+    position: relative;
+    text-align: center;
+    margin-left: 30px;
+}
+.checkbox {
+  -webkit-appearance: none;
+  appearance:none;
+  position: absolute;
+
+}
+.label {
+    padding-left: 35px ;
+     font-size: 13px;
+    font-weight: 400;
+    font-family: "GothamPro", sans-serif;
+    line-height: 15px;
+}
+.label::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+
+
+    position: absolute;
+    top:12%;
+    left: 0;
+    z-index: 2;
+}
+
+.label::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../../assets/img/checkbox.png);
+    background-repeat: no-repeat;
+    background-size: 21px 20px;
+    position: absolute;
+    top: 10%;
+    left: 1px;
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+
+}
+
+.checkbox:checked + .label::after {
+    opacity: 1;
+}
+
+.label span {
+    color:#FF0020;
+}
+
+
+.content-block-3__button {
+    max-width: 320px;
+    width: 100%;
+    border-radius: 12px;
+    font-size: 22px;
+    padding: 5px 10px 8px 10px;
+    margin-top: 30px;
+
+}
+
+
+.content-block-3__img {
+    background-image: url("../../assets/img/step2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 646px;
+    position: relative;
+}
+
+.content-block-3__img::before {
+    content: "";
+    width: 1000px;
+    height: 646px;
+    position: absolute;
+    z-index: 1;
+    background-color: #000000;
+    opacity: 0.35;
+}
+.content-block-3__text {
+    max-width: 372px;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    right: 77px;
+    bottom: 34px;
+    font-family: "GothamPro", sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500 ;
+    color:#FFFFFF;
+    text-align: right;
+}
+
+/*content-block-4*/
+.content-block-4__inner {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.content-block-3__input {
-    max-width: 235px;
+.content-block-4__title {
+    text-align: center;
+    max-width: 786px;
     width: 100%;
-    margin-bottom: 15px;
-    border:1px solid #707070;
-   border-radius: 15px 15px 15px 15px;
-    padding: 7px 12px;
-
-}
-.content-block-3__button {
-    border-radius: 12px;
-    font-size: 22px;
-    width: 15vw;
-    padding: 5px 10px 8px 10px;
-    margin-top: 2vh;
+    font-family: "GothamPro", sans-serif;
+    font-weight: bold;
+    line-height: 41px;
+    font-size: 36px;
+    color: #4B4B4B;
+    margin-bottom: 153px;
 }

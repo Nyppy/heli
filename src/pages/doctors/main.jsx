@@ -2,13 +2,15 @@ import React,{Component} from "react"
 import Header from '../../components/Header/Header'
 import '../../pages/doctors/main.css'
 import doctor from  '../../assets/img/doctors_main.png'
+import block4 from '../../assets/img/3299743.png'
+import img1 from "../../assets/img/614.png"
 
 class Doctors extends Component {
 
     render () {
         return (
             <div className={"wrapper-doctors"}>
-                {/*<Header />*/}
+                <Header />
                 <div className="content-page-main">
                     <div className="content-main-block-1">
                         <div className="main-img-doctor">
@@ -51,20 +53,43 @@ class Doctors extends Component {
                             <div className={"content-block-3__step1"}>
                                 <div className={"content-block-3__title"}>ШАГ 1</div>
                                 <div className={"content-block-3__subtitle"}>РЕГИСТРАЦИЯ</div>
-                                <form action="" className={"content-block-3__form"}>
-                                    <input className={"content-block-3__input"} type="text" placeholder={"Имя"}/>
-                                    <input className={"content-block-3__input"} type="text" placeholder={"Фамилия"}/>
-                                    <input className={"content-block-3__input"} type="Email" placeholder={"Email"}/>
-                                    <input className={"content-block-3__input"} type="text" placeholder={"Специализация"}/>
-                                    <input className={"content-block-3__input"} type="text" placeholder={"Город"}/>
-                                    <input className={"content-block-3__input"} type="text" placeholder={"Откуда узнали о HELI?"}/>
-                                    <input className={"content-block-3__input"} type="checkbox"/> принимаю условия <span>политики конфиденциальности</span>
+                                <form  className={"form"}>
+                                    <input className={"input"} type="text" placeholder={"Имя"}/>
+                                    <input className={"input"} type="text" placeholder={"Фамилия"}/>
+                                    <input className={"input"} type="Email" placeholder={"Email"}/>
+                                    <input className={"input"} type="text" placeholder={"Специализация"}/>
+                                    <input className={"input"} type="text" placeholder={"Город"}/>
+                                    <input className={"input"} type="text" placeholder={"Откуда узнали о HELI?"}/>
+                                    <div className={"content-checkbox"}>
+                                        <input className={"checkbox"} type="checkbox" id={"checkbox-id"}/>
+                                        <label className={"label"} htmlFor="checkbox-id">
+                                            принимаю условия <span>политики конфиденциальности</span>
+                                        </label>
+                                    </div>
                                     <a href={"#"} className="main-content-button content-block-3__button">Присоединиться</a>
                                 </form>
                             </div>
                             <div className={"content-block-3__step2"}>
-                                <div className={"content-block-3__title"}>ШАГ 2</div>
-                                <div className={"content-block-3__img"}><img src="" alt=""/></div>
+                                <div className={"content-block-3__title content-block-3__steps2 "}>ШАГ 2</div>
+                                <div className={"content-block-3__img"}>
+                                    <div className={"content-block-3__text"}>
+                                        Наблюдайте за показателями
+                                        ваших пациентов и при необходимости
+                                        проводите с ними консультации по
+                                        улучшению их здоровья
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className={"content-block-4 content-block-4__option"}>
+                    <div className={"container"}>
+                        <div className={"content-block-4__inner"}>
+                            <div className={"content-block-4__title"}>
+                                КОМПЛЕКСНОЕ УЛУЧШЕНИЕ ЗДОРОВЬЯ
+                                ВАШИХ ПАЦИЕНТОВ
+                                ВМЕСТЕ С ПЛАТФОРМОЙ HELI
                             </div>
                         </div>
                     </div>
