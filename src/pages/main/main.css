@@ -76,7 +76,8 @@ ul {
     width: 639px;
     height: 186px;
     margin-top: 3vh;
-    font-size: 2.2vh;
+    font-size: 22px;
+    line-height: 39px;
     color: #565A5E;
 }
 .info-main-block-1 span {
@@ -100,6 +101,9 @@ ul {
     color: #fff;
     float: left;
     cursor: pointer;
+}
+.main-content-button:hover {
+    background-color: #DB0520;
 }
 
 .main-content-button-app {
@@ -134,12 +138,20 @@ ul {
     /*background-color: #707070;*/
 
 }
+.contentMainBlock2Text {
+    display: flex;
+    color: #fff;
+    font-size: 22px;
+    line-height: 38px;
+    flex-direction: column;
+    text-align: left;
+}
 
 .text-block-2 {
     display: flex;
     color: #fff;
     font-size: 16px;
-    font-weight: 600;
+    line-height: 19px;
     flex-direction: column;
     text-align: left;
 }
@@ -174,14 +186,14 @@ ul {
     margin: 20px;
     background-color: #ffffff;
     border-radius: 10px;
-    padding: 4vh;
+    padding: 24px;
 }
 
 .blockHeader {
     margin: 0;
     color: #FF0020;
     font-size: 18px;
-    line-height: 18px;
+    line-height: 22px;
 }
 
 .blockPriceInfo {
@@ -191,20 +203,20 @@ ul {
 
 .blockPrice {
     font-size: 48px;
-    line-height: 48px;
+    line-height: 58px;
 
 }
 .blockPriceR {
     font-size: 36px;
-    line-height: 36px;
+    line-height: 43px;
     margin: 0;
 }
 
 .blockPriceText li {
     font-size: 15px;
+    line-height: 17px;
     font-weight: 600;
     list-style-type: disc;
-    font-size: 20px;
     color: #FF0020;
 }
 .blockPriceText li {
@@ -284,7 +296,11 @@ ul {
     float: left;
     cursor: pointer;
     font-size: 20px;
+    font-weight: 600;
     align-self: center;
+}
+.button-info-price:hover {
+    background-color: #DB0520;
 }
 
 .content-main-block-3 {
@@ -315,7 +331,7 @@ ul {
 .elem-block-3 {
     width: 340px;
     height: 160px;
-    border: 1px solid #0000001a;
+    box-shadow: 0 0 2px 1px #0000001a;
     border-radius: 10px;
     padding: 2vh;
 }
@@ -342,13 +358,14 @@ ul {
 
 .elem-block-3-1 {
     width: 182px;
-    width: 185px;
+    height: 185px;
     font-size: 16px;
-    border: 1px solid #0000001a;
+    box-shadow: 0 0 2px 1px #0000001a;
     border-radius: 10px;
     padding: 2vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -434,6 +451,16 @@ ul {
     height: 46px;
     font-size: 20px;
     margin-left: -37.5vw;
+    background-color: #FF0020;
+    padding: 1vh 3.5vh 1vh 3.5vh;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.block5Button:hover {
+    background-color: #DB0520;
 }
 
 .content-main-block-5-text {
@@ -446,6 +473,9 @@ ul {
     background-color: #FF0020;
     padding: 1vh 4vh 1vh 4vh;
     font-size: 3vh;
+}
+.content-main-block-5-button:hover {
+    background-color: #DB0520;
 }
 
 .main-elem-block-5-1 {
@@ -554,6 +584,9 @@ ul {
     align-items: center;
     padding: 1.4vh 4vh 1.4vh 4vh;
     font-size: 3vh;
+}
+.button-form-7:hover {
+    background-color: #DB0520;
 }
 
 .content-main-block-8 {
@@ -687,10 +720,24 @@ ul {
     width: 223px;
     height: 46px;
     font-size: 18px;
+    font-weight: 600;
 }
 
 .button-form-6-block {
-    width: 25vw;
+    background-color: #FF0020;
+    padding: 1vh 4vh 1vh 4vh;
+    font-size: 18px;
+    font-weight: 600;
+    width: 223px;
+    height: 46px;
+    margin: 10px auto;
+    border-radius: 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.button-form-6-block:hover {
+    background-color: #DB0520;
 }
 .reviewDesc {
     display: flex;
@@ -897,10 +944,18 @@ ul {
     }
 
     .block5Button {
-        width: 90vw;
         margin-left: -1.5vw;
+        background-color: #FF0020;
+        font-size: 20px;
+        padding: 1vh 3.5vh 1vh 3.5vh;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        width: 223px;
+        height: 46px;
+        border-radius: 20px;
     }
-
     .main-elem-block-5-1 {
         flex-direction: column;
         width: 90vw;

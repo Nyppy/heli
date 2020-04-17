@@ -56,6 +56,10 @@
     text-align: center;
     cursor: pointer;
 }
+.headerButton:hover {
+    background-color: #FF0020;
+    color: #fff;
+}
 @media screen and (max-width: 991px) {
 
     .headerContent {

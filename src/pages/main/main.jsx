@@ -289,11 +289,7 @@ class Main extends React.Component {
                         <img src={pc} alt=""/>
                     </div>
                     <div className="">
-                        <button className="button-shop block5Button" style={{
-                            backgroundColor: '#FF0020',
-                            padding: '1vh 4vh 1vh 4vh',
-                            fontSize: '20px'
-                        }}>Присоединиться
+                        <button className="block5Button">Присоединиться
                         </button>
                     </div>
 
@@ -332,7 +328,7 @@ class Main extends React.Component {
                     </p>
 
                     <button className="button-shop button-form-6-block"
-                            style={{backgroundColor: '#FF0020', padding: '1vh 4vh 1vh 4vh', fontSize: '3vh'}}>Узнать
+                            style={{}}>Узнать
                         подробнее
                     </button>
                 </div>
