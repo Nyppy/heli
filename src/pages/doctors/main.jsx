@@ -51,7 +51,6 @@ class Doctors extends Component {
         console.log('2',data)
     }
 
-
     render () {
         return (
             <div className={"wrapper-doctors"}>
@@ -137,6 +136,7 @@ class Doctors extends Component {
                                 ВАШИХ ПАЦИЕНТОВ
                                 ВМЕСТЕ С ПЛАТФОРМОЙ HELI
                             </div>
+
                         </div>
                     </div>
                 </div>
