@@ -2,10 +2,55 @@ import React,{Component} from "react"
 import Header from '../../components/Header/Header'
 import '../../pages/doctors/main.css'
 import doctor from  '../../assets/img/doctors_main.png'
-import block4 from '../../assets/img/3299743.png'
-import img1 from "../../assets/img/614.png"
+
+
 
 class Doctors extends Component {
+
+    state = {
+        username:'',
+        surname: '',
+        email:'',
+        specialization:'',
+        city:'',
+        information:''
+    }
+
+    handleUserChange=(ev)=> {
+            this.setState({
+                [ev.target.name]:ev.target.value,
+                })
+    }
+
+    save = (ev) => {
+        ev.preventDefault()
+        this.setState({
+            ...this.state,
+            username:'',
+            surname: '',
+            email:'',
+            specialization:'',
+            city:'',
+            information:''
+
+        })
+    }
+
+    sendEmail =(type) => {
+        let data = {
+            template_params: {
+                username: this.state.username,
+                surname: this.state.surname,
+                email: this.state.email,
+                specialization: this.state.specialization,
+                city: this.state.city,
+                information: this.state.information,
+                type: type
+            }
+        }
+        console.log('2',data)
+    }
+
 
     render () {
         return (
@@ -53,20 +98,21 @@ class Doctors extends Component {
                             <div className={"content-block-3__step1"}>
                                 <div className={"content-block-3__title"}>ШАГ 1</div>
                                 <div className={"content-block-3__subtitle"}>РЕГИСТРАЦИЯ</div>
-                                <form  className={"form"}>
-                                    <input className={"input"} type="text" placeholder={"Имя"}/>
-                                    <input className={"input"} type="text" placeholder={"Фамилия"}/>
-                                    <input className={"input"} type="Email" placeholder={"Email"}/>
-                                    <input className={"input"} type="text" placeholder={"Специализация"}/>
-                                    <input className={"input"} type="text" placeholder={"Город"}/>
-                                    <input className={"input"} type="text" placeholder={"Откуда узнали о HELI?"}/>
+                                <form  className={"form"} onSubmit={this.save}>
+                                    <input className={"input"} type="text" placeholder={"Имя"}  value={this.state.username} onChange={this.handleUserChange} name="username"/>
+                                    <input className={"input"} type="text" placeholder={"Фамилия"} value={this.state.surname}   onChange={this.handleUserChange} name={"surname"}/>
+                                    <input className={"input"} type="Email" placeholder={"Email"}  value={this.state.email}   onChange={this.handleUserChange} name={"email"}/>
+                                    <input className={"input"} type="text" placeholder={"Специализация"} value={this.state.specialization}  onChange={this.handleUserChange} name={"specialization"}/>
+                                    <input className={"input"} type="text" placeholder={"Город"} value={this.state.city}    onChange={this.handleUserChange} name={"city"}/>
+                                    <input className={"input"} type="text" placeholder={"Откуда узнали о HELI?"} value={this.state.information}   onChange={this.handleUserChange} name={"information"}/>
                                     <div className={"content-checkbox"}>
-                                        <input className={"checkbox"} type="checkbox" id={"checkbox-id"}/>
+                                        <input className={"checkbox"} type="checkbox" id={"checkbox-id"} name={"checkbox"}/>
                                         <label className={"label"} htmlFor="checkbox-id">
                                             принимаю условия <span>политики конфиденциальности</span>
                                         </label>
                                     </div>
-                                    <a href={"#"} className="main-content-button content-block-3__button">Присоединиться</a>
+                                    <button type="sabmit"  className={"form__btn"} onClick={this.sendEmail} >Присоединиться</button>
+                                    {/*<a href={"#"} className="main-content-button content-block-3__button">Присоединиться</a>*/}
                                 </form>
                             </div>
                             <div className={"content-block-3__step2"}>
