@@ -10,6 +10,10 @@ input {
 a {
     text-decoration: none;
 }
+img {
+    margin: 0;
+    padding: 0;
+}
 
 .wrapper-page-main {
     width: 100vw;
@@ -117,7 +121,7 @@ a {
 
 .container {
     width: 100%;
-    max-width: 1750px;
+    max-width: 1800px;
     margin: 0 auto;
 }
 
@@ -355,4 +359,37 @@ a {
     font-size: 36px;
     color: #4B4B4B;
     margin-bottom: 153px;
+}
+
+.content-block-4__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.content-block-4__item {
+    margin-right:5px ;
+}
+
+.content-block-4__elements {
+    display: flex;
+    flex-wrap: wrap;
+}
+.content-block-4__element {
+    display: flex;
+    justify-content: center;
+    max-width: 700px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.content-block-4__element2 {
+    width: 100%;
+    max-width: 1020px;
+}
+
+.content-block-4__element2 img {
+    width: 100%;
+    max-width: 1020px;
+    height: 100%;
+    max-height:1298px;
 }
