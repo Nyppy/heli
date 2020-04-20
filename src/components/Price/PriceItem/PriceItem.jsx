@@ -15,12 +15,13 @@ const PriceItem = (props) => {
         price,
         term,
         customStyle,
+        blockBox,
         advantages,
         footnote,
     } = props;
 
 
-    return <div className="block-price-elem block-price-1" style={customStyle}>
+    return <div className={blockBox} style={customStyle}>
         <p className="blockHeader">{head}</p>
         <p className="blockPriceR">₽<span className="blockPrice">{price}</span></p>
         <span className="blockTermsInfo">{term}</span>

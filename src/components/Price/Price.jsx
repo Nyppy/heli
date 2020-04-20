@@ -17,11 +17,11 @@ const Price = (props) => {
             </div>
             <div className="backImg" className="block-price">
                 <PriceItem head="Популярный тариф!" price="19'000" term="4 месяца"
-                           footnote="Не входит стоимость браслета"/>
+                           footnote="Не входит стоимость браслета" blockBox="block-price-elem block-price-1"/>
                 <PriceItem head="Экономный тариф!" price="32'000" term="8 месяцев"
-                           footnote="Не входит стоимость браслета" customStyle={{width: '398px', height: '460px'}}/>
+                           footnote="Не входит стоимость браслета" blockBox="block-price-elem block-price-1 blockPriceSecondary"/>
                 <PriceItem head="Супер предложение!" price="49'000" term="12 месяцев"
-                           footnote="Не входит стоимость браслета"/>
+                           footnote="Не входит стоимость браслета" blockBox="block-price-elem block-price-1"/>
             </div>
             <div className="text-button-block-2 text-block-2">
                 <span>Подробнее о тарифах вы сможете узнать у&nbsp;наших консультантов.</span>

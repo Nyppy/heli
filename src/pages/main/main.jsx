@@ -24,7 +24,7 @@ import stress from "../../assets/img/stress.png"
 import cardiogram from "../../assets/img/cardiogram.png"
 
 import pc from "../../assets/img/pc.png"
-import medhelp from "../../assets/img/medhelp.png"
+import guy from "../../assets/img/guy.png"
 import facebook2 from "../../assets/img/facebook2.png"
 import twitter2 from "../../assets/img/twitter2.png"
 import vk2 from "../../assets/img/vk2.png"
@@ -157,36 +157,37 @@ class Main extends React.Component {
                     </div>
                     <div className="main-elem-block-3">
                         <div className="elem-block-3">
-                            <div>
+                            <div className="elem-block-3-h">
                                 <img src={doctor} alt=""/>
                                 <span>После операции</span>
                             </div>
-                            <span>HELI - это удобный способ
+                            <div className="elem-block-3-text">HELI - это удобный способ
                                 контролировать рецидив AFib 
-                                после операции на сердце.
-                            </span>
+                                после операции на сердце.
+                            </div>
                         </div>
 
                         <div className="elem-block-3">
-                            <div>
+                            <div className="elem-block-3-h">
                                 <img src={heart} alt=""/>
                                 <span>Качество жизни</span>
                             </div>
-                            <span>Самоконтроль с HELI улучшает
-                                обнаружение AFib и самооценку 
+                            <div className="elem-block-3-text">
+                                Самоконтроль с HELI улучшает
+                                обнаружение AFib и самооценку
                                 качества жизни.
-                            </span>
+                            </div>
                         </div>
 
                         <div className="elem-block-3">
-                            <div>
+                            <div className="elem-block-3-h">
                                 <img src={sos} alt=""/>
                                 <span>Экстренный вызов</span>
                             </div>
-                            <span>Ваши родственники или врач
+                            <div className="elem-block-3-text">Ваши родственники или врач
                                 получат уведомление о том, что
                                 с вашим здоровьем что-то не так.
-                            </span>
+                            </div>
                         </div>
                     </div>
 
@@ -294,7 +295,7 @@ class Main extends React.Component {
                     </div>
 
                     <div className='main-elem-block-5-2'>
-                        <img style={{width: '70vw'}} src={medhelp} alt=""/>
+                        <img style={{width: '70vw'}} src={guy} alt=""/>
 
                         <div className="block-5-1">
                             <div className="block5-1-h">
@@ -356,7 +357,7 @@ class Main extends React.Component {
                         <button className='input-form-7 button-form-7 button-form-7-block'
                                 type="submit"
                                 ref={this.button_submit}
-                        >Присоединиться
+                        >Записаться
                         </button>
                     </form>
                 </div>

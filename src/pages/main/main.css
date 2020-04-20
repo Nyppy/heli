@@ -15,6 +15,8 @@ ul {
 }
 
 .wrapper-page-main {
+    font-family: 'Gotham Pro', bold;
+    color: #333;
     width: 100vw;
 }
 
@@ -26,6 +28,7 @@ ul {
 
 .content-main-block-1 {
     display: flex;
+    margin-top: 75px;
     width: 75vw;
     justify-content: space-between;
 }
@@ -49,9 +52,10 @@ ul {
 
 .info-main-block-1-h-text {
     margin-top: 2vh;
+    margin-bottom: 10px;
     font-size: 49px;
     line-height: 49px;
-    color: rgb(86, 90, 94);
+    color: #565A5E;
     font-weight: 500;
 }
 
@@ -70,7 +74,7 @@ ul {
 }
 .infoblock1 {
     width: 639px;
-    heught: 136px;
+    height: 136px;
 }
 .infoblock1_text {
     width: 639px;
@@ -96,7 +100,7 @@ ul {
     line-height: 52px;
     font-weight: 600;
     /*padding: 5px 15px 5px 15px;*/
-    margin-top: 4vh;
+    margin-top: 100px;
     text-align: center;
     color: #fff;
     float: left;
@@ -127,7 +131,6 @@ ul {
 .content-main-block-2 {
     display: flex;
     background-image: url('../../assets/img/fon.png');
-    background-size: 100%;
     background-size: cover;
     /*background-repeat: no-repeat;*/
     /* background-image: url("~@/assets/img/"); */
@@ -139,6 +142,7 @@ ul {
 
 }
 .contentMainBlock2Text {
+    font-family: 'Gotham Pro', regular;
     display: flex;
     color: #fff;
     font-size: 22px;
@@ -161,7 +165,9 @@ ul {
 }
 
 .text-head-block-2 {
+    font-family: 'Gotham Pro Regular';
     font-size: 47px;
+    line-height: 39px;
     margin-bottom: 1vw;
     margin-top: 2vw;
     text-align: left;
@@ -185,6 +191,8 @@ ul {
     display: flex;
     margin: 20px;
     background-color: #ffffff;
+    background-size: cover;
+    background-image: url('../../assets/img/braslet.png');
     border-radius: 10px;
     padding: 24px;
 }
@@ -202,11 +210,13 @@ ul {
 }
 
 .blockPrice {
+    font-family: 'Gotham Pro', regular;
     font-size: 48px;
     line-height: 58px;
 
 }
 .blockPriceR {
+    font-family: 'Calibri', regular;
     font-size: 36px;
     line-height: 43px;
     margin: 0;
@@ -244,6 +254,11 @@ ul {
     justify-content: space-between;
     width: 336px;
     height: 388px;
+}
+.blockPriceSecondary {
+    width: 398px !important;
+    height: 460px !important;
+    background-image: url('../../assets/img/braslet2.png') !important;
 }
 
 .block-price-2 {
@@ -322,10 +337,16 @@ ul {
 .main-elem-block-3 {
     width: 75vw;
     font-size: 16px;
+    line-height: 19px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 4vh;
+}
+
+.elem-block-3-text {
+    width: 223px;
+    height: 59px;
 }
 
 .elem-block-3 {
@@ -341,7 +362,7 @@ ul {
     margin-right: 1vw;
 }
 
-.elem-block-3 div {
+.elem-block-3-h {
     font-size: 24px;
     margin-bottom: 1vw;
 
@@ -464,8 +485,8 @@ ul {
 }
 
 .content-main-block-5-text {
-    width: 547px;
-    height: 96px;
+    width: 487px;
+    height: 231px;
     font-size: 16px;
 }
 
@@ -479,10 +500,8 @@ ul {
 }
 
 .main-elem-block-5-1 {
-    width: 75vw;
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     align-items: center;
     margin-top: 6vh;
 }
@@ -491,7 +510,6 @@ ul {
     width: 75vw;
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     align-items: center;
     margin-top: 6vh;
     margin-bottom: 8vh;
@@ -504,6 +522,9 @@ ul {
     font-weight: 600;
     margin: 0;
 }
+.block-5-1 {
+    margin-left: 113px;
+}
 
 .block-5-1-text {
     font-size: 22px;
@@ -513,8 +534,8 @@ ul {
 }
 .block5-1-h {
     display: flex;
-    width: 387px;
-    height: 197px;
+    width: 408px;
+    height: 187px;
     flex-direction: row;
     margin-bottom: 2vw;
     align-items: center;
@@ -571,10 +592,11 @@ ul {
     border: 1px solid #707070;
     border-radius: 39px;
     outline: none;
-    /*padding: 1.4vh 4vh 1.4vh 1vh;*/
+    padding: 1.4vh 4vh 1.4vh 1vh;
     color: #707070;
     font-size: 2.4vh;
     margin-right: 2vh;
+    box-sizing: border-box;
 }
 
 .button-form-7 {
@@ -656,7 +678,7 @@ ul {
 }
 
 .footer-elem-3-logo {
-    background: #00A7CF;
+    background: #DD1733;
     outline: none;
     width: 70px;
     height: 60px;
