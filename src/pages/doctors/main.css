@@ -50,8 +50,8 @@ img {
 .info-main-block-1-h-text {
     margin-top: 2vh;
     font-size: 3.5vh;
-    color: rgb(86, 90, 94);
-    font-weight: 500;
+    color: #31383D;
+    font-weight: 700;
     font-family: "GothamPro", sans-serif;
 }
 
@@ -66,13 +66,13 @@ img {
     text-align: justify;
     font-size: 3.1vh;
     color: #4B4B4B;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .info-main-block-1 span {
     font-size: 18px;
     font-family: "GothamPro", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
 }
 .backImg {
     position: absolute;
@@ -83,7 +83,7 @@ img {
     font-size: 24px;
     background-color: #FF0020;
     width: 23vw;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 15px 12px 15px;
     margin-top: 4vh;
     text-align: center;
     color: #fff;
@@ -141,7 +141,7 @@ img {
     width: 100%;
     font-size: 30px;
     line-height: 36px;
-    font-weight: 500;
+    font-weight: 700;
     font-family: "GothamPro",sans-serif ;
     text-align: center;
     color: #31383D;
@@ -152,7 +152,8 @@ img {
     width: 100%;
     font-size: 18px;
     line-height: 21px;
-    font-weight: 400;
+
+    font-weight: 600;
     font-family: "GothamPro",sans-serif ;
     text-align: center;
     color: #4B4B4B;
@@ -296,7 +297,7 @@ img {
     width: 100%;
     border-radius: 12px;
     font-size: 22px;
-    padding: 5px 10px 8px 10px;
+    padding: 10px 10px 12px 10px;
     margin-top: 30px;
     border:none;
     background-color: #FF0020;
@@ -378,9 +379,6 @@ img {
     flex-wrap: wrap;
     justify-content: center;
 }
-.content-block-4__item {
-
-}
 
 .content-block-4__elements {
     display: flex;
@@ -405,7 +403,7 @@ img {
 .content-block-4__element2 {
     width: 100%;
     max-width: 1008px;
-    flex: 1 1 0;
+
 }
 
 .content-block-4__element2 img {
