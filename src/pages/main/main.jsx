@@ -19,7 +19,7 @@ import heart from "../../assets/img/heart.png"
 import sos from "../../assets/img/sos.png"
 import ecg from "../../assets/img/ecg.png"
 import pressure from "../../assets/img/pressure.png"
-import sleep from "../../assets/img/sleep.png"
+import lung from "../../assets/img/lung.png"
 import stress from "../../assets/img/stress.png"
 import cardiogram from "../../assets/img/cardiogram.png"
 
@@ -123,7 +123,7 @@ class Main extends React.Component {
                         </div>
 
                         <div className="info-main-block-1">
-                            <p className="info-main-block-1-h-text">Современное решение в&nbsp;истории ранней
+                            <p className="info-main-block-1-h-text">Современное решение в истории ранней
                                 диагностики
                                 <span style={{color: '#FF0017', fontSize: '49px'}}> COVID-19</span> и мониторинга
                                 состояния здоровья
@@ -153,12 +153,14 @@ class Main extends React.Component {
                             <p className="content-main-block-3-text">Персональное ЭКГ с 1 отведением, а также с возможностью мониторинга
                                 внутренних органов, <span style={{color: '#FF0020'}}>включая легкие</span>!</p>
                         </div>
+                        <div>
                         <img src={logo1} className="logo-content-block-3" alt=""/>
+                        </div>
                     </div>
                     <div className="main-elem-block-3">
                         <div className="elem-block-3">
                             <div className="elem-block-3-h">
-                                <img src={doctor} alt=""/>
+                                <img src={doctor} style={{width: '28px', height: '32px'}} alt=""/>
                                 <span>После операции</span>
                             </div>
                             <div className="elem-block-3-text">HELI - это удобный способ
@@ -169,7 +171,7 @@ class Main extends React.Component {
 
                         <div className="elem-block-3">
                             <div className="elem-block-3-h">
-                                <img src={heart} alt=""/>
+                                <img src={heart} style={{width: '31px', height: '28px'}} alt=""/>
                                 <span>Качество жизни</span>
                             </div>
                             <div className="elem-block-3-text">
@@ -181,7 +183,7 @@ class Main extends React.Component {
 
                         <div className="elem-block-3">
                             <div className="elem-block-3-h">
-                                <img src={sos} alt=""/>
+                                <img src={sos} style={{width: '32px', height: '32px'}} alt=""/>
                                 <span>Экстренный вызов</span>
                             </div>
                             <div className="elem-block-3-text">Ваши родственники или врач
@@ -193,27 +195,27 @@ class Main extends React.Component {
 
                     <div className='main-elem-block-3-1'>
                         <div className="elem-block-3-1">
-                            <img src={ecg} alt=""/>
+                            <img src={ecg} style={{width: '58px', height: '101px'}} alt=""/>
                             <span>Нужен текст</span>
                         </div>
 
                         <div className="elem-block-3-1">
-                            <img src={pressure} style={{width: '4vw'}} alt=""/>
+                            <img src={pressure} style={{width: '78px', height: '101px'}} alt=""/>
                             <span>Нужен текст</span>
                         </div>
 
                         <div className="elem-block-3-1">
-                            <img src={cardiogram} style={{width: '6vw'}} alt=""/>
+                            <img src={cardiogram} style={{width: '107px', height: '97px'}} alt=""/>
                             <span>Нужен текст</span>
                         </div>
 
                         <div className="elem-block-3-1">
-                            <img src={stress} style={{width: '4.2vw'}} alt=""/>
+                            <img src={stress} style={{width: '76px', height: '94px'}} alt=""/>
                             <span>Нужен текст</span>
                         </div>
 
                         <div className="elem-block-3-1">
-                            <img src={sleep} style={{width: '6vw'}} alt=""/>
+                            <img src={lung} style={{width: '94px', height: '94px'}} alt=""/>
                             <span>Нужен текст</span>
                         </div>
                     </div>
@@ -299,19 +301,14 @@ class Main extends React.Component {
 
                         <div className="block-5-1">
                             <div className="block5-1-h">
-                                <p style={{fontSize: '30px'}}>
-                                    Снижаем риск повторной<br/> госпитализации на
-                                </p>
-
-                                <span style={{fontSize: '60px', color: '#FF0020', marginLeft: '4vh'}}>76%</span>
+                                <p style={{fontSize: '47px'}}>
+                                    Снижаем риск госпитализации <span style={{color: '#FF0020'}}>COVID-19 </span>
+                                    на <span style={{color: '#FF0020'}}>76%</span></p>
                             </div>
-
-
                             <p className="content-main-block-5-text">
-                                Равным образом консультация с
-                                широким активом позволяет выполнять
-                                важные задания по разработке дальнейших
-                                направлений развития.
+                                Благодаря искусственному интеллекту мы можем выявлять нарушения в работе
+                                дыхательной системы на ранних стадиях. Вам не нужно лишний раз ходить к врачу,
+                                чтобы узнать о вашем здоровье, HELI работает 24/7 на благо вашего здоровья.
                             </p>
 
                             <button style={{fontSize: '18px'}}
@@ -322,10 +319,11 @@ class Main extends React.Component {
                 </div>
 
                 <div className="content-main-block-6">
-                    <p className="block6-h-text">Упражнения для продления жизни</p>
+                    <h className="block6-h-text">Упражнения для продления жизни</h>
                     <p className="block6-text">
-                        Дыхательная терапия, контроль стресса и мониторинг сна
-                        улучшат ваше здоровье. Взгляните на мир глазами здорового человека.
+                        Дыхательная терапия поможет улучшить вашу дыхательную систему,
+                        контроль стресса и мониторинг сна улучшат ваше здоровье в комплексе.
+                        Взгляните на мир глазами здорового человека.
                     </p>
 
                     <button className="button-shop button-form-6-block"
@@ -346,7 +344,7 @@ class Main extends React.Component {
                     <form onSubmit={this.save} className="form-elem-7">
                         <input className='input-form-7' defaultValue={this.state.name} required
                                onChange={this.onChangeName} placeholder="Имя *" type="text"/>
-                        <InputMask className='input-form-7' mask="8(999)999-99-99" ref={this.phone}
+                        <InputMask className='input-form-7 input-form-7-2' mask="8(999)999-99-99" ref={this.phone}
                                    placeholder="Телефон *" defaultValue={this.state.phone}
                                    onChange={this.onChangePhone}
                                    id="phone" maskChar={null} required placeholder="Ваш телефон *"/>
@@ -354,7 +352,7 @@ class Main extends React.Component {
                             <input type="radio" style={{fontSize: '2vh'}} required/>
                             Принимаю условия политики конфиденциальности
                         </label>
-                        <button className='input-form-7 button-form-7 button-form-7-block'
+                        <button className='input-form-7 button-form-7 button-form-7-block input-form-7-3'
                                 type="submit"
                                 ref={this.button_submit}
                         >Записаться
@@ -369,104 +367,86 @@ class Main extends React.Component {
                         <div className="review-elem">
                             <div className="imageBox">
                                 <img src={rev1} alt=""/>
-
                                 <div className="reviewDesc">
-                                    <span style={{color: "#707070", fontSize: '2.6vh'}}>Анастасия Разумовская</span>
-                                    <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Работаю в банке</span>
+                                    <span className="reviewNameBlock">Анастасия Разумовская</span>
+                                    <span className="reviewWorkBlock">Работаю в банке</span>
                                     {/*<span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>*/}
+                                    <p className="imageBoxText">
+                                        Используя браслет HELI, я могу каждый день
+                                        наблюдать за своими показателями здоровья.
+                                    </p>
                                 </div>
                             </div>
-
-                            <p className="imageBoxText">
-                                Используя браслет HELI, я могу каждый день
-                                наблюдать за своими показателями здоровья.
-                            </p>
                         </div>
-
                         <div className="review-elem">
                             <div className="imageBox">
                                 <img src={rev2} alt=""/>
-
                                 <div className="reviewDesc">
-                                    <span style={{color: "#707070", fontSize: '2.6vh'}}>Александр  Смирнов</span>
-                                    <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Работаю юристом</span>
+                                    <span className="reviewNameBlock">Александр  Смирнов</span>
+                                    <span  className="reviewWorkBlock">Работаю юристом</span>
                                     {/*<span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>*/}
+                                    <p className="imageBoxText">
+                                        Мое давления всегда под контролем. Теперь я могу его измерять в любой момент.
+                                    </p>
                                 </div>
                             </div>
-
-                            <p className="imageBoxText">
-                                Мое давления всегда под контролем. Теперь я могу его измерять в любой момент.
-                            </p>
-                        </div>
-
-                        <div className="review-elem">
-                            <div className="imageBox">
-                                <img src={rev3} alt=""/>
-
-                                <div className="reviewDesc">
-                                    <span style={{color: "#707070", fontSize: '2.6vh'}}>Олег Воронов</span>
-                                    <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Спортсмен</span>
-                                    {/*<span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>*/}
-                                </div>
-                            </div>
-
-                            <p className="imageBoxText">
-                                Я слежу за своим пульсом во время тренировок, теперь они намного эффективнее.
-                            </p>
                         </div>
                     </div>
-
                     <div className="review-block">
                         <div className="review-elem">
                             <div className="imageBox">
-                                <img src={rev4} alt=""/>
-
+                                <img src={rev3} alt=""/>
                                 <div className="reviewDesc">
-                                    <span style={{color: "#707070", fontSize: '2.6vh'}}>Татьяна Миронова</span>
-                                    <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Работаю в рекламе</span>
+                                    <span className="reviewNameBlock">Олег Воронов</span>
+                                    <span className="reviewWorkBlock">Спортсмен</span>
                                     {/*<span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>*/}
+                                    <p className="imageBoxText">
+                                        Я слежу за своим пульсом во время тренировок, теперь они намного эффективнее.
+                                    </p>
                                 </div>
                             </div>
-
-                            <p className="imageBoxText">
-                                Теперь я вижу когда уровень стресса повышается, и я могу во время прекратить
-                                работать.
-                            </p>
                         </div>
-
+                        <div className="review-elem">
+                            <div className="imageBox">
+                                <img src={rev4} alt=""/>
+                                <div className="reviewDesc">
+                                    <span className="reviewNameBlock">Татьяна Миронова</span>
+                                    <span className="reviewWorkBlock">Работаю в рекламе</span>
+                                    {/*<span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>*/}
+                                    <p className="imageBoxText">
+                                        Теперь я вижу когда уровень стресса повышается, и я могу во время прекратить
+                                        работать.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="review-block">
                         <div className="review-elem">
                             <div className="imageBox">
                                 <img src={rev5} alt=""/>
-
                                 <div className="reviewDesc">
-                                    <span style={{color: "#707070", fontSize: '2.6vh'}}>Евгений Стародубцев</span>
-                                    <span style={{color: '#A2A2A2', fontSize: '1.8vh'}}>Предприниматель</span>
+                                    <span className="reviewNameBlock">Евгений Стародубцев</span>
+                                    <span className="reviewWorkBlock">Предприниматель</span>
                                     {/*<span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>*/}
+                                    <p className="imageBoxText">
+                                        Мне сделали операцию на сердце и благодаря HELI, я могу следить за ним всегда.
+                                    </p>
                                 </div>
                             </div>
-
-                            <p className="imageBoxText">
-                                Мне сделали операцию на сердце и благодаря HELI, я могу следить за ним всегда.
-                            </p>
                         </div>
-
                         <div className="review-elem">
                             <div className="imageBox">
                                 <img src={rev6} alt=""/>
-
                                 <div className="reviewDesc">
-                                    <span style={{color: "#707070", fontSize: '2.6vh'}}>Мария Попова</span>
-                                    <span style={{
-                                        color: '#A2A2A2',
-                                        fontSize: '1.8vh'
-                                    }}>Работаю в строительной компании</span>
+                                    <span className="reviewNameBlock">Мария Попова</span>
+                                    <span className="reviewWorkBlock">Работаю в строительной компании</span>
                                     {/*<span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>*/}
+                                    <p className="imageBoxText">
+                                        C HELI мой день эффективнее. Я получаю рекомендации, как улучшить свое здоровье.
+                                    </p>
                                 </div>
                             </div>
-
-                            <p className="imageBoxText">
-                                C HELI мой день эффективнее. Я получаю рекомендации, как улучшить свое здоровье.
-                            </p>
                         </div>
                     </div>
 

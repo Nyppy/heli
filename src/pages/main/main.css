@@ -53,9 +53,11 @@ ul {
 .info-main-block-1-h-text {
     margin-top: 2vh;
     margin-bottom: 10px;
+    width: 751px;
+    height: 233px;
     font-size: 49px;
     line-height: 49px;
-    color: #565A5E;
+    color: #31383D;
     font-weight: 500;
 }
 
@@ -73,8 +75,8 @@ ul {
     font-weight: 500;
 }
 .infoblock1 {
-    width: 639px;
-    height: 136px;
+    width: 729px;
+    height: 180px;
 }
 .infoblock1_text {
     width: 639px;
@@ -142,7 +144,9 @@ ul {
 
 }
 .contentMainBlock2Text {
-    font-family: 'Gotham Pro', regular;
+    font-family: 'Gotham Pro';
+    width: 628px;
+    height: 148px;
     display: flex;
     color: #fff;
     font-size: 22px;
@@ -165,7 +169,7 @@ ul {
 }
 
 .text-head-block-2 {
-    font-family: 'Gotham Pro Regular';
+    font-family: "Gotham Pro";
     font-size: 47px;
     line-height: 39px;
     margin-bottom: 1vw;
@@ -329,6 +333,7 @@ ul {
 }
 
 .logo-content-block-3 {
+    margin-left: 53px;
     width: 429px;
     height: 160px;
 
@@ -345,8 +350,8 @@ ul {
 }
 
 .elem-block-3-text {
-    width: 223px;
-    height: 59px;
+    width: 255px;
+    height: 56px;
 }
 
 .elem-block-3 {
@@ -359,7 +364,7 @@ ul {
 
 .elem-block-3 img {
     width: 1.6vw;
-    margin-right: 1vw;
+    margin-right: 16px;
 }
 
 .elem-block-3-h {
@@ -404,8 +409,8 @@ ul {
     margin-bottom: 40px;
 }
 .main-elem-block-3-1p-text {
-    width: 614px;
-    height: 291px;
+    width: 688px;
+    height: 280px;
 }
 
 
@@ -487,12 +492,13 @@ ul {
 .content-main-block-5-text {
     width: 487px;
     height: 231px;
-    font-size: 16px;
+    font-size: 22px;
+    line-height: 38px;
 }
 
 .content-main-block-5-button {
     background-color: #FF0020;
-    padding: 1vh 4vh 1vh 4vh;
+    /*padding: 1vh 4vh 1vh 4vh;*/
     font-size: 3vh;
 }
 .content-main-block-5-button:hover {
@@ -546,6 +552,7 @@ ul {
     margin-left: 20px;
 }
 .content-main-block-6 {
+    margin: 0 auto;
     width: 100vw;
     height: 50vh;
     background-image: url('../../assets/img/polza.png');
@@ -559,15 +566,18 @@ ul {
 }
 
 .block6-h-text {
+    text-align: left;
     font-size: 36px;
     color: rgb(255, 255, 255);
 }
 
 .block6-text {
-    font-size: 2.4vh;
+    width: 745px;
+    height: 144px;
+    font-size: 22px;
+    line-height: 38px;
     color: rgb(255, 255, 255);
-    width: 40vw;
-    text-align: center;
+    text-align: left;
 }
 
 .content-main-block-7 {
@@ -587,10 +597,10 @@ ul {
 }
 
 .input-form-7 {
-    width: 280px;
+    width: 226px;
     height: 46px;
     border: 1px solid #707070;
-    border-radius: 39px;
+    border-radius: 18px;
     outline: none;
     padding: 1.4vh 4vh 1.4vh 1vh;
     color: #707070;
@@ -598,6 +608,12 @@ ul {
     margin-right: 2vh;
     box-sizing: border-box;
 }
+.input-form-7-2 {
+    width: 280px;
+}
+/*.input-form-7-3 {*/
+/*    width: 223px;*/
+/*}*/
 
 .button-form-7 {
     background-color: #FF0020;
@@ -621,15 +637,23 @@ ul {
 }
 
 .review-block {
-    width: 75vw;
+    width: 83vw;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     margin-top: 4vh;
     margin-bottom: 4vh;
 }
-
+.reviewNameBlock {
+    color: #FF0020;
+    font-size: 28px;
+}
+.reviewWorkBlock {
+    color: #707070;
+    fontSize: 18px;
+}
 .footer {
     display: flex;
     font-size: 0.7vw;
@@ -708,27 +732,29 @@ ul {
 }
 
 .imageBoxText {
-    width: 22vw;
-    color: rgb(112, 112, 112);
-    font-size: 2vh;
+    width: 494px;
+    height: 117px;
+    color: #14171C;
+    font-size: 29px;
     margin-top: 2vh;
 }
 
 .imageBox img {
-    width: 90px;
-    height: 90px;
+    width: 178px;
+    height: 178px;
 }
 
 .content-main-block-7-h-text {
     color: #31383D;
-    font-size: 4.2vh;
+    font-size: 47px;
 }
 
 .content-main-block-7-text {
     color: #31383D;
     font-size: 2vh;
-    width: 50vw;
-    text-align: center;
+    width: 753px;
+    height: 69px;
+    text-align: left;
 }
 
 .blockConditions {
@@ -747,7 +773,7 @@ ul {
 
 .button-form-6-block {
     background-color: #FF0020;
-    padding: 1vh 4vh 1vh 4vh;
+    /*padding: 1vh 4vh 1vh 4vh;*/
     font-size: 18px;
     font-weight: 600;
     width: 223px;
@@ -838,7 +864,7 @@ ul {
         height: 242px;
         margin-top: 2vh;
         font-size: 49px;
-        color: rgb(86, 90, 94);
+        color: #31383D;
         font-weight: 500;
     }
 
