@@ -4,6 +4,7 @@ import '../../pages/doctors/main.css'
 import doctor from  '../../assets/img/doctors_main.png'
 import img1 from '../../assets/img/3299743.png'
 import img2 from '../../assets/img/614.png'
+import Footer from "../../components/Footer/Footer";
 
 class Doctors extends Component {
 
@@ -130,47 +131,51 @@ class Doctors extends Component {
                 </div>
                 <div className={"content-block-4 content-block-4__option"}>
                     <div className={"container"}>
-                        <div className={"content-block-4__inner"}>
+                        <div className={"content-block-4__wrapper"}>
                             <div className={"content-block-4__title"}>
                                 КОМПЛЕКСНОЕ УЛУЧШЕНИЕ ЗДОРОВЬЯ
                                 ВАШИХ ПАЦИЕНТОВ
                                 ВМЕСТЕ С ПЛАТФОРМОЙ HELI
                             </div>
-                            {/*<div className={"content-block-4__items"}>*/}
-                                {/*<div className={"content-block-4__item"}><img src={img1} alt=""/></div>*/}
-                                {/*<div className={"content-block-4__item"}><img src={img1} alt=""/></div>*/}
-                                {/*<div className={"content-block-4__item"}><img src={img1} alt=""/></div>*/}
-                                {/*<div className={"content-block-4__item"}><img src={img1} alt=""/></div>*/}
-                                {/*<div className={"content-block-4__item"}><img src={img1} alt=""/></div>*/}
+                        </div>
+                        <div className={"content-block-4__inner"}>
+                            <div className={"content-block-4__items"}>
+                                <div className={"content-block-4__item"}><img src={img1} alt=""/></div>
+                                <div className={"content-block-4__item"}><img src={img1} alt=""/></div>
+                                <div className={"content-block-4__item"}><img src={img1} alt=""/></div>
+                                <div className={"content-block-4__item"}><img src={img1} alt=""/></div>
+                                <div className={"content-block-4__item"}><img src={img1} alt=""/></div>
+                            </div>
+                            <div className={"content-block-4__elements"}>
+                                    <div className={"content-block-4__element"}>
+                                        <div className={"content-block-4__img"}>
+                                             <div className={"content-block-4__item"}><img src={img1} alt=""/></div>
+                                             <div className={"content-block-4__item"}><img src={img1} alt=""/></div>
+                                        </div>
+                                        <form  className={"form"} onSubmit={this.save}>
+                                            <input className={"input"} type="text" placeholder={"Имя"}  value={this.state.username} onChange={this.handleUserChange} name="username"/>
+                                            <input className={"input"} type="text" placeholder={"Фамилия"} value={this.state.surname}   onChange={this.handleUserChange} name={"surname"}/>
+                                            <input className={"input"} type="Email" placeholder={"Email"}  value={this.state.email}   onChange={this.handleUserChange} name={"email"}/>
+                                            <input className={"input"} type="text" placeholder={"Специализация"} value={this.state.specialization}  onChange={this.handleUserChange} name={"specialization"}/>
+                                            <input className={"input"} type="text" placeholder={"Город"} value={this.state.city}    onChange={this.handleUserChange} name={"city"}/>
+                                            <input className={"input"} type="text" placeholder={"Откуда узнали о HELI?"} value={this.state.information}   onChange={this.handleUserChange} name={"information"}/>
+                                            <div className={"content-checkbox"}>
+                                                <input className={"checkbox"} type="checkbox" id={"checkbox-id1"} name={"checkbox"}/>
+                                                <label className={"label"} htmlFor="checkbox-id1">
+                                                    принимаю условия <span>политики конфиденциальности</span>
+                                                </label>
+                                            </div>
+                                            <button type="sabmit"  className={"form__btn"} onClick={this.sendEmail} >Присоединиться</button>
+                                            {/*<a href={"#"} className="main-content-button content-block-3__button">Присоединиться</a>*/}
+                                        </form>
+                                    </div>
+                                    <div className={"content-block-4__element2"}><img src={img2} alt=""/></div>
+                            </div>
 
-                                {/*<div className={"content-block-4__elements"}>*/}
-                                    {/*<div className={"content-block-4__element"}>*/}
-                                        {/*<div className={"content-block-4__item"}><img src={img1} alt=""/></div>*/}
-                                        {/*<div className={"content-block-4__item"}><img src={img1} alt=""/></div>*/}
-
-                                        {/*<form  className={"form"} onSubmit={this.save}>*/}
-                                            {/*<input className={"input"} type="text" placeholder={"Имя"}  value={this.state.username} onChange={this.handleUserChange} name="username"/>*/}
-                                            {/*<input className={"input"} type="text" placeholder={"Фамилия"} value={this.state.surname}   onChange={this.handleUserChange} name={"surname"}/>*/}
-                                            {/*<input className={"input"} type="Email" placeholder={"Email"}  value={this.state.email}   onChange={this.handleUserChange} name={"email"}/>*/}
-                                            {/*<input className={"input"} type="text" placeholder={"Специализация"} value={this.state.specialization}  onChange={this.handleUserChange} name={"specialization"}/>*/}
-                                            {/*<input className={"input"} type="text" placeholder={"Город"} value={this.state.city}    onChange={this.handleUserChange} name={"city"}/>*/}
-                                            {/*<input className={"input"} type="text" placeholder={"Откуда узнали о HELI?"} value={this.state.information}   onChange={this.handleUserChange} name={"information"}/>*/}
-                                            {/*<div className={"content-checkbox"}>*/}
-                                                {/*<input className={"checkbox"} type="checkbox" id={"checkbox-id"} name={"checkbox"}/>*/}
-                                                {/*<label className={"label"} htmlFor="checkbox-id">*/}
-                                                    {/*принимаю условия <span>политики конфиденциальности</span>*/}
-                                                {/*</label>*/}
-                                            {/*</div>*/}
-                                            {/*<button type="sabmit"  className={"form__btn"} onClick={this.sendEmail} >Присоединиться</button>*/}
-                                            {/*/!*<a href={"#"} className="main-content-button content-block-3__button">Присоединиться</a>*!/*/}
-                                        {/*</form>*/}
-                                    {/*</div>*/}
-                                    {/*<div className={"content-block-4__element2"}><img src={img2} alt=""/></div>*/}
-                                {/*</div>*/}
-                            {/*</div>*/}
                         </div>
                     </div>
                 </div>
+               <Footer/>
             </div>
         )
     }
