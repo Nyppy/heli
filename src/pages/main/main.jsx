@@ -35,7 +35,11 @@ import rev2 from "../../assets/img/rev2.png"
 import rev3 from "../../assets/img/rev3.png"
 import rev4 from "../../assets/img/rev4.png"
 import rev5 from "../../assets/img/rev5.png"
-import rev6 from "../../assets/img/rev6.png"
+import rev6 from "../../assets/img/rev5.png"
+import run from "../../assets/img/run.png"
+import work from "../../assets/img/work.png"
+import bol from "../../assets/img/bol.png"
+import sleeping from "../../assets/img/sleeping.png"
 
 import emailjs from 'emailjs-com';
 
@@ -224,15 +228,15 @@ class Main extends React.Component {
                 {/*<input type="button" onClick={this.sendEmail} value="Send" />*/}
 
                 {/* Закоментил на время, пока не разберемся с фото */}
-                {/* <div className="content-main-block-4">
+                <div className="content-main-block-4">
                     <div className='content-block-4-text'>
                         <span style={{fontSize: '5.5vh', color: '#FF0020'}}>HELI BAND</span>
                         <span style={{color: '#31383D', fontSize: '3vh', marginBottom: '2vh'}}>Пользуйтесь где вам удобно</span>
                         <span style={{color: '#565A5E', fontSize: '2vh'}}>
                             Равным образом консультация с широким
                             активом позволяет выполнять важные задания
-                            по разработке дальнейших направлений развития. 
-                            Таким образом сложившаяся структура организации 
+                            по разработке дальнейших направлений развития.
+                            Таким образом сложившаяся структура организации
                             играет важную роль в формировании существенных
                             финансовых и административных условий.
                         </span>
@@ -248,7 +252,7 @@ class Main extends React.Component {
                         <div>
                             <span
                                 style={{position: 'absolute', margin: '54vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>Когда спите</span>
-                            <img src={sleep_1} style={{width: '48vw', height: '40vh', marginTop: '20vh'}} alt=""/>
+                            <img src={sleeping} style={{width: '48vw', height: '40vh', marginTop: '20vh'}} alt=""/>
 
                         </div>
                         <div>
@@ -259,14 +263,14 @@ class Main extends React.Component {
                         </div>
 
                     </div>
-                    
+
                     <span style={{position: 'absolute', margin: '90vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>Когда вы работаете</span>
-                    <img src={wokr} style={{width: '45vw', height: '40vh', marginTop: '-40.3vh'}} alt=""/>
-                    
+                    <img src={work} style={{width: '45vw', height: '40vh', marginTop: '-40.3vh'}} alt=""/>
+
                     <div>
-                        <img className="blockLogoHeli" src={logo} alt=""/>
+                        <img className="blockLogoHeli" src={logo1} alt=""/>
                     </div>
-                </div> */}
+                </div>
 
 
                 <div className="content-main-block-5">

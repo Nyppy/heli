@@ -14,6 +14,16 @@ ul {
     margin: 0;
 }
 
+/*@font-face {*/
+/*    font-family: "GothamProMedium";*/
+/*    src: url("../fonts/GothamProMedium/GothamProMedium.eot");*/
+/*    src: url("../fonts/GothamProMedium/GothamProMedium.eot?#iefix")format("embedded-opentype"),*/
+/*    url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff"),*/
+/*    url("../fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");*/
+/*    font-style: normal;*/
+/*    font-weight: normal;*/
+/*}*/
+
 .wrapper-page-main {
     font-family: 'Gotham Pro', bold;
     color: #333;
@@ -451,7 +461,7 @@ ul {
 .content-block-4-text {
     display: flex;
     flex-direction: column;
-    margin-bottom: -14vw;
+    margin-bottom: -11vw;
     margin-left: 28vw;
     width: 60vw;
 }
@@ -459,8 +469,8 @@ ul {
 .blockLogoHeli {
     position: absolute;
     width: 20vw;
-    margin-top: -28vh;
-    margin-left: 110vh;
+    margin-top: -29vh;
+    margin-left: 120vh;
 }
 
 .content-main-block-5 {
