@@ -247,20 +247,20 @@ class Main extends React.Component {
                         <div>
                             <span
                                 style={{position: 'absolute', margin: '85vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>Когда спите</span>
-                            <img src={sleeping} style={{width: '948px', height: '403px', marginTop: '35vh'}} alt=""/>
+                            <img src={sleeping} style={{width: '948px', height: '403px', marginTop: '247px'}} alt=""/>
 
                         </div>
                         <div>
                             <span
                                 style={{position: 'absolute', margin: '138vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>Когда вы болеете</span>
-                            <img src={bol} style={{width: '524px', height: '810px', marginTop: '35vh'}} alt=""/>
+                            <img src={bol} style={{width: '524px', height: '810px', marginTop: '247px'}} alt=""/>
 
                         </div>
 
                     </div>
 
                     <span style={{position: 'absolute', margin: '142vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>Когда вы работаете</span>
-                    <img src={work} style={{width: '949px', height: '405px', marginTop: '-58.3vh'}} alt=""/>
+                    <img src={work} style={{width: '949px', height: '405px', marginTop: '-411px'}} alt=""/>
 
                     <div>
                         <img className="blockLogoHeli" src={logo1} alt=""/>
