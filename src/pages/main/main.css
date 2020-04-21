@@ -14,18 +14,20 @@ ul {
     margin: 0;
 }
 
-/*@font-face {*/
-/*    font-family: "GothamProMedium";*/
-/*    src: url("../fonts/GothamProMedium/GothamProMedium.eot");*/
-/*    src: url("../fonts/GothamProMedium/GothamProMedium.eot?#iefix")format("embedded-opentype"),*/
-/*    url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff"),*/
-/*    url("../fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");*/
-/*    font-style: normal;*/
-/*    font-weight: normal;*/
-/*}*/
+@font-face {
+    font-family: 'GothamPro';
+    src: url('./fonts/GothamPro/GothamPro.woff') format('woff')
+}
+@font-face {
+    font-family: 'GothamPro-Medium';
+    src: url('./fonts/GothamPro-Medium/GothamPro-Medium.woff') format('woff')
+}
+@font-face {
+    font-family: 'GothamPro-Bold';
+    src: url('./fonts/GothamPro-Bold/GothamPro-Bold.woff') format('woff')
+}
 
 .wrapper-page-main {
-    font-family: 'Gotham Pro', bold;
     color: #333;
     width: 100vw;
 }
@@ -61,6 +63,7 @@ ul {
 }
 
 .info-main-block-1-h-text {
+    font-family: 'GothamPro-Bold', sans-serif;
     margin-top: 2vh;
     margin-bottom: 10px;
     width: 751px;
@@ -89,6 +92,7 @@ ul {
     height: 180px;
 }
 .infoblock1_text {
+    font-family: 'GothamPro-Medium', sans-serif;
     width: 639px;
     height: 186px;
     margin-top: 3vh;
@@ -153,8 +157,11 @@ ul {
     /*background-color: #707070;*/
 
 }
+.content-main-block-2:hover {
+    filter: grayscale(100%);
+}
 .contentMainBlock2Text {
-    font-family: 'Gotham Pro';
+    font-family: 'GothamPro-Medium', sans-serif;
     width: 628px;
     height: 148px;
     display: flex;
@@ -166,6 +173,7 @@ ul {
 }
 
 .text-block-2 {
+    font-family: 'GothamPro-Bold', sans-serif;
     display: flex;
     color: #fff;
     font-size: 16px;
@@ -179,7 +187,7 @@ ul {
 }
 
 .text-head-block-2 {
-    font-family: "Gotham Pro";
+    font-family: "GothamPro-Bold", sans-serif;
     font-size: 47px;
     line-height: 39px;
     margin-bottom: 1vw;
@@ -212,6 +220,7 @@ ul {
 }
 
 .blockHeader {
+    font-family: 'GothamPro-Medium', sans-serif;
     margin: 0;
     color: #FF0020;
     font-size: 18px;
@@ -224,7 +233,7 @@ ul {
 }
 
 .blockPrice {
-    font-family: 'Gotham Pro', regular;
+    font-family: 'GothamPro-Medium', sans-serif;
     font-size: 48px;
     line-height: 58px;
 
@@ -237,17 +246,15 @@ ul {
 }
 
 .blockPriceText li {
-    font-size: 15px;
-    line-height: 17px;
-    font-weight: 600;
-    list-style-type: disc;
     color: #FF0020;
 }
 .blockPriceText li {
     margin: 10px 0;
 }
 .blockPriceText li span {
-    color: #333;
+    font-family: 'GothamPro-Bold', sans-serif;
+    font-size: 15px;
+    color: #31383D;
 }
 
 .blockPriceText2 {
@@ -256,11 +263,20 @@ ul {
 }
 
 .blockTermsInfo {
+    font-family: 'GothamPro', sans-serif;
     color: #707070;
     font-size: 24px;
     line-height: 24px;
     border-bottom: 1px solid #707070;
     padding-bottom: 0.5vw;
+}
+.blockCapabilities {
+    font-family: 'GothamPro-Medium', sans-serif;
+    color: #FF0020;
+    font-size: 22px;
+    margin-bottom: 1vh;
+    list-style-type: none;
+    margin-left: -20px;
 }
 
 .block-price-1 {
@@ -289,11 +305,12 @@ ul {
 }
 
 .button-shop {
+    font-family: 'GothamPro-Bold', sans-serif;
     background-color: #31383D;
     width: 223px;
     height: 46px;
     margin: 10px auto;
-    padding: 1vh 3.5vh 1vh 3.5vh;
+    /*padding: 1vh 3.5vh 1vh 3.5vh;*/
     border-radius: 20px;
     color: #fff;
     font-size: 18px;
@@ -360,6 +377,7 @@ ul {
 }
 
 .elem-block-3-text {
+    font-family: 'GothamPro', sans-serif;
     width: 255px;
     height: 56px;
 }
@@ -378,6 +396,7 @@ ul {
 }
 
 .elem-block-3-h {
+    font-family: 'GothamPro-Medium', sans-serif;
     font-size: 24px;
     margin-bottom: 1vw;
 
@@ -393,6 +412,7 @@ ul {
 }
 
 .elem-block-3-1 {
+    font-family: 'GothamPro-Medium', sans-serif;
     width: 182px;
     height: 185px;
     font-size: 16px;
@@ -432,6 +452,7 @@ ul {
 }
 
 .content-main-block-3-text {
+    font-family: 'GothamPro-Medium', sans-serif;
     display: block;
     padding: 10px;
     font-size: 47px;
@@ -498,8 +519,12 @@ ul {
 .block5Button:hover {
     background-color: #DB0520;
 }
-
+.content-main-block-5-h {
+    font-family: 'GothamPro-Bold', sans-serif;
+    font-size: 47px;
+}
 .content-main-block-5-text {
+    font-family: 'GothamPro', sans-serif;
     width: 487px;
     height: 231px;
     font-size: 22px;
@@ -531,8 +556,9 @@ ul {
     margin-bottom: 8vh;
 }
 .block-5-1-h {
-    width: 582px;
-    height: 291px;
+    font-family: 'GothamPro-Bold', sans-serif;
+    width: 613px;
+    height: 281px;
     font-size: 47px;
     line-height: 47px;
     font-weight: 600;
@@ -543,7 +569,9 @@ ul {
 }
 
 .block-5-1-text {
+    font-family: 'GothamPro', sans-serif;
     font-size: 22px;
+    line-height: 38px;
     width: 603px;
     height: 256px;
     margin: 0;

@@ -26,7 +26,7 @@ const PriceItem = (props) => {
         <p className="blockPriceR">₽<span className="blockPrice">{price}</span></p>
         <span className="blockTermsInfo">{term}</span>
         <ul className="blockPriceText">
-            <li style={{color: '#FF0020', fontSize: '22px', marginBottom: '1vh', listStyleType: 'none', marginLeft: '-20px'}}>Возможности:</li>
+            <li className="blockCapabilities">Возможности:</li>
             <li>
                 {advantagesItems}
             </li>

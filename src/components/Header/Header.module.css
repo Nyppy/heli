@@ -6,6 +6,7 @@
     padding-bottom: 1vw;
     border-bottom: 1px solid #EDEDED;
     box-sizing: border-box;
+    z-index: 10;
 }
 
 .headerContent {
@@ -34,7 +35,7 @@
 }
 
 .headerMenuElem {
-    font-family: 'Gotham Pro', bold;
+    font-family: 'GothamPro', sans-serif;
     outline: none;
     text-decoration: none;
     margin-right: 32px;

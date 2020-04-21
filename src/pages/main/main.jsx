@@ -241,25 +241,25 @@ class Main extends React.Component {
                     <div className="cont-1-4">
                         <div>
                             <span
-                                style={{position: 'absolute', margin: '85vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>На пробежке</span>
+                                style={{position: 'absolute', margin: '76vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>На пробежке</span>
                             <img src={run} style={{width: '516px', height: '650px'}} alt=""/>
                         </div>
                         <div>
                             <span
-                                style={{position: 'absolute', margin: '85vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>Когда спите</span>
+                                style={{position: 'absolute', margin: '76vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>Когда спите</span>
                             <img src={sleeping} style={{width: '948px', height: '403px', marginTop: '247px'}} alt=""/>
 
                         </div>
                         <div>
                             <span
-                                style={{position: 'absolute', margin: '138vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>Когда вы болеете</span>
+                                style={{position: 'absolute', margin: '128vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>Когда вы болеете</span>
                             <img src={bol} style={{width: '524px', height: '810px', marginTop: '247px'}} alt=""/>
 
                         </div>
 
                     </div>
 
-                    <span style={{position: 'absolute', margin: '142vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>Когда вы работаете</span>
+                    <span style={{position: 'absolute', margin: '132vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>Когда вы работаете</span>
                     <img src={work} style={{width: '949px', height: '405px', marginTop: '-411px'}} alt=""/>
 
                     <div>
@@ -300,7 +300,7 @@ class Main extends React.Component {
 
                         <div className="block-5-1">
                             <div className="block5-1-h">
-                                <p style={{fontSize: '47px'}}>
+                                <p className="content-main-block-5-h">
                                     Снижаем риск госпитализации <span style={{color: '#FF0020'}}>COVID-19 </span>
                                     на <span style={{color: '#FF0020'}}>76%</span></p>
                             </div>
