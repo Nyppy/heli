@@ -55,29 +55,67 @@ class Doctors extends Component {
     render () {
         return (
             <div className={"wrapper-doctors"}>
-                <Header />
-                <div className="content-page-main">
-                    <div className="content-main-block-1">
-                        <div className="main-img-doctor">
-                            <img className="main-img-doctor" src={doctor} alt="doctor"/>
-                        </div>
+                {/*<Header />*/}
 
-                        <div className="info-main-block-1">
-                            <p className="info-main-block-1-h-text">Консультируйте ваших
-                                пациентов вместе с <span style={{color: '#FF0017', fontSize: '3.5vh'}}>HELI</span>
-                            </p>
-                            <div>
-                            <span style={{marginTop: '3vh', fontSize: '2.2vh', color: '#565A5E'}}>
-                                Мы создаем экосистему по комплексному уходу
-                                за здоровьем, где вы можете эффективно
-                                использовать свое время и консультировать
-                                большее количество ваших пациентов.
-                            </span>
+
+                <div className={'content-block-1'}>
+                    <div className={'container'}>
+                        <div className={'content-block-1__inner'}>
+                            <div className={'content-block-1__wrapper'}>
+                                 <div className={'content-block-1__elements'}>
+                                        <img className={'content-block-1__element'} src={doctor} alt="doctor"/>
+                                 </div>
+                                 <div className={'content-block-1__items'}>
+                                         <div className={'content-block-1__title'}>
+                                        Консультируйте ваших
+                                        пациентов вместе с <span >HELI</span>
+                                         </div>
+                                         <div className={'content-block-1__subtitle'}>
+                                        Мы создаем экосистему по комплексному уходу
+                                        за здоровьем, где вы можете эффективно
+                                        использовать свое время и консультировать
+                                        большее количество ваших пациентов.
+                                         </div>
+                                        <button type="sabmit"  className={"form__btn"} >Присоединиться</button>
+                                 </div>
                             </div>
-                            <a href={"#"} className="main-content-button">Присоединиться</a>
                         </div>
                     </div>
                 </div>
+
+
+
+
+
+
+
+
+
+
+                {/*<div className="content-page-main">*/}
+                    {/*<div className="content-main-block-1">*/}
+                        {/*<div className="main-img-doctor">*/}
+                            {/*<img className="main-img-doctor" src={doctor} alt="doctor"/>*/}
+                        {/*</div>*/}
+
+                        {/*<div className="info-main-block-1">*/}
+                            {/*<p className="info-main-block-1-h-text">Консультируйте ваших*/}
+                                {/*пациентов вместе с <span style={{color: '#FF0017', fontSize: '3.5vh'}}>HELI</span>*/}
+                            {/*</p>*/}
+                            {/*<div>*/}
+                            {/*<span style={{marginTop: '3vh', fontSize: '2.2vh', color: '#565A5E'}}>*/}
+                                {/*Мы создаем экосистему по комплексному уходу*/}
+                                {/*за здоровьем, где вы можете эффективно*/}
+                                {/*использовать свое время и консультировать*/}
+                                {/*большее количество ваших пациентов.*/}
+                            {/*</span>*/}
+                            {/*</div>*/}
+                            {/*<a href={"#"} className="main-content-button">Присоединиться</a>*/}
+                        {/*</div>*/}
+                    {/*</div>*/}
+                {/*</div>*/}
+
+
                 <section className={"content-block-2"}>
                         <div className={"container"}>
                             <div className="content-block-2-inner">
@@ -140,25 +178,72 @@ class Doctors extends Component {
                         </div>
                         <div className={"content-block-4__inner"}>
                             <div className={"content-block-4__items"}>
-                                <div className={"content-block-4__item"}><img src={img1} alt=""/></div>
-                                <div className={"content-block-4__item"}><img src={img1} alt=""/></div>
-                                <div className={"content-block-4__item"}><img src={img1} alt=""/></div>
-                                <div className={"content-block-4__item"}><img src={img1} alt=""/></div>
-                                <div className={"content-block-4__item"}><img src={img1} alt=""/></div>
+                                <div className={"content-block-4__item"}>
+                                    <img src={img1} alt=""/>
+                                    <div className={"content-block-4__text"}>
+                                        ФИЗИЧЕСКАЯ
+                                        АКТИВНОСТЬ
+                                    </div>
+                                </div>
+                                <div className={"content-block-4__item"}>
+                                    <img src={img1} alt=""/>
+                                    <div className={"content-block-4__text"}>
+                                        эмоциональное
+                                        состояние
+                                    </div>
+                                </div>
+                                <div className={"content-block-4__item"}>
+                                    <img src={img1} alt=""/>
+                                    <div className={"content-block-4__text"}>
+                                        работа
+                                        сердца
+                                    </div>
+                                </div>
+                                <div className={"content-block-4__item"}>
+                                    <img src={img1} alt=""/>
+                                    <div className={"content-block-4__text"}>
+                                        состояние
+                                        органов
+                                    </div>
+                                </div>
+                                <div className={"content-block-4__item"}>
+                                    <img src={img1} alt=""/>
+                                    <div className={"content-block-4__text"}>
+                                        анализы
+                                        пациентов
+                                    </div>
+                                </div>
                             </div>
                             <div className={"content-block-4__elements"}>
                                     <div className={"content-block-4__element"}>
                                         <div className={"content-block-4__img"}>
-                                             <div className={"content-block-4__item"}><img src={img1} alt=""/></div>
-                                             <div className={"content-block-4__item"}><img src={img1} alt=""/></div>
+                                            <div className={"content-block-4__item"}>
+                                                <img src={img1} alt=""/>
+                                                <div className={"content-block-4__text"}>
+                                                    Семейный
+                                                    доктор
+                                                </div>
+                                            </div>
+                                            <div className={"content-block-4__item"}>
+                                                <img src={img1} alt=""/>
+                                                <div className={"content-block-4__text"}>
+                                                    корпоративный
+                                                    доктор
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className={"content-block-4__title  content-block-4__BUSINESS"}>
+                                            Подключиться к HELI FAMILY
+                                            или HELI  BUSINESS
                                         </div>
                                         <form  className={"form"} onSubmit={this.save}>
-                                            <input className={"input"} type="text" placeholder={"Имя"}  value={this.state.username} onChange={this.handleUserChange} name="username"/>
-                                            <input className={"input"} type="text" placeholder={"Фамилия"} value={this.state.surname}   onChange={this.handleUserChange} name={"surname"}/>
-                                            <input className={"input"} type="Email" placeholder={"Email"}  value={this.state.email}   onChange={this.handleUserChange} name={"email"}/>
-                                            <input className={"input"} type="text" placeholder={"Специализация"} value={this.state.specialization}  onChange={this.handleUserChange} name={"specialization"}/>
-                                            <input className={"input"} type="text" placeholder={"Город"} value={this.state.city}    onChange={this.handleUserChange} name={"city"}/>
-                                            <input className={"input"} type="text" placeholder={"Откуда узнали о HELI?"} value={this.state.information}   onChange={this.handleUserChange} name={"information"}/>
+                                            <input className={"input input-option"} type="text" placeholder={"Доктор"}  value={this.state.username} onChange={this.handleUserChange} name="username"/>
+                                            <input className={"input input-option"} type="text" placeholder={"HALI FAMILY"} value={this.state.surname}   onChange={this.handleUserChange} name={"surname"}/>
+                                            <input className={"input input-option"} type="text" placeholder={"Имя"}  value={this.state.email}   onChange={this.handleUserChange} name={"email"}/>
+                                            <input className={"input input-option"} type="text" placeholder={"Фамилия"} value={this.state.specialization}  onChange={this.handleUserChange} name={"specialization"}/>
+                                            <input className={"input input-option"} type="text" placeholder={"Специальность"} value={this.state.city}    onChange={this.handleUserChange} name={"city"}/>
+                                            <input className={"input input-option"} type="text" placeholder={"Город"} value={this.state.information}   onChange={this.handleUserChange} name={"information"}/>
+                                            <input className={"input input-option"} type="text" placeholder={"Телефон"} value={this.state.information}   onChange={this.handleUserChange} name={"information"}/>
                                             <div className={"content-checkbox"}>
                                                 <input className={"checkbox"} type="checkbox" id={"checkbox-id1"} name={"checkbox"}/>
                                                 <label className={"label"} htmlFor="checkbox-id1">
@@ -169,7 +254,13 @@ class Doctors extends Component {
                                             {/*<a href={"#"} className="main-content-button content-block-3__button">Присоединиться</a>*/}
                                         </form>
                                     </div>
-                                    <div className={"content-block-4__element2"}><img src={img2} alt=""/></div>
+                                    <div className={"content-block-4__element2"}>
+                                        <img src={img2} alt=""/>
+                                        <div className={"content-block-4__text2"}>
+                                            Наблюдайте сразу за всей семьей
+                                            или целой компанией
+                                        </div>
+                                    </div>
                             </div>
 
                         </div>
