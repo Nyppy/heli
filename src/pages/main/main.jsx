@@ -200,27 +200,27 @@ class Main extends React.Component {
                     <div className='main-elem-block-3-1'>
                         <div className="elem-block-3-1">
                             <img src={ecg} style={{width: '58px', height: '101px'}} alt=""/>
-                            <span>Нужен текст</span>
+                            <span>ЭКГ</span>
                         </div>
 
                         <div className="elem-block-3-1">
                             <img src={pressure} style={{width: '78px', height: '101px'}} alt=""/>
-                            <span>Нужен текст</span>
+                            <span>Давление</span>
                         </div>
 
                         <div className="elem-block-3-1">
                             <img src={cardiogram} style={{width: '107px', height: '97px'}} alt=""/>
-                            <span>Нужен текст</span>
+                            <span>Пульс</span>
                         </div>
 
                         <div className="elem-block-3-1">
                             <img src={stress} style={{width: '76px', height: '94px'}} alt=""/>
-                            <span>Нужен текст</span>
+                            <span>Стресс</span>
                         </div>
 
                         <div className="elem-block-3-1">
                             <img src={lung} style={{width: '94px', height: '94px'}} alt=""/>
-                            <span>Нужен текст</span>
+                            <span>Дыхание</span>
                         </div>
                     </div>
                 </div>
@@ -230,42 +230,37 @@ class Main extends React.Component {
                 {/* Закоментил на время, пока не разберемся с фото */}
                 <div className="content-main-block-4">
                     <div className='content-block-4-text'>
-                        <span style={{fontSize: '5.5vh', color: '#FF0020'}}>HELI BAND</span>
-                        <span style={{color: '#31383D', fontSize: '3vh', marginBottom: '2vh'}}>Пользуйтесь где вам удобно</span>
-                        <span style={{color: '#565A5E', fontSize: '2vh'}}>
-                            Равным образом консультация с широким
-                            активом позволяет выполнять важные задания
-                            по разработке дальнейших направлений развития.
-                            Таким образом сложившаяся структура организации
-                            играет важную роль в формировании существенных
-                            финансовых и административных условий.
+                        <span style={{fontSize: '82px', color: '#FF0020'}}>HELI BAND</span>
+                        <span style={{color: '#31383D', fontSize: '31px', marginBottom: '2vh'}}>Пользуйтесь где вам удобно</span>
+                        <span style={{color: '#565A5E', fontSize: '21px', lineHeight: '38px'}}>
+                            Наша экосистема это новый взгляд на вашу диагностику здоровья. Удобный умный браслет
+                            даст возможность следить за вашим здоровьем в любом месте и в любое время, а искусственный
+                            интеллект вовремя оповестит об изменениях в организме.
                         </span>
-
                     </div>
                     <div className="cont-1-4">
                         <div>
                             <span
-                                style={{position: 'absolute', margin: '54vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>На пробежке</span>
-                            <img src={run} style={{width: '25vw', height: '60vh'}} alt=""/>
+                                style={{position: 'absolute', margin: '85vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>На пробежке</span>
+                            <img src={run} style={{width: '516px', height: '650px'}} alt=""/>
+                        </div>
+                        <div>
+                            <span
+                                style={{position: 'absolute', margin: '85vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>Когда спите</span>
+                            <img src={sleeping} style={{width: '948px', height: '403px', marginTop: '35vh'}} alt=""/>
 
                         </div>
                         <div>
                             <span
-                                style={{position: 'absolute', margin: '54vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>Когда спите</span>
-                            <img src={sleeping} style={{width: '48vw', height: '40vh', marginTop: '20vh'}} alt=""/>
-
-                        </div>
-                        <div>
-                            <span
-                                style={{position: 'absolute', margin: '93vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>Когда вы болеете</span>
-                            <img src={bol} style={{width: '30vw', height: '80vh', marginTop: '20vh'}} alt=""/>
+                                style={{position: 'absolute', margin: '138vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>Когда вы болеете</span>
+                            <img src={bol} style={{width: '524px', height: '810px', marginTop: '35vh'}} alt=""/>
 
                         </div>
 
                     </div>
 
-                    <span style={{position: 'absolute', margin: '90vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>Когда вы работаете</span>
-                    <img src={work} style={{width: '45vw', height: '40vh', marginTop: '-40.3vh'}} alt=""/>
+                    <span style={{position: 'absolute', margin: '142vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>Когда вы работаете</span>
+                    <img src={work} style={{width: '949px', height: '405px', marginTop: '-58.3vh'}} alt=""/>
 
                     <div>
                         <img className="blockLogoHeli" src={logo1} alt=""/>

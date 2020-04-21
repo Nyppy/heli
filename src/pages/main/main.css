@@ -455,22 +455,22 @@ ul {
     min-height: 40vh;
     flex-direction: row;
     /* align-items: center; */
-    margin-top: 8vh;
+    /*margin-top: 8vh;*/
 }
 
 .content-block-4-text {
     display: flex;
     flex-direction: column;
-    margin-bottom: -11vw;
-    margin-left: 28vw;
+    margin-bottom: -14vw;
+    margin-left: 34vw;
     width: 60vw;
 }
 
 .blockLogoHeli {
     position: absolute;
     width: 20vw;
-    margin-top: -29vh;
-    margin-left: 120vh;
+    margin-top: -38vh;
+    margin-left: 148vh;
 }
 
 .content-main-block-5 {
