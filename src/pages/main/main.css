@@ -303,7 +303,7 @@ ul {
 
 .button-shop {
     font-family: 'GothamPro-Bold', sans-serif;
-    background-color: #31383D;
+    background-color: #3E474C;
     width: 223px;
     height: 46px;
     margin: 10px auto;
@@ -314,6 +314,9 @@ ul {
     font-weight: bold;
     border: none;
     cursor: pointer;
+}
+.button-shop:hover {
+    background-color: #31383D;
 }
 
 .text-button-block-2 {
@@ -365,8 +368,8 @@ ul {
 
 .main-elem-block-3 {
     width: 75vw;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 20px;
+    line-height: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -375,8 +378,6 @@ ul {
 
 .elem-block-3-text {
     font-family: 'GothamPro', sans-serif;
-    width: 255px;
-    height: 56px;
 }
 
 .elem-block-3 {
@@ -394,7 +395,7 @@ ul {
 
 .elem-block-3-h {
     font-family: 'GothamPro-Medium', sans-serif;
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 1vw;
 
 }
@@ -522,8 +523,8 @@ ul {
 .blockLogoHeli {
     position: absolute;
     width: 20vw;
-    margin-top: -38vh;
-    margin-left: 1041px;
+    margin-top: -25vh;
+    margin-left: 1020px;
 }
 
 .content-main-block-5 {
@@ -592,7 +593,7 @@ ul {
     width: 613px;
     height: 281px;
     font-size: 47px;
-    line-height: 47px;
+    line-height: 57px;
     font-weight: 600;
     margin: 0;
 }
@@ -638,6 +639,7 @@ ul {
 .block6-h-text {
     text-align: left;
     font-size: 36px;
+    margin-right: 163px;
     color: rgb(255, 255, 255);
 }
 
@@ -717,12 +719,14 @@ ul {
     margin-bottom: 4vh;
 }
 .reviewNameBlock {
+    font-family: "GothamPro-Bold", sans-serif;
     color: #FF0020;
     font-size: 28px;
 }
 .reviewWorkBlock {
+    font-family: "GothamPro-Medium", sans-serif;
     color: #707070;
-    fontSize: 18px;
+    font-size: 18px;
 }
 .footer {
     display: flex;
@@ -802,6 +806,7 @@ ul {
 }
 
 .imageBoxText {
+    font-family: "GothamPro", sans-serif;
     width: 494px;
     height: 117px;
     color: #14171C;
@@ -815,13 +820,17 @@ ul {
 }
 
 .content-main-block-7-h-text {
-    color: #31383D;
+    font-family: "GothamPro-Bold", sans-serif;
     font-size: 47px;
+    margin-right: 56px;
+    color: #31383D;
 }
 
 .content-main-block-7-text {
+    font-family: "GothamPro", sans-serif;
     color: #31383D;
-    font-size: 2vh;
+    font-size: 22px;
+    line-height: 38px;
     width: 753px;
     height: 69px;
     text-align: left;
@@ -829,6 +838,8 @@ ul {
 
 .blockConditions {
     position: absolute;
+    font-family: "GothamPro", sans-serif;
+    font-size: 16px;
     margin: 6vh auto;
     color: #31383D;
     font-size: 2vh;
@@ -856,6 +867,11 @@ ul {
 }
 .button-form-6-block:hover {
     background-color: #DB0520;
+}
+.review-block-h {
+    font-family: "GothamPro-Bold", sans-serif;
+    font-size: 47px;
+    color: #31383D;
 }
 .reviewDesc {
     display: flex;

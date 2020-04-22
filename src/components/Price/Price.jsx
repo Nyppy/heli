@@ -18,9 +18,9 @@ const Price = (props) => {
             <div className="backImg" className="block-price">
                 <PriceItem head="Популярный тариф!" price="19'000" term="4 месяца"
                            footnote="Не входит стоимость браслета" blockBox="block-price-elem block-price-1"/>
-                <PriceItem head="Экономный тариф!" price="32'000" term="8 месяцев"
+                <PriceItem head="Экономный тариф!" price="24'000" term="8 месяцев"
                            footnote="Не входит стоимость браслета" blockBox="block-price-elem block-price-1 blockPriceSecondary"/>
-                <PriceItem head="Супер предложение!" price="49'000" term="12 месяцев"
+                <PriceItem head="Супер предложение!" price="30'000" term="12 месяцев"
                            footnote="Не входит стоимость браслета" blockBox="block-price-elem block-price-1"/>
             </div>
             <div className="text-button-block-2 text-block-2">

@@ -35,7 +35,7 @@ import rev2 from "../../assets/img/rev2.png"
 import rev3 from "../../assets/img/rev3.png"
 import rev4 from "../../assets/img/rev4.png"
 import rev5 from "../../assets/img/rev5.png"
-import rev6 from "../../assets/img/rev5.png"
+import rev6 from "../../assets/img/rev6.png"
 import runing1 from "../../assets/img/runing1.png"
 import working1 from "../../assets/img/working1.png"
 import hill1 from "../../assets/img/hill1.png"
@@ -333,10 +333,8 @@ class Main extends React.Component {
 
                 <div className="content-main-block-7">
                     <span className="content-main-block-7-h-text">Записаться на тестирование</span>
-
-                    <p className="content-main-block-7-text">Равным образом
-                        консультация с широким активом позволяет выполнять важные задания по разработке дальнейших
-                        направлений развития. </p>
+                    <p className="content-main-block-7-text">Оставьте свой номер телефона,
+                        и наш специалист свяжется с вами, чтобы рассказать возможности и все особенности системы.</p>
 
                     <span ref={this.message_send}
                           style={{margin: '10px 0 10px 0', display: 'none'}}>Заявка отправлена!</span>
@@ -348,8 +346,8 @@ class Main extends React.Component {
                                    onChange={this.onChangePhone}
                                    id="phone" maskChar={null} required placeholder="Ваш телефон *"/>
                         <label className="blockConditions">
-                            <input type="radio" style={{fontSize: '2vh'}} required/>
-                            Принимаю условия политики конфиденциальности
+                            <input type="checkbox" style={{fontSize: '2vh'}} required/>
+                            Принимаю условия <span style={{color: '#FF0020'}}>политики конфиденциальности</span>
                         </label>
                         <button className='input-form-7 button-form-7 button-form-7-block input-form-7-3'
                                 type="submit"
@@ -360,7 +358,7 @@ class Main extends React.Component {
                 </div>
 
                 <div className="content-main-block-8">
-                    <span style={{color: '#31383D', fontSize: '4.2vh'}}>Отзывы</span>
+                    <span className="review-block-h">Отзывы</span>
 
                     <div className="review-block">
                         <div className="review-elem">
