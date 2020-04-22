@@ -36,10 +36,10 @@ import rev3 from "../../assets/img/rev3.png"
 import rev4 from "../../assets/img/rev4.png"
 import rev5 from "../../assets/img/rev5.png"
 import rev6 from "../../assets/img/rev5.png"
-import run from "../../assets/img/run.png"
-import working from "../../assets/img/working.png"
-import hill from "../../assets/img/hill.png"
-import sleeping from "../../assets/img/sleeping.png"
+import runing1 from "../../assets/img/runing1.png"
+import working1 from "../../assets/img/working1.png"
+import hill1 from "../../assets/img/hill1.png"
+import sleeping1 from "../../assets/img/sleeping1.png"
 
 import emailjs from 'emailjs-com';
 
@@ -242,25 +242,25 @@ class Main extends React.Component {
                         <div>
                             <span
                                 style={{position: 'absolute', margin: '76vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>На пробежке</span>
-                            <img src={run} style={{width: '516px', height: '650px'}} alt=""/>
+                            <img src={runing1} className="cont-1-4-img-run" alt=""/>
                         </div>
                         <div>
                             <span
                                 style={{position: 'absolute', margin: '76vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>Когда спите</span>
-                            <img src={sleeping} style={{width: '948px', height: '403px', marginTop: '247px'}} alt=""/>
+                            <img src={sleeping1} className="cont-1-4-img-sleep" alt=""/>
 
                         </div>
                         <div>
                             <span
                                 style={{position: 'absolute', margin: '128vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>Когда вы болеете</span>
-                            <img src={hill} style={{width: '524px', height: '810px', marginTop: '247px'}} alt=""/>
+                            <img src={hill1} className="cont-1-4-img-hill" alt=""/>
 
                         </div>
 
                     </div>
 
                     <span style={{position: 'absolute', margin: '132vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>Когда вы работаете</span>
-                    <img src={working} style={{width: '949px', height: '405px', marginTop: '-411px'}} alt=""/>
+                    <img src={working1} className="cont-1-4-img-work" alt=""/>
 
                     <div>
                         <img className="blockLogoHeli" src={logo1} alt=""/>

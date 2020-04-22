@@ -157,9 +157,6 @@ ul {
     /*background-color: #707070;*/
 
 }
-.content-main-block-2:hover {
-    filter: grayscale(100%);
-}
 .contentMainBlock2Text {
     font-family: 'GothamPro-Medium', sans-serif;
     width: 628px;
@@ -479,6 +476,41 @@ ul {
     /*margin-top: 8vh;*/
 }
 
+.cont-1-4-img-run {
+    width: 516px;
+    height: 650px;
+}
+.cont-1-4-img-run:hover {
+    filter: grayscale(100%);
+}
+
+.cont-1-4-img-sleep {
+    width: 948px;
+    height: 403px;
+    margin-top: 247px;
+}
+.cont-1-4-img-sleep:hover {
+    filter: grayscale(100%);
+}
+
+.cont-1-4-img-hill {
+    width: 524px;
+    height: 810px;
+    margin-top: 247px;
+}
+.cont-1-4-img-hill:hover {
+    filter: grayscale(100%);
+}
+
+.cont-1-4-img-work {
+    width: 949px;
+    height: 405px;
+    margin-top: -411px;
+}
+.cont-1-4-img-work:hover {
+    filter: grayscale(100%);
+}
+
 .content-block-4-text {
     display: flex;
     flex-direction: column;
@@ -500,7 +532,7 @@ ul {
     min-height: 40vh;
     flex-direction: column;
     align-items: center;
-    margin-top: 25vh;
+    margin-top: 70px;
 }
 
 .block5Button {
@@ -680,7 +712,7 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 4vh;
     margin-bottom: 4vh;
 }
