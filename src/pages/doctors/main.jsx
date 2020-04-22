@@ -55,10 +55,8 @@ class Doctors extends Component {
     render () {
         return (
             <div className={"wrapper-doctors"}>
-                {/*<Header />*/}
-
-
-                <div className={'content-block-1'}>
+                <Header />
+                <div className={'content-block-1 content-block-1__option'}>
                     <div className={'container'}>
                         <div className={'content-block-1__inner'}>
                             <div className={'content-block-1__wrapper'}>
@@ -82,16 +80,6 @@ class Doctors extends Component {
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
                 {/*<div className="content-page-main">*/}
                     {/*<div className="content-main-block-1">*/}
                         {/*<div className="main-img-doctor">*/}
@@ -266,7 +254,7 @@ class Doctors extends Component {
                         </div>
                     </div>
                 </div>
-               {/*<Footer/>*/}
+               <Footer/>
             </div>
         )
     }
