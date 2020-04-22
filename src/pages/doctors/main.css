@@ -574,6 +574,59 @@ img {
     text-align: center;
 }
 
+.content-block-5 {
+    margin: 200px 0;
+}
+.container-block-5 {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+.content-block-5__inner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.content-block-5__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-block-5__title {
+    font-family: "GothamPro-Bold",sans-serif;
+    font-size: 47px;
+    line-height: 5.2px;
+    letter-spacing: -1px;
+    margin-bottom: 78px;
+}
+.content-block-5__item {
+    position: relative;
+    margin-right: 56px;
+}
+.content-block-5__item:last-child {
+    margin-right: 0;
+    margin-left: 50px;
+}
+
+.content-block-5__img {
+    position: absolute;
+    z-index: 5;
+    top: -50%;
+    left: -30%;
+}
+.content-block-5__text {
+    width: 100%;
+    max-width: 205px;
+    font-size: 13px;
+    font-family: "GothamPro-Bold", sans-serif;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-align: left;
+    z-index: 5;
+    text-decoration: none;
+    color: #080808;
+
+}
 
 
 

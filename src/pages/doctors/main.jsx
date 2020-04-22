@@ -1,9 +1,16 @@
 import React,{Component} from "react"
 import Header from '../../components/Header/Header'
 import '../../pages/doctors/main.css'
+
+
 import doctor from  '../../assets/img/doctors_main.png'
 import img1 from '../../assets/img/3299743.png'
 import img2 from '../../assets/img/614.png'
+import habr from '../../assets/img/habr-1.png'
+import regnum from '../../assets/img/regnum.png'
+import digital from  '../../assets/img/digital.png'
+import admin from '../../assets/img/admin.png'
+
 import Footer from "../../components/Footer/Footer";
 
 class Doctors extends Component {
@@ -251,6 +258,26 @@ class Doctors extends Component {
                                     </div>
                             </div>
 
+                        </div>
+                    </div>
+                </div>
+                <div className={"content-block-5"}>
+                    <div className={"container-block-5"}>
+                        <div className={"content-block-5__inner"}>
+                             <div className={"content-block-5__title"}>
+                                 <p>О нас в сети</p>
+                             </div>
+                            <div className={"content-block-5__wrapper"}>
+                                       <a className={"content-block-5__item"} href="#"><img src={habr} alt="habr"/></a>
+                                       <a className={"content-block-5__item"} href="#"><img src={regnum} alt="regnum"/></a>
+                                       <a className={"content-block-5__item"} href="#"><img src={digital} alt="digital"/></a>
+                                       <a className={"content-block-5__item"} href="#">
+                                           <img className={"content-block-5__img"} src={admin} alt="admin"/>
+                                          <div className={"content-block-5__text"}>
+                                              Админстрация Курской области
+                                          </div>
+                                       </a>
+                            </div>
                         </div>
                     </div>
                 </div>

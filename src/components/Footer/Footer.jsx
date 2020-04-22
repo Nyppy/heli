@@ -9,49 +9,54 @@ import facebook from "../../assets/img/facebook.png"
 import twitter from "../../assets/img/twitter.png"
 import vk from "../../assets/img/vk.png"
 import jscorplogos from "../../assets/img/jscorplogos.png"
-
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 class Main extends Component {
     render() {
         return (
-            <div className="footer">
-                <div className="footer-elem-1">
-                    <img className="footerLogo" src={logo} alt=""/>
+            <footer>
+                <div className={"container-footer"}>
+                    <div className="footer-wrapper">
+                        <div className="footer-elem-1">
+                            <img className="footerLogo" src={logo} alt=""/>
 
-                    <div style={{display: 'flex', flexDirection: 'row'}}>
-                        <img className="img-footer-social" src={vk} alt=""/>
-                        <img className="img-footer-social" style={{margin: '0 1vh 0 1vh'}} src={twitter} alt=""/>
-                        <img className="img-footer-social" src={facebook} alt=""/>
-                    </div>
+                            <div className={"footer-elem-1__items"}>
+                                <a className={"footer-elem-1__item"} href="#"><img className="img-footer-social" src={vk} alt=""/></a>
+                                <a className={"footer-elem-1__item"} href="#"><img className="img-footer-social" src={twitter} alt=""/></a>
+                                <a className={"footer-elem-1__item"} href="#"><img className="img-footer-social" src={facebook} alt=""/></a>
+                            </div>
 
-                    <div style={{display: 'flex', flexDirection: 'column', color: '#31383D', fontSize: '2.4vh'}}>
-                        <span style={{marginBottom: '0.5vh'}}>info@heli.com</span>
-                        <span>8 (900) 000-00-00</span>
+                            <div className={"footer-elem-1__info"}>
+                                <p>info@heli.com</p>
+                                <span>8 (900) 000-00-00</span>
+                            </div>
+                        </div>
+
+                        <div className="footer-elem-2">
+                            <a href="#">Политика конфиденциальности</a>
+                            <span>|</span>
+                            <a href="#">Условия использования</a>
+                            <span>|</span>
+                            <a href="#">Условия оферты</a>
+                        </div>
+                        <div className="footer-elem-3">
+                             <div className="footer-elem-3-item1">© {new Date().getFullYear()} HELI technology ltd.</div>
+                                <div className="footer-elem-3-item2">
+                                     Информация, представленная на сайте, не может быть использована для
+                                     постановки диагноза, назначения лечения и не заменяет прием врача.
+                                </div>
+                                <div className={"footer-jscorp"}>
+                                    <div className={"footer-jscorp__text"}  >При поддержке:</div>
+                                    <div className={"jscorp-bgr"}>
+                                    <div className={"jscorp"}>
+                                         <a href="https://jscorp.ru/" className="footer-elem-3-logo"><img className="footer-logojs" src={jscorplogos}/></a>
+                                    </div>
+                                    </div>
+                                </div>
+                        </div>
                     </div>
                 </div>
-
-                <div className="footer-elem-2">
-                    <Link style={{color: '#31383D'}} to="#">Политика конфиденциальности</Link>
-                    <span style={{marginRight: '1vh', marginLeft: '1vh'}}>|</span>
-                    <Link style={{color: '#31383D'}} to="#">Условия использования</Link>
-                    <span style={{marginRight: '1vh', marginLeft: '1vh'}}>|</span>
-                    <Link style={{color: '#31383D'}} to="#">Условия оферты</Link>
-                </div>
-
-                <div className="footer-elem-3">
-                    <span
-                        className="footer-elem-3-item">© {new Date().getFullYear()} HELI technology ltd.</span>
-                    <span className="footer-elem-3-item" style={{color: '#31383D', width: '40vw'}}>
-                        Информация, представленная на сайте, не может быть использована для 
-                        постановки диагноза, назначения лечения и не заменяет прием врача.
-                    </span>
-
-                    <div style={{display: 'flex', flexDirection: 'column', textAlign: 'left', fontSize: '2vh', alignItems: 'flex-end'}}>
-                        <span style={{marginBottom: '1.2vh', fontSize: '2vh'}}>При поддержке:</span>
-                        <a href="https://jscorp.ru/" className="footer-elem-3-logo"><img className="footer-logojs" src={jscorplogos}/></a>
-                    </div>
-                </div>
-            </div>
+            </footer>
         )
     }
 }
