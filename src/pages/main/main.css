@@ -540,7 +540,8 @@ ul {
     width: 223px;
     height: 46px;
     font-size: 20px;
-    margin-left: -37.5vw;
+    margin-top: 20px;
+    margin-left: -34.5vw;
     background-color: #FF0020;
     padding: 1vh 3.5vh 1vh 3.5vh;
     color: #fff;
@@ -595,7 +596,7 @@ ul {
     font-size: 47px;
     line-height: 57px;
     font-weight: 600;
-    margin: 0;
+    margin-bottom: 30px;
 }
 .block-5-1 {
     margin-left: 113px;
