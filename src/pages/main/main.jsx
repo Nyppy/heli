@@ -37,8 +37,8 @@ import rev4 from "../../assets/img/rev4.png"
 import rev5 from "../../assets/img/rev5.png"
 import rev6 from "../../assets/img/rev5.png"
 import run from "../../assets/img/run.png"
-import work from "../../assets/img/work.png"
-import bol from "../../assets/img/bol.png"
+import working from "../../assets/img/working.png"
+import hill from "../../assets/img/hill.png"
 import sleeping from "../../assets/img/sleeping.png"
 
 import emailjs from 'emailjs-com';
@@ -253,14 +253,14 @@ class Main extends React.Component {
                         <div>
                             <span
                                 style={{position: 'absolute', margin: '128vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>Когда вы болеете</span>
-                            <img src={bol} style={{width: '524px', height: '810px', marginTop: '247px'}} alt=""/>
+                            <img src={hill} style={{width: '524px', height: '810px', marginTop: '247px'}} alt=""/>
 
                         </div>
 
                     </div>
 
                     <span style={{position: 'absolute', margin: '132vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>Когда вы работаете</span>
-                    <img src={work} style={{width: '949px', height: '405px', marginTop: '-411px'}} alt=""/>
+                    <img src={working} style={{width: '949px', height: '405px', marginTop: '-411px'}} alt=""/>
 
                     <div>
                         <img className="blockLogoHeli" src={logo1} alt=""/>
