@@ -480,36 +480,40 @@ ul {
 .cont-1-4-img-run {
     width: 516px;
     height: 650px;
+    filter: grayscale(100%);
 }
 .cont-1-4-img-run:hover {
-    filter: grayscale(100%);
+    filter: none;
 }
 
 .cont-1-4-img-sleep {
     width: 948px;
     height: 403px;
     margin-top: 247px;
+    filter: grayscale(100%);
 }
 .cont-1-4-img-sleep:hover {
-    filter: grayscale(100%);
+    filter: none;
 }
 
 .cont-1-4-img-hill {
     width: 524px;
     height: 810px;
     margin-top: 247px;
+    filter: grayscale(100%);
 }
 .cont-1-4-img-hill:hover {
-    filter: grayscale(100%);
+    filter: none;
 }
 
 .cont-1-4-img-work {
     width: 949px;
     height: 405px;
     margin-top: -411px;
+    filter: grayscale(100%);
 }
 .cont-1-4-img-work:hover {
-    filter: grayscale(100%);
+    filter: none;
 }
 
 .content-block-4-text {

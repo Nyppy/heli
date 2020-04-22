@@ -241,25 +241,25 @@ class Main extends React.Component {
                     <div className="cont-1-4">
                         <div>
                             <span
-                                style={{position: 'absolute', margin: '76vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>На пробежке</span>
+                                style={{position: 'absolute', margin: '76vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>&#8594; На пробежке</span>
                             <img src={runing1} className="cont-1-4-img-run" alt=""/>
                         </div>
                         <div>
                             <span
-                                style={{position: 'absolute', margin: '76vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>Когда спите</span>
+                                style={{position: 'absolute', margin: '76vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>&#8594; Когда спите</span>
                             <img src={sleeping1} className="cont-1-4-img-sleep" alt=""/>
 
                         </div>
                         <div>
                             <span
-                                style={{position: 'absolute', margin: '128vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>Когда вы болеете</span>
+                                style={{position: 'absolute', margin: '128vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>&#8594; Когда вы болеете</span>
                             <img src={hill1} className="cont-1-4-img-hill" alt=""/>
 
                         </div>
 
                     </div>
 
-                    <span style={{position: 'absolute', margin: '132vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>Когда вы работаете</span>
+                    <span style={{position: 'absolute', margin: '132vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>&#8594; Когда вы работаете</span>
                     <img src={working1} className="cont-1-4-img-work" alt=""/>
 
                     <div>
