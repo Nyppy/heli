@@ -51,7 +51,7 @@ ul {
 
 .main-img-doctor img {
     width: 528px;
-    height: 825px;
+    height: 796px;
     margin-bottom: -3px;
 }
 
@@ -66,9 +66,7 @@ ul {
     font-family: 'GothamPro-Bold', sans-serif;
     margin-top: 2vh;
     margin-bottom: 14px;
-    /*width: 751px;*/
-    height: 233px;
-    font-size: 47px;
+    font-size: 37px;
     line-height: 57px;
     color: #31383D;
     font-weight: 500;
@@ -432,6 +430,7 @@ ul {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
     margin-top: 6vh;
     margin-bottom: 40px;
 }
@@ -452,8 +451,8 @@ ul {
     font-family: 'GothamPro-Medium', sans-serif;
     display: block;
     padding: 10px;
-    font-size: 47px;
-    line-height: 57px;
+    font-size: 37px;
+    line-height: 47px;
     text-align: left;
     color: #31383D;
 }
@@ -536,7 +535,6 @@ ul {
     min-height: 40vh;
     flex-direction: column;
     align-items: center;
-    margin-top: 70px;
 }
 
 .block5Button {
@@ -544,7 +542,7 @@ ul {
     height: 46px;
     font-size: 20px;
     margin-top: 20px;
-    margin-left: -34.5vw;
+    margin-left: -48.5vw;
     background-color: #FF0020;
     padding: 1vh 3.5vh 1vh 3.5vh;
     color: #fff;
@@ -558,14 +556,15 @@ ul {
 }
 .content-main-block-5-h {
     font-family: 'GothamPro-Bold', sans-serif;
-    font-size: 47px;
+    font-size: 27px;
+    line-height: 37px;
+    margin: 0;
 }
 .content-main-block-5-text {
     font-family: 'GothamPro', sans-serif;
     width: 487px;
-    height: 231px;
-    font-size: 19px;
-    line-height: 38px;
+    font-size: 17px;
+    line-height: 35px;
 }
 
 .content-main-block-5-button {
@@ -595,30 +594,26 @@ ul {
 .block-5-1-h {
     font-family: 'GothamPro-Bold', sans-serif;
     width: 613px;
-    height: 281px;
-    font-size: 47px;
-    line-height: 57px;
+    font-size: 27px;
+    line-height: 37px;
     font-weight: 600;
     margin-bottom: 30px;
 }
 .block-5-1 {
-    /*margin-left: 113px;*/
+    margin-left: 50px;
 }
 
 .block-5-1-text {
     font-family: 'GothamPro', sans-serif;
-    font-size: 22px;
-    line-height: 38px;
+    font-size: 17px;
+    line-height: 35px;
     width: 603px;
-    height: 256px;
     margin: 0;
 }
 .block5-1-h {
     display: flex;
     width: 408px;
-    height: 187px;
     flex-direction: row;
-    margin-bottom: 2vw;
     align-items: center;
 }
 .main-elem-block-5-1 img {
@@ -814,7 +809,7 @@ ul {
     width: 494px;
     height: 117px;
     color: #14171C;
-    font-size: 29px;
+    font-size: 22px;
     margin-top: 2vh;
 }
 
@@ -825,8 +820,8 @@ ul {
 
 .content-main-block-7-h-text {
     font-family: "GothamPro-Bold", sans-serif;
-    font-size: 47px;
-    margin-right: 56px;
+    font-size: 37px;
+    margin-right: 197px;
     color: #31383D;
 }
 
@@ -874,7 +869,7 @@ ul {
 }
 .review-block-h {
     font-family: "GothamPro-Bold", sans-serif;
-    font-size: 47px;
+    font-size: 37px;
     color: #31383D;
 }
 .reviewDesc {

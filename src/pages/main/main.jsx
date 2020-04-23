@@ -296,7 +296,7 @@ class Main extends React.Component {
                     </div>
 
                     <div className='main-elem-block-5-2'>
-                        <img style={{width: '70vw'}} src={guy} alt=""/>
+                        <img style={{width: '656px'}} src={guy} alt=""/>
 
                         <div className="block-5-1">
                             <div className="block5-1-h">
