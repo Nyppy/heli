@@ -42,6 +42,7 @@ class Main extends Component {
                                 Условия использования
                                 </div>
                             </a>
+
                             <span>|</span>
                             <a className={"footer-elem-2__item"} href="#">
                                 <div className={"footer-elem-2__items"}>
