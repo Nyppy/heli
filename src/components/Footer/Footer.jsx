@@ -3,10 +3,10 @@ import React, {Component} from "react";
 import {withRouter, Link} from "react-router-dom";
 
 import "./Footer.css"
-
+import Modal from './modal/modal'
 import logo from "../../assets/img/logo-header.png"
 import jscorplogos from "../../assets/img/jscorplogos.png"
-import { FaVk,FaFacebookF,FaInstagram } from "react-icons/fa";
+import { FaVk,FaFacebookF,FaInstagram,FaTelegramPlane } from "react-icons/fa";
 
 
 class Main extends Component {
@@ -22,34 +22,21 @@ class Main extends Component {
                                 <a className={"footer-elem-1__item"} href="#"><FaVk className={"footer-elem-1__icon"}/></a>
                                 <a className={"footer-elem-1__item"} href="#"><FaInstagram className={"footer-elem-1__icon"}/></a>
                                 <a className={"footer-elem-1__item"} href="#"><FaFacebookF className={"footer-elem-1__icon"}/></a>
+                                <a className={"footer-elem-1__item"} href="#"><FaTelegramPlane className={"footer-elem-1__icon"}/></a>
                             </div>
 
                             <div className={"footer-elem-1__info"}>
-                                <p>info@heli.com</p>
-                                <span>8 (900) 000-00-00</span>
+                                <p>office@jscorp.ru</p>
+                                <span>+79192105102</span>
                             </div>
                         </div>
 
                         <div className="footer-elem-2">
-                            <a className={"footer-elem-2__item"} href="#">
-                                <div className={"footer-elem-2__items"}>
-                                Политика конфиденциальности
-                             </div>
-                            </a>
+                                <Modal  text={"Политика конфиденциальности"}/>
                             <span>|</span>
-                            <a className={"footer-elem-2__item"} href="#">
-                                <div className={"footer-elem-2__items"}>
-                                Условия использования
-                                </div>
-                            </a>
-
+                                <Modal  text={"Условия использования"}/>
                             <span>|</span>
-                            <a className={"footer-elem-2__item"} href="#">
-                                <div className={"footer-elem-2__items"}>
-                                    Условия оферты
-                                </div>
-                            </a>
-
+                                <Modal  text={"Условия оферты"}/>
                         </div>
                         <div className="footer-elem-3">
                              <div className="footer-elem-3-item1">© {new Date().getFullYear()} HELI technology ltd.</div>
@@ -60,7 +47,7 @@ class Main extends Component {
                                 <div className={"footer-jscorp"}>
                                     <div className={"jscorp-bgr"}>
                                     <div className={"jscorp"}>
-                                         <a href="https://jscorp.ru/" className="footer-elem-3-logo"><img className="footer-logojs" src={jscorplogos}/></a>
+                                         <a href="https://jscorp.ru/" className="footer-elem-3-logo" target={'_blank'}><img className="footer-logojs" src={jscorplogos}/></a>
                                     </div>
                                     </div>
                                 </div>

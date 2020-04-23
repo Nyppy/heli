@@ -10,7 +10,7 @@ import habr from '../../assets/img/habr-1.png'
 import regnum from '../../assets/img/regnum.png'
 import digital from  '../../assets/img/digital.png'
 import admin from '../../assets/img/admin.png'
-
+import edinorog from '../../assets/img/edinorog.png'
 import Footer from "../../components/Footer/Footer";
 
 class Doctors extends Component {
@@ -265,13 +265,14 @@ class Doctors extends Component {
                     <div className={"container-block-5"}>
                         <div className={"content-block-5__inner"}>
                              <div className={"content-block-5__title"}>
-                                 <p>О нас в сети</p>
+                                 О нас в сети
                              </div>
                             <div className={"content-block-5__wrapper"}>
-                                       <a className={"content-block-5__item"} href="#"><img src={habr} alt="habr"/></a>
-                                       <a className={"content-block-5__item"} href="#"><img src={regnum} alt="regnum"/></a>
-                                       <a className={"content-block-5__item"} href="#"><img src={digital} alt="digital"/></a>
-                                       <a className={"content-block-5__item"} href="#">
+                                       <a className={"content-block-5__item"} href="https://habr.com/ru/post/495362/" target={"_blank"}><img src={habr} alt="habr"/></a>
+                                       <a className={"content-block-5__item"} href="https://regnum.ru/news/society/2893845.html" target={"_blank"}><img src={regnum} alt="regnum"/></a>
+                                       <a className={"content-block-5__item"} href="https://leadersofdigital.ru/db/novosti/9485e7b24b1170e1" target={"_blank"}><img src={digital} alt="digital"/></a>
+                                       <a className={"content-block-5__item"} href="https://t.me/Theedinorogblog/1118" target={"_blank"}><img className={"content-block-5__edinorog"} src={edinorog} alt="edinorog"/></a>
+                                       <a className={"content-block-5__item"} href="https://adm.rkursk.ru/index.php?id=13&mat_id=105426&query=HELI" target={"_blank"}>
                                            <img className={"content-block-5__img"} src={admin} alt="admin"/>
                                           <div className={"content-block-5__text"}>
                                               Админстрация Курской области

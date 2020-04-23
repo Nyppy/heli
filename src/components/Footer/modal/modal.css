@@ -1,0 +1,165 @@
+::-webkit-scrollbar {
+    max-width: 5px;
+    transition: .2s all linear;
+}
+::-webkit-scrollbar-track {
+    background-color: #080808;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FF0020;
+    border-radius: 10px;
+    transition: .2s all linear;
+
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #DB0520;
+}
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+
+
+
+
+.footer-elem-2__item {
+    border: none;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+.footer-elem-2__items {
+    position: relative;
+    padding: 10px 5px;
+
+}
+
+.footer-elem-2__items::before {
+    content: "";
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    transition: 0.3s linear;
+    transform: scaleX(0);
+}
+.footer-elem-2__items::after {
+    content: "";
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    transform: scaleY(0);
+    transition: 0.3s linear;
+}
+
+.footer-elem-2__items:hover:after,
+.footer-elem-2__items:hover:before {
+    transform: scale(1);
+}
+
+
+.footer-elem-2__item {
+    text-decoration: none;
+    color: #31383D;
+    font-size: 16px;
+    font-family: "GothamPro-Medium", sans-serif;
+    line-height: 1.9px;
+}
+.footer-elem-2__item:hover {
+    color: #FF0020;
+}
+.footer-elem-2__item:focus {
+    color: #DB0520;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.5);
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    z-index: 1000;
+}
+
+.modal-body {
+    padding: 2rem;
+    width: 1200px;
+    border-radius: 5px;
+    background-color: #fff;
+    height: 88vh;
+    overflow: auto;
+    position: relative;
+}
+.modal-body h1{
+    font-family: "GothamPro-Medium", sans-serif;
+    font-size: 24px;
+    color: #080808;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.modal-body ul {
+    list-style: none;
+}
+.modal-body ul li {
+    text-align: left;
+    font-family: "GothamPro", sans-serif;
+    font-size: 18px;
+    color: #080808;
+    margin-bottom: 15px;
+}
+
+.btn-close {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 1001;
+    border: none;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+    top: -1%;
+    right: 4%;
+
+}
+
+.btn-close:before {
+    content: '';
+    width: 40px;
+    height: 3px;
+    background-color: #080808;
+    position: absolute;
+    transform-origin: left;
+    transform: rotate(-45deg);
+    bottom: -13%;
+
+}
+.btn-close:after {
+    content: '';
+    width: 40px;
+    height: 3px;
+    background-color: #080808;
+    position: absolute;
+    transform-origin: left;
+    transform: rotate(45deg);
+}
+
+
+

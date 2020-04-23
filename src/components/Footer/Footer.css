@@ -30,6 +30,12 @@ footer {
 
 
 }
+
+
+
+
+
+
 .footer-wrapper {
     display: flex;
     flex-direction: column;
@@ -69,6 +75,13 @@ footer {
 }
 .footer-elem-2__item:last-child {
     margin-right: 0;
+}
+
+.footer-elem-2__item {
+    border: none;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    cursor: pointer;
 }
 .footer-elem-2__items {
     position: relative;
@@ -216,6 +229,7 @@ footer {
 
 .footer-elem-1__items {
     display: flex;
+    margin-left: 40px;
 
 }
 .footer-elem-1__item {
@@ -240,12 +254,10 @@ footer {
 
 }
 
-.img-footer-social {
 
-}
 
-.footer-elem-1 {
+/*modal*/
 
-}
+
 
 

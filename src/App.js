@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
+import Modal from './components/Footer/modal/modal'
 // import Main from './pages/main';
 import Doctors from './pages/doctors/main'
 import './App.css';
