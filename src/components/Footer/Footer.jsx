@@ -58,7 +58,6 @@ class Main extends Component {
                                      постановки диагноза, назначения лечения и не заменяет прием врача.
                                 </div>
                                 <div className={"footer-jscorp"}>
-                                    <div className={"footer-jscorp__text"}  >При поддержке:</div>
                                     <div className={"jscorp-bgr"}>
                                     <div className={"jscorp"}>
                                          <a href="https://jscorp.ru/" className="footer-elem-3-logo"><img className="footer-logojs" src={jscorplogos}/></a>
