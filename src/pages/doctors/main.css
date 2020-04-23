@@ -533,15 +533,13 @@ img {
 .content-block-5__item {
     position: relative;
     margin-right: 56px;
-    transition: .2s all linear;
-    filter: none;
-    -webkit-filter: blur(0px);
-    -moz-filter: blur(0px);
-    -ms-filter: blur(0px);
+    transition: .3s all linear;
+
+
 }
 
 .content-block-5__item:hover {
-        transform: scale(1.05);
+        transform: translatey(10px);
 }
 .content-block-5__item:last-child {
     margin-right: 0;
