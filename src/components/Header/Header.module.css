@@ -12,7 +12,7 @@
 .headerContent {
     width: 74vw;
     display: flex;
-    margin: 21px auto 0 318px;
+    margin: 21px auto;
     height: 8vh;
     align-items: center;
 }
@@ -30,6 +30,7 @@
 
 .headerMenu {
     width: 50vw;
+    margin-left: 190px;
     display: flex;
     align-items: center;
 }

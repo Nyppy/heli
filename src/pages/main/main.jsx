@@ -228,44 +228,44 @@ class Main extends React.Component {
                 {/*<input type="button" onClick={this.sendEmail} value="Send" />*/}
 
                 {/* Закоментил на время, пока не разберемся с фото */}
-                <div className="content-main-block-4">
-                    <div className='content-block-4-text'>
-                        <span style={{fontSize: '82px', color: '#FF0020'}}>HELI BAND</span>
-                        <span style={{color: '#31383D', fontSize: '31px', marginBottom: '2vh'}}>Пользуйтесь где вам удобно</span>
-                        <span style={{color: '#565A5E', fontSize: '21px', lineHeight: '38px'}}>
-                            Наша экосистема это новый взгляд на вашу диагностику здоровья. Удобный умный браслет
-                            даст возможность следить за вашим здоровьем в любом месте и в любое время, а искусственный
-                            интеллект вовремя оповестит об изменениях в организме.
-                        </span>
-                    </div>
-                    <div className="cont-1-4">
-                        <div>
-                            <span
-                                style={{position: 'absolute', margin: '76vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>&#8594; На пробежке</span>
-                            <img src={runing1} className="cont-1-4-img-run" alt=""/>
-                        </div>
-                        <div>
-                            <span
-                                style={{position: 'absolute', margin: '76vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>&#8594; Когда спите</span>
-                            <img src={sleeping1} className="cont-1-4-img-sleep" alt=""/>
+                {/*<div className="content-main-block-4">*/}
+                {/*    <div className='content-block-4-text'>*/}
+                {/*        <span style={{fontSize: '82px', color: '#FF0020'}}>HELI BAND</span>*/}
+                {/*        <span style={{color: '#31383D', fontSize: '31px', marginBottom: '2vh'}}>Пользуйтесь где вам удобно</span>*/}
+                {/*        <span style={{color: '#565A5E', fontSize: '21px', lineHeight: '38px'}}>*/}
+                {/*            Наша экосистема это новый взгляд на вашу диагностику здоровья. Удобный умный браслет*/}
+                {/*            даст возможность следить за вашим здоровьем в любом месте и в любое время, а искусственный*/}
+                {/*            интеллект вовремя оповестит об изменениях в организме.*/}
+                {/*        </span>*/}
+                {/*    </div>*/}
+                {/*    <div className="cont-1-4">*/}
+                {/*        <div>*/}
+                {/*            <span*/}
+                {/*                style={{position: 'absolute', margin: '76vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>&#8594; На пробежке</span>*/}
+                {/*            <img src={runing1} className="cont-1-4-img-run" alt=""/>*/}
+                {/*        </div>*/}
+                {/*        <div>*/}
+                {/*            <span*/}
+                {/*                style={{position: 'absolute', margin: '76vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>&#8594; Когда спите</span>*/}
+                {/*            <img src={sleeping1} className="cont-1-4-img-sleep" alt=""/>*/}
 
-                        </div>
-                        <div>
-                            <span
-                                style={{position: 'absolute', margin: '128vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>&#8594; Когда вы болеете</span>
-                            <img src={hill1} className="cont-1-4-img-hill" alt=""/>
+                {/*        </div>*/}
+                {/*        <div>*/}
+                {/*            <span*/}
+                {/*                style={{position: 'absolute', margin: '128vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>&#8594; Когда вы болеете</span>*/}
+                {/*            <img src={hill1} className="cont-1-4-img-hill" alt=""/>*/}
 
-                        </div>
+                {/*        </div>*/}
 
-                    </div>
+                {/*    </div>*/}
 
-                    <span style={{position: 'absolute', margin: '132vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>&#8594; Когда вы работаете</span>
-                    <img src={working1} className="cont-1-4-img-work" alt=""/>
+                {/*    <span style={{position: 'absolute', margin: '132vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>&#8594; Когда вы работаете</span>*/}
+                {/*    <img src={working1} className="cont-1-4-img-work" alt=""/>*/}
 
-                    <div>
-                        <img className="blockLogoHeli" src={logo1} alt=""/>
-                    </div>
-                </div>
+                {/*    <div>*/}
+                {/*        <img className="blockLogoHeli" src={logo1} alt=""/>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
 
 
                 <div className="content-main-block-5">
@@ -383,7 +383,7 @@ class Main extends React.Component {
                                     <span  className="reviewWorkBlock">Работаю юристом</span>
                                     {/*<span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>*/}
                                     <p className="imageBoxText">
-                                        Мое давления всегда под контролем. Теперь я могу его измерять в любой момент.
+                                        Мое давление всегда под контролем. Теперь я могу его измерять в любой момент.
                                     </p>
                                 </div>
                             </div>
@@ -411,7 +411,7 @@ class Main extends React.Component {
                                     <span className="reviewWorkBlock">Работаю в рекламе</span>
                                     {/*<span style={{color: '#FF0020', fontSize: '2.2vh'}}>“Клиника”</span>*/}
                                     <p className="imageBoxText">
-                                        Теперь я вижу когда уровень стресса повышается, и я могу во время прекратить
+                                        Теперь я вижу, когда уровень стресса повышается, и я могу во время прекратить
                                         работать.
                                     </p>
                                 </div>
