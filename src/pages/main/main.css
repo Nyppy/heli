@@ -282,6 +282,7 @@ ul {
 }
 .blockPriceSecondary {
     padding: 35px;
+    box-sizing: border-box;
     width: 398px !important;
     height: 460px !important;
     background-image: url('../../assets/img/braslet2.png') !important;
