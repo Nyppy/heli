@@ -16,12 +16,14 @@ const PriceItem = (props) => {
         term,
         customStyle,
         blockBox,
+        blockPriceImg,
         advantages,
         footnote,
     } = props;
 
 
     return <div className={blockBox} style={customStyle}>
+        <img src="../../../assets/img/icon.png"  className={blockPriceImg} />
         <p className="blockHeader">{head}</p>
         <p className="blockPriceR">₽<span className="blockPrice">{price}</span></p>
         <span className="blockTermsInfo">{term}</span>
