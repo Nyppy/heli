@@ -5,9 +5,6 @@ import {withRouter, Link} from "react-router-dom";
 import "./Footer.css"
 
 import logo from "../../assets/img/logo-header.png"
-import facebook from "../../assets/img/facebook.png"
-import twitter from "../../assets/img/twitter.png"
-import vk from "../../assets/img/vk.png"
 import jscorplogos from "../../assets/img/jscorplogos.png"
 import { FaVk,FaFacebookF,FaInstagram } from "react-icons/fa";
 
@@ -34,11 +31,24 @@ class Main extends Component {
                         </div>
 
                         <div className="footer-elem-2">
-                            <a href="#">Политика конфиденциальности</a>
+                            <a className={"footer-elem-2__item"} href="#">
+                                <div className={"footer-elem-2__items"}>
+                                Политика конфиденциальности
+                             </div>
+                            </a>
                             <span>|</span>
-                            <a href="#">Условия использования</a>
+                            <a className={"footer-elem-2__item"} href="#">
+                                <div className={"footer-elem-2__items"}>
+                                Условия использования
+                                </div>
+                            </a>
                             <span>|</span>
-                            <a href="#">Условия оферты</a>
+                            <a className={"footer-elem-2__item"} href="#">
+                                <div className={"footer-elem-2__items"}>
+                                    Условия оферты
+                                </div>
+                            </a>
+
                         </div>
                         <div className="footer-elem-3">
                              <div className="footer-elem-3-item1">© {new Date().getFullYear()} HELI technology ltd.</div>
