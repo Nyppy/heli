@@ -474,9 +474,9 @@ ul {
 .content-main-block-4 {
     display: grid;
     width: 100%;
-    grid-template-areas: "r h h" "r s  hill" "w w  hill";
+    grid-template-areas: "r h h h" "r s s hill" "w w l hill";
     grid-template-rows: 247px 403px 405px;
-    grid-template-columns: 516px 948px 524px;
+    grid-template-columns: 516px 433px 515px 524px;
     /*display: flex;*/
     /*width: 100vw;*/
     /*min-height: 40vh;*/
@@ -550,7 +550,7 @@ ul {
 }
 
 .blockLogoHeli {
-    position: absolute;
+    grid-area: l;
     width: 20vw;
     margin-top: -25vh;
     margin-left: 1020px;
