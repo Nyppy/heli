@@ -170,10 +170,38 @@ footer {
 }
 .footer-elem-1__item {
     margin-right: 10px;
+
 }
 .footer-elem-1__item:last-child {
     margin-right: 0;
 }
+
+.footer-elem-1__items {
+    display: flex;
+
+}
+.footer-elem-1__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 39px;
+    width: 39px;
+    border-radius: 50%;
+    background-color: #FF0020;
+    transition: 0.2s all linear;
+}
+.footer-elem-1__item:hover {
+    background-color: #DD1733;
+    transform: scale(1.1);
+}
+.footer-elem-1__icon {
+    width: 21px;
+    height: 21px;
+    color: #FFFFFF;
+
+}
+
 .img-footer-social {
 
 }

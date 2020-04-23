@@ -9,8 +9,9 @@ import facebook from "../../assets/img/facebook.png"
 import twitter from "../../assets/img/twitter.png"
 import vk from "../../assets/img/vk.png"
 import jscorplogos from "../../assets/img/jscorplogos.png"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { FaVk,FaFacebookF,FaInstagram } from "react-icons/fa";
+
+
 class Main extends Component {
     render() {
         return (
@@ -21,9 +22,9 @@ class Main extends Component {
                             <img className="footerLogo" src={logo} alt=""/>
 
                             <div className={"footer-elem-1__items"}>
-                                <a className={"footer-elem-1__item"} href="#"><img className="img-footer-social" src={vk} alt=""/></a>
-                                <a className={"footer-elem-1__item"} href="#"><img className="img-footer-social" src={twitter} alt=""/></a>
-                                <a className={"footer-elem-1__item"} href="#"><img className="img-footer-social" src={facebook} alt=""/></a>
+                                <a className={"footer-elem-1__item"} href="#"><FaVk className={"footer-elem-1__icon"}/></a>
+                                <a className={"footer-elem-1__item"} href="#"><FaInstagram className={"footer-elem-1__icon"}/></a>
+                                <a className={"footer-elem-1__item"} href="#"><FaFacebookF className={"footer-elem-1__icon"}/></a>
                             </div>
 
                             <div className={"footer-elem-1__info"}>
