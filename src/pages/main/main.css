@@ -85,21 +85,12 @@ ul {
     color: #565A5E;
     font-weight: 500;
 }
-.infoblock1 {
-    width: 729px;
-    height: 180px;
-}
 .infoblock1_text {
     font-family: 'GothamPro-Medium', sans-serif;
-    width: 639px;
-    height: 186px;
     margin-top: 3vh;
     font-size: 22px;
     line-height: 39px;
     color: #565A5E;
-}
-.info-main-block-1 span {
-    font-size: 22px;
 }
 .backImg {
     position: absolute;
@@ -283,8 +274,8 @@ ul {
 .blockPriceSecondary {
     padding: 35px;
     box-sizing: border-box;
-    width: 398px !important;
-    height: 460px !important;
+    width: 398px;
+    height: 460px;
     background-image: url('../../assets/img/braslet2.png') !important;
 }
 
@@ -566,7 +557,7 @@ ul {
     font-family: 'GothamPro', sans-serif;
     width: 487px;
     font-size: 17px;
-    line-height: 35px;
+    line-height: 23px;
 }
 
 .content-main-block-5-button {
@@ -593,6 +584,9 @@ ul {
     margin-top: 6vh;
     margin-bottom: 8vh;
 }
+.main-elem-block-5-2 img {
+    width: 656px;
+}
 .block-5-1-h {
     font-family: 'GothamPro-Bold', sans-serif;
     width: 613px;
@@ -601,20 +595,20 @@ ul {
     font-weight: 600;
     margin-bottom: 30px;
 }
+.block-5-1-text {
+    font-family: 'GothamPro', sans-serif;
+    width: 603px;
+    font-size: 17px;
+    line-height: 23px;
+    /* width: 603px; */
+    margin: 0;
+}
 .block-5-1 {
     margin-left: 50px;
 }
 
-.block-5-1-text {
-    font-family: 'GothamPro', sans-serif;
-    font-size: 17px;
-    line-height: 35px;
-    width: 603px;
-    margin: 0;
-}
 .block5-1-h {
     display: flex;
-    width: 408px;
     flex-direction: row;
     align-items: center;
 }
@@ -809,7 +803,7 @@ ul {
 .imageBoxText {
     font-family: "GothamPro", sans-serif;
     width: 494px;
-    height: 117px;
+    /*height: 117px;*/
     color: #14171C;
     font-size: 22px;
     margin-top: 2vh;
@@ -940,6 +934,7 @@ ul {
 
     .main-content-button {
         width: 80vw;
+        margin-top: 10px;
     }
 
     .content-main-block-1 {
@@ -947,23 +942,20 @@ ul {
     }
 
     .info-main-block-1-h-text {
-        width: 701px;
-        height: 242px;
         margin-top: 2vh;
-        font-size: 49px;
-        line-height: 57px;
+        font-size: 22px;
+        line-height: 32px;
         color: #31383D;
-        font-weight: 500;
+    }
+    .infoblock1_text {
+        font-size: 17px;
+        line-height: 23px;
     }
 
     .info-main-block-1-text {
         color: rgb(86, 90, 94);
         margin-top: 1vh;
         font-size: 2.7vh;
-    }
-
-    .info-main-block-1 span {
-        font-size: 2.6vh;
     }
 
     .img-app-main {
@@ -985,6 +977,29 @@ ul {
     .block-price {
         flex-direction: column;
     }
+    .text-head-block-2 {
+        font-size: 27px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .contentMainBlock2Text {
+        font-family: 'GothamPro-Medium', sans-serif;
+        width: 85vw;
+        height: auto;
+        display: flex;
+        color: #fff;
+        font-size: 20px;
+        line-height: 28px;
+        margin: 0 auto;
+        flex-direction: column;
+        text-align: left;
+    }
+    .blockPriceSecondary {
+        width: 75vw;
+        height: 62vh;
+        padding: 24px;
+        box-sizing: inherit;
+    }
 
     .blockPrice {
         font-size: 7vw;
@@ -1004,7 +1019,7 @@ ul {
     }
 
     .button-shop {
-        margin-top: 9vw;
+        margin-top: 0;
     }
 
     .capabilities {
@@ -1027,6 +1042,7 @@ ul {
 
     .text-block-2 {
         font-size: 2.7vh;
+        text-align: center;
     }
 
     .text-block-2 p {
@@ -1038,10 +1054,15 @@ ul {
         width: 96vw;
         margin-top: 0;
     }
+    .main-elem-block-3-1p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 
     .content-main-block-3-text {
         width: 100%;
-        font-size: 4vw;
+        font-size: 17px;
+        line-height: 23px;
     }
 
     .main-elem-block-3 {
@@ -1055,16 +1076,21 @@ ul {
     .main-elem-block-3-1 {
         width: 94vw;
         flex-wrap: wrap;
+        margin-bottom: 0;
+        margin-top: 0;
     }
 
     .elem-block-3-1 {
-        width: 11vw;
+        margin: 20px auto;
+    }
+    .elem-block-3-h {
+        font-size: 24px;
     }
 
     .elem-block-3 {
         width: 88vw;
         height: 88px;
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     .content-main-block-5-text {
@@ -1077,6 +1103,15 @@ ul {
 
     .content-main-block-5 {
         margin-top: 0;
+    }
+
+    .main-elem-block-5-1 img {
+        width: 328px;
+        height: 176px;
+    }
+    .content-main-block-5-h {
+        width: 90vw;
+        font-size: 23px;
     }
 
     .block5Button {
@@ -1096,9 +1131,31 @@ ul {
         flex-direction: column;
         width: 90vw;
     }
+    .block-5-1-h {
+        font-family: 'GothamPro-Bold', sans-serif;
+        width: 90vw;
+        font-size: 27px;
+        line-height: 37px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    .block-5-1 {
+        margin-left: 0;
+    }
+    .block-5-1-text {
+        font-family: 'GothamPro', sans-serif;
+        width: 90vw;
+        font-size: 17px;
+        line-height: 23px;
+        margin: 0;
+    }
 
     .main-elem-block-5-2 {
         flex-direction: column;
+    }
+
+    .main-elem-block-5-2 img {
+        width: 328px;
     }
 
     .info-main-block-1 {
@@ -1110,17 +1167,20 @@ ul {
         padding: 15px;
         width: auto;
         height: auto;
+        background-size: cover;
     }
 
     .block6-h-text {
         font-size: 3.1vh;
+        margin-right: 0;
     }
 
     .block6-text {
-        font-size: 18px;
+        font-size: 17px;
+        line-height: 23px;
         color: rgb(255, 255, 255);
         width: 90vw;
-        text-align: center;
+        text-align: center
     }
 
     .review-block {
@@ -1149,14 +1209,14 @@ ul {
 
     .imageBox {
         display: flex;
-        width: 100vw;
+        width: 90vw;
         flex-direction: row;
         justify-content: space-evenly;
         margin-top: 2vw;
     }
 
     .imageBoxText {
-        width: 95vw;
+        width: 68vw;
         color: rgb(112, 112, 112);
         font-size: 2vh;
         margin-top: 2vh;
@@ -1173,11 +1233,16 @@ ul {
 
     .content-main-block-7-h-text {
         font-size: 4.1vh;
+        text-align: center;
+        margin-top: 40px;
+        margin-right: 0;
     }
 
     .content-main-block-7-text {
         width: 90vw;
         text-align: center;
+        font-size: 17px;
+        line-height: 23px;
     }
 
     .input-form-7 {
@@ -1192,17 +1257,18 @@ ul {
     .blockConditions {
         position: absolute;
         margin: 29vh 0 0;
-        width: 100vw;
+        width: 95vw;
         text-align: center;
     }
 
     .content-main-block-8 {
-        margin-top: 8vh;
+        margin-top: 15vh;
     }
 
     .logo-content-block-3 {
         width: 150px;
         height: 55px;
+        margin-left: 20px;
     }
 
     .input-form-7 {
@@ -1213,6 +1279,9 @@ ul {
         flex-direction: column;
         margin-left: 2vh;
         width: 70%;
+    }
+    .reviewNameBlock {
+        font-size: 22px;
     }
 
     .footer {

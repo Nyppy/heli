@@ -129,7 +129,7 @@ class Main extends React.Component {
                         <div className="info-main-block-1">
                             <p className="info-main-block-1-h-text">Современное решение в истории ранней
                                 диагностики
-                                <span style={{color: '#FF0017', fontSize: '49px'}}> COVID-19</span> и мониторинга
+                                <span style={{color: '#FF0017'}}> COVID-19</span> и мониторинга
                                 состояния здоровья
                             </p>
                             <div className="infoblock1">
@@ -296,7 +296,7 @@ class Main extends React.Component {
                     </div>
 
                     <div className='main-elem-block-5-2'>
-                        <img style={{width: '656px'}} src={guy} alt=""/>
+                        <img src={guy} alt=""/>
 
                         <div className="block-5-1">
                             <div className="block5-1-h">
