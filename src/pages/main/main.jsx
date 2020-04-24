@@ -225,47 +225,76 @@ class Main extends React.Component {
                     </div>
                 </div>
 
-                {/*<input type="button" onClick={this.sendEmail} value="Send" />*/}
+                {/* <input type="button" onClick={this.sendEmail} value="Send" /> */}
 
                 {/* Закоментил на время, пока не разберемся с фото */}
-                {/*<div className="content-main-block-4">*/}
-                {/*    <div className='content-block-4-text'>*/}
-                {/*        <span style={{fontSize: '82px', color: '#FF0020'}}>HELI BAND</span>*/}
-                {/*        <span style={{color: '#31383D', fontSize: '31px', marginBottom: '2vh'}}>Пользуйтесь где вам удобно</span>*/}
-                {/*        <span style={{color: '#565A5E', fontSize: '21px', lineHeight: '38px'}}>*/}
-                {/*            Наша экосистема это новый взгляд на вашу диагностику здоровья. Удобный умный браслет*/}
-                {/*            даст возможность следить за вашим здоровьем в любом месте и в любое время, а искусственный*/}
-                {/*            интеллект вовремя оповестит об изменениях в организме.*/}
-                {/*        </span>*/}
-                {/*    </div>*/}
-                {/*    <div className="cont-1-4">*/}
-                {/*        <div>*/}
-                {/*            <span*/}
-                {/*                style={{position: 'absolute', margin: '76vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>&#8594; На пробежке</span>*/}
-                {/*            <img src={runing1} className="cont-1-4-img-run" alt=""/>*/}
-                {/*        </div>*/}
-                {/*        <div>*/}
-                {/*            <span*/}
-                {/*                style={{position: 'absolute', margin: '76vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>&#8594; Когда спите</span>*/}
-                {/*            <img src={sleeping1} className="cont-1-4-img-sleep" alt=""/>*/}
+                <div className='grid-block'>
+                    <div className="elem-1">
+                        <img src={runing1} style={{width: '100%', height: '100%', margin: '0'}} className="cont-1-4-img-run" alt=""/>
+                    </div>
+                    <div className="elem-2">
+                        <div className='content-block-4-text-new'>
+                            <span style={{fontSize: '78px', color: '#FF0020'}}>HELI BAND</span>
+                            <span style={{color: '#31383D', fontSize: '26px', marginBottom: '2vh'}}>Пользуйтесь где вам удобно</span>
+                            <span style={{color: '#565A5E', fontSize: '21px', lineHeight: '38px'}}>
+                                Наша экосистема это новый взгляд на вашу диагностику здоровья. Удобный умный браслет
+                                даст возможность следить за вашим здоровьем в любом месте и в любое время, а искусственный
+                                интеллект вовремя оповестит об изменениях в организме.
+                            </span>
+                        </div>
+                        <img src={sleeping1} style={{width: '100%', height: '48.2vh', marginTop: '0vh'}} className="cont-1-4-img-sleep" alt=""/>
+                    </div>
+                    <div className="elem-3">
+                        <img src={hill1} style={{width: '100%', height: '95.5vh', marginTop: '36vh'}} className="cont-1-4-img-hill" alt=""/>
+                    </div>
+                </div>
+                <div className='grid-block1'>
+                    <div className="elem-4">
+                        <img src={working1} style={{width: '100%', height: '100%', margin: '0'}} className="cont-1-4-img-work" alt=""/>
+                    </div>
+                    <div className="elem-5">
+                        <img className="blockLogoHeli" style={{width: '22%', height: '18%', margin: '0'}} src={logo1} alt=""/>
+                    </div>
+                </div>
 
-                {/*        </div>*/}
-                {/*        <div>*/}
-                {/*            <span*/}
-                {/*                style={{position: 'absolute', margin: '128vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>&#8594; Когда вы болеете</span>*/}
-                {/*            <img src={hill1} className="cont-1-4-img-hill" alt=""/>*/}
+                {/* <div className="content-main-block-4">
+                   <div className='content-block-4-text'>
+                       <span style={{fontSize: '82px', color: '#FF0020'}}>HELI BAND</span>
+                       <span style={{color: '#31383D', fontSize: '31px', marginBottom: '2vh'}}>Пользуйтесь где вам удобно</span>
+                       <span style={{color: '#565A5E', fontSize: '21px', lineHeight: '38px'}}>
+                           Наша экосистема это новый взгляд на вашу диагностику здоровья. Удобный умный браслет
+                           даст возможность следить за вашим здоровьем в любом месте и в любое время, а искусственный
+                           интеллект вовремя оповестит об изменениях в организме.
+                       </span>
+                   </div>
+                   <div className="cont-1-4">
+                       <div>
+                           <span
+                               style={{position: 'absolute', margin: '76vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>&#8594; На пробежке</span>
+                           <img src={runing1} className="cont-1-4-img-run" alt=""/>
+                       </div>
+                       <div>
+                           <span
+                               style={{position: 'absolute', margin: '76vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>&#8594; Когда спите</span>
+                           <img src={sleeping1} className="cont-1-4-img-sleep" alt=""/>
 
-                {/*        </div>*/}
+                       </div>
+                       <div>
+                           <span
+                               style={{position: 'absolute', margin: '128vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>&#8594; Когда вы болеете</span>
+                           <img src={hill1} className="cont-1-4-img-hill" alt=""/>
 
-                {/*    </div>*/}
+                       </div>
 
-                {/*    <span style={{position: 'absolute', margin: '132vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>&#8594; Когда вы работаете</span>*/}
-                {/*    <img src={working1} className="cont-1-4-img-work" alt=""/>*/}
+                   </div>
 
-                {/*    <div>*/}
-                {/*        <img className="blockLogoHeli" src={logo1} alt=""/>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
+                   <span style={{position: 'absolute', margin: '132vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>&#8594; Когда вы работаете</span>
+                   <img src={working1} className="cont-1-4-img-work" alt=""/>
+
+                   <div>
+                       <img className="blockLogoHeli" src={logo1} alt=""/>
+                   </div>
+                </div> */}
 
 
                 <div className="content-main-block-5">
