@@ -338,21 +338,23 @@ class Main extends React.Component {
                     <span ref={this.message_send}
                           style={{margin: '10px 0 10px 0', display: 'none'}}>Заявка отправлена!</span>
                     <form onSubmit={this.save} className="form-elem-7">
-                        <input className='input-form-7' defaultValue={this.state.name} required
+                        <div>
+                        <input className='input-form-7 input-form-7-user' defaultValue={this.state.name} required
                                onChange={this.onChangeName} placeholder="Имя *" type="text"/>
-                        <InputMask className='input-form-7 input-form-7-2' mask="8(999)999-99-99" ref={this.phone}
+                        <InputMask className='input-form-7 input-form-7-2 input-form-7-phone' mask="8(999)999-99-99" ref={this.phone}
                                    placeholder="Телефон *" defaultValue={this.state.phone}
                                    onChange={this.onChangePhone}
-                                   id="phone" maskChar={null} required placeholder="Ваш телефон *"/>
+                                   id="phone" maskChar={null} required placeholder="+7(___)___ __ __*"/>
+                            <button className='input-form-7 button-form-7 button-form-7-block input-form-7-3'
+                                    type="submit"
+                                    ref={this.button_submit}
+                            >Записаться
+                            </button>
+                        </div>
                         <label className="blockConditions">
                             <input type="checkbox" style={{fontSize: '2vh'}} required/>
                             Принимаю условия <span style={{color: '#FF0020'}}>политики конфиденциальности</span>
                         </label>
-                        <button className='input-form-7 button-form-7 button-form-7-block input-form-7-3'
-                                type="submit"
-                                ref={this.button_submit}
-                        >Записаться
-                        </button>
                     </form>
                 </div>
 
