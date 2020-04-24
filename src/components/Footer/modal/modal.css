@@ -98,6 +98,9 @@
     padding-top: 5rem;
     z-index: 1000;
     width: 100%;
+    padding-left: 5rem;
+    padding-right:10rem ;
+
 }
 
 .modal-body {
@@ -108,6 +111,9 @@
     background-color: #fff;
     height: 88vh;
     overflow: auto;
+    position: relative;
+
+
 }
 .modal-body h1{
     font-family: "GothamPro-Medium", sans-serif;
@@ -126,15 +132,7 @@
     color: #080808;
     margin-bottom: 15px;
 }
-.modal-body__btn {
-    position: relative;
-}
-.btn {
-    position: fixed;
-    top:10%;
-    right: 21%;
-    z-index: 999;
-}
+
 .btn-close {
     width: 50px;
     height: 50px;

@@ -10,18 +10,19 @@ import './modal.css'
 
 
 
-     // componentDidMount() {
-     //      document.addEventListener('click', this.handleOutsideClick, false)
-     // }
-     // componentWillUnmount() {
-     //     document.removeEventListener('click', this.handleOutsideClick, false)
-     // }
-     // handleOutsideClick= (e)=> {
-     //     if (this.modal && !this.modal.contains(e.target)) {
-     //             this.setState({isOpen:false})
-     //             document.removeEventListener('click', this.handleOutsideClick, false)
-     //     }
-     // }
+     componentDidMount() {
+          document.addEventListener('click', this.handleOutsideClick, false)
+     }
+     componentWillUnmount() {
+         document.removeEventListener('click', this.handleOutsideClick, false)
+     }
+     handleOutsideClick= (e)=> {
+         if (this.modal && !this.modal.contains(e.target)) {
+                 this.setState({isOpen:false})
+                 document.removeEventListener('click', this.handleOutsideClick, false)
+         }
+     }
+
 
 
 
@@ -37,12 +38,8 @@ import './modal.css'
 
             {this.state.isOpen &&(
                 <div className={"modal"} >
-                <div className={"modal-body"} /*ref={node => (this.modal = node)}*/ >
-                    <div className={'modal-body__btn'}>
-                        <div className={'btn'}>
-                            <button  className={"btn-close"} onClick={()=>this.setState({ isOpen: false })} ></button>
-                        </div>
-                    </div>
+                <div className={"modal-body"} ref={node => (this.modal = node)} >
+                     <button  className={"btn-close"} onClick={()=>this.setState({ isOpen: false })} ></button>
                     <h1>Политика в отношении обработки персональных данных</h1>
                     <ul>
                         <li>1. Общие положения</li>
