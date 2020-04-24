@@ -1,0 +1,18 @@
+.text h1{
+    font-family: "GothamPro-Medium", sans-serif;
+    font-size: 24px;
+    color: #31383D;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.text ul {
+    list-style: none;
+}
+.text ul li {
+    text-align: left;
+    font-family: "GothamPro", sans-serif;
+    font-size: 18px;
+    color: #080808;
+    margin-bottom: 15px;
+}
