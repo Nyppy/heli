@@ -192,7 +192,7 @@ class Main extends React.Component {
                             </div>
                             <div className="elem-block-3-text">Ваши родственники или врач
                                 получат уведомление о том, что
-                                с вашим здоровьем что-то не так.
+                                с вашим здоровьем что&nbsp;-&nbsp;то&nbsp;не&nbsp;так.
                             </div>
                         </div>
                     </div>
