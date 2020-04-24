@@ -8,6 +8,23 @@ import './modal.css'
     isOpen:false
  }
 
+
+
+     // componentDidMount() {
+     //      document.addEventListener('click', this.handleOutsideClick, false)
+     // }
+     // componentWillUnmount() {
+     //     document.removeEventListener('click', this.handleOutsideClick, false)
+     // }
+     // handleOutsideClick= (e)=> {
+     //     if (this.modal && !this.modal.contains(e.target)) {
+     //             this.setState({isOpen:false})
+     //             document.removeEventListener('click', this.handleOutsideClick, false)
+     //     }
+     // }
+
+
+
     render() {
 
     return(
@@ -18,8 +35,9 @@ import './modal.css'
                 </div>
             </button>
 
-            {this.state.isOpen &&(<div className={"modal"}>
-                <div className={"modal-body"}>
+            {this.state.isOpen &&(
+                <div className={"modal"} >
+                <div className={"modal-body"} /*ref={node => (this.modal = node)}*/ >
                     <h1>Политика в отношении обработки персональных данных</h1>
                     <ul>
                         <li>1. Общие положения</li>

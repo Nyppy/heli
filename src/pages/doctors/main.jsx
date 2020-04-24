@@ -56,7 +56,7 @@ class Doctors extends Component {
                 type: type
             }
         }
-        console.log('2',data)
+
     }
 
     render () {
