@@ -38,6 +38,11 @@ import './modal.css'
             {this.state.isOpen &&(
                 <div className={"modal"} >
                 <div className={"modal-body"} /*ref={node => (this.modal = node)}*/ >
+                    <div className={'modal-body__btn'}>
+                        <div className={'btn'}>
+                            <button  className={"btn-close"} onClick={()=>this.setState({ isOpen: false })} ></button>
+                        </div>
+                    </div>
                     <h1>Политика в отношении обработки персональных данных</h1>
                     <ul>
                         <li>1. Общие положения</li>
@@ -100,7 +105,7 @@ import './modal.css'
                             <li> Актуальная версия Политики в свободном доступе расположена в сети Интернет по адресу https://heli.band/policy.</li>
 
                     </ul>
-                    <div className={'btn'}><button  className={"btn-close"} onClick={()=>this.setState({ isOpen: false })} ></button></div>
+
                 </div>
             </div>)}
 

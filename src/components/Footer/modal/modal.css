@@ -101,13 +101,13 @@
 }
 
 .modal-body {
-    padding: 2rem;
-    width: 1200px;
+    padding: 2rem 5rem;
+    max-width: 1200px;
+    width: 100%;
     border-radius: 5px;
     background-color: #fff;
     height: 88vh;
     overflow: auto;
-    position: relative;
 }
 .modal-body h1{
     font-family: "GothamPro-Medium", sans-serif;
@@ -126,7 +126,15 @@
     color: #080808;
     margin-bottom: 15px;
 }
-
+.modal-body__btn {
+    position: relative;
+}
+.btn {
+    position: fixed;
+    top:10%;
+    right: 21%;
+    z-index: 999;
+}
 .btn-close {
     width: 50px;
     height: 50px;
@@ -136,30 +144,33 @@
     background-color: #FFFFFF;
     text-decoration: none;
     cursor: pointer;
-    top: -1%;
+    top: 1%;
     right: 4%;
 
 }
 
 .btn-close:before {
     content: '';
-    width: 40px;
+    width: 50px;
     height: 3px;
     background-color: #080808;
     position: absolute;
     transform-origin: left;
     transform: rotate(-45deg);
-    bottom: -13%;
+    bottom: 13%;
+    right: -19%;
 
 }
 .btn-close:after {
     content: '';
-    width: 40px;
+    width: 50px;
     height: 3px;
     background-color: #080808;
     position: absolute;
     transform-origin: left;
     transform: rotate(45deg);
+    bottom: 80%;
+    right: -19%;
 }
 
 
