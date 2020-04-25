@@ -1,10 +1,10 @@
 import React from 'react';
 import s from './HeliBand.module.css'
 
-import runing1 from "../../assets/img/runing1.png";
-import sleeping1 from "../../assets/img/sleeping1.png";
-import hill1 from "../../assets/img/hill1.png";
-import working1 from "../../assets/img/working1.png";
+import runing2 from "../../assets/img/runing2.png";
+import sleeping2 from "../../assets/img/sleeping2.png";
+import hill2 from "../../assets/img/hill2.png";
+import working2 from "../../assets/img/working2.png";
 import logo1 from "../../assets/img/logo1.png";
 
 const HeliBand = () => {
@@ -22,19 +22,19 @@ const HeliBand = () => {
             </div>
             <div className={s.run}>
                 <span className={`${s.list_item} ${s.list_item_run}`}><span className={s.row}>&#8594;</span> На пробежке</span>
-                <img src={runing1} className={s.image} alt=""/>
+                <img src={runing2} className={s.image} alt=""/>
             </div>
             <div className={s.sleep}>
                 <span className={`${s.list_item} ${s.list_item_sleep}`}><span className={s.row}>&#8594;</span> Когда спите</span>
-                <img src={sleeping1} className={s.image} alt=""/>
+                <img src={sleeping2} className={s.image} alt=""/>
             </div>
             <div className={s.hill}>
                 <span className={`${s.list_item} ${s.list_item_hill}`}><span className={s.row}>&#8594;</span> Когда вы болеете</span>
-                <img src={hill1} className={s.image} alt=""/>
+                <img src={hill2} className={s.image} alt=""/>
             </div>
             <div className={s.work}>
                 <span className={`${s.list_item} ${s.list_item_work}`}><span className={s.row}>&#8594;</span> Когда вы работаете</span>
-                <img src={working1} className={s.image} alt=""/>
+                <img src={working2} className={s.image} alt=""/>
             </div>
             <div className={s.logo}>
                 <img className={s.imageLogo} src={logo1} alt=""/>
