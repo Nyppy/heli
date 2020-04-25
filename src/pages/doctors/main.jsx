@@ -1,7 +1,7 @@
 import React,{Component} from "react"
 import Header from '../../components/Header/Header'
 import '../../pages/doctors/main.css'
-
+import Modal from '../../components/Footer/modal/modal'
 
 import doctor from  '../../assets/img/doctors_main.png'
 import img1 from '../../assets/img/3299743.png'
@@ -12,6 +12,8 @@ import digital from  '../../assets/img/digital.png'
 import admin from '../../assets/img/admin.png'
 import edinorog from '../../assets/img/edinorog.png'
 import Footer from "../../components/Footer/Footer";
+import Feedback from "./forms/Feedback";
+import Submitted from "./forms/submitted";
 
 class Doctors extends Component {
 
@@ -21,28 +23,45 @@ class Doctors extends Component {
         email:'',
         specialization:'',
         city:'',
-        information:''
+        information:'',
+        feedback:false
     }
 
-    handleUserChange=(ev)=> {
-            this.setState({
-                [ev.target.name]:ev.target.value,
-                })
-    }
 
-    save = (ev) => {
-        ev.preventDefault()
+
+
+
+    onCloseModal = () => (
         this.setState({
-            ...this.state,
-            username:'',
-            surname: '',
-            email:'',
-            specialization:'',
-            city:'',
-            information:''
+            feedback:false,
+            submitted:false
 
         })
-    }
+    )
+
+
+
+
+
+    // handleUserChange=(ev)=> {
+    //         this.setState({
+    //             [ev.target.name]:ev.target.value,
+    //             })
+    // }
+    //
+    // save = (ev) => {
+    //     ev.preventDefault()
+    //     this.setState({
+    //         ...this.state,
+    //         username:'',
+    //         surname: '',
+    //         email:'',
+    //         specialization:'',
+    //         city:'',
+    //         information:''
+    //
+    //     })
+    // }
 
     sendEmail =(type) => {
         let data = {
@@ -59,7 +78,34 @@ class Doctors extends Component {
 
     }
 
+
+
     render () {
+
+        const {feedback,submitted}= this.state
+
+
+        let modalContent
+        if(feedback) {
+            modalContent = <Feedback />
+        }
+        else if(submitted) {
+            modalContent = <Submitted/>
+        }
+
+
+        if(feedback || submitted) {
+            return (
+                <Modal
+                    modalContent = {modalContent}
+                    onCloseModal ={this.onCloseModal}
+                />
+            )
+        }
+
+
+
+
         return (
             <div className={"wrapper-doctors"}>
                 <Header />
@@ -81,36 +127,12 @@ class Doctors extends Component {
                                         использовать свое время и консультировать
                                         большее количество ваших пациентов.
                                          </div>
-                                        <button type="sabmit"  className={"form__btn"} >Присоединиться</button>
+                                        <button type="sabmit"  className={"form__btn"}  onClick={()=>this.setState({ submitted: true })}>Присоединиться</button>
                                  </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                {/*<div className="content-page-main">*/}
-                    {/*<div className="content-main-block-1">*/}
-                        {/*<div className="main-img-doctor">*/}
-                            {/*<img className="main-img-doctor" src={doctor} alt="doctor"/>*/}
-                        {/*</div>*/}
-
-                        {/*<div className="info-main-block-1">*/}
-                            {/*<p className="info-main-block-1-h-text">Консультируйте ваших*/}
-                                {/*пациентов вместе с <span style={{color: '#FF0017', fontSize: '3.5vh'}}>HELI</span>*/}
-                            {/*</p>*/}
-                            {/*<div>*/}
-                            {/*<span style={{marginTop: '3vh', fontSize: '2.2vh', color: '#565A5E'}}>*/}
-                                {/*Мы создаем экосистему по комплексному уходу*/}
-                                {/*за здоровьем, где вы можете эффективно*/}
-                                {/*использовать свое время и консультировать*/}
-                                {/*большее количество ваших пациентов.*/}
-                            {/*</span>*/}
-                            {/*</div>*/}
-                            {/*<a href={"#"} className="main-content-button">Присоединиться</a>*/}
-                        {/*</div>*/}
-                    {/*</div>*/}
-                {/*</div>*/}
-
-
                 <section className={"content-block-2"}>
                         <div className={"container"}>
                             <div className="content-block-2-inner">
