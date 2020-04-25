@@ -9,7 +9,21 @@ import jscorplogos from "../../assets/img/jscorplogos.png"
 import { FaVk,FaFacebookF,FaInstagram,FaTelegramPlane } from "react-icons/fa";
 
 
-class Main extends Component {
+class Main extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            openPopup: false,
+        };
+    }
+    showPopup = () => {
+        this.setState({openPopup: true})
+    };
+
+    hidePopup = (e) => {
+        if (e.target.id === 'modal')
+            this.setState({openPopup: false})
+    }
     render() {
         return (
             <footer>
@@ -32,11 +46,20 @@ class Main extends Component {
                         </div>
 
                         <div className="footer-elem-2">
-                            <Modal  text={"Политика конфиденциальности"}/>
-                            <span>|</span>
-                            <Modal  text={"Условия использования"}/>
-                            <span>|</span>
-                            <Modal  text={"Условия оферты"}/>
+                            {
+                                this.state.openPopup &&
+                                <div id="modal" className="modal" onClick={this.hidePopup}>
+                                    <div id="modalContent" className="modal__content"/>
+                                    <div><span className="modal__close" id="close">&times;</span></div>
+                                </div>
+                            }
+                            <Link onClick={this.showPopup}>Политика
+                                конфиденциальности
+                            </Link>
+                            <span style={{marginRight: '1vh', marginLeft: '1vh'}}>|</span>
+                            <Link  onClick={this.showPopup} style={{color: '#31383D'}} to="#">Условия использования</Link>
+                            <span style={{marginRight: '1vh', marginLeft: '1vh'}}>|</span>
+                            <Link  onClick={this.showPopup} style={{color: '#31383D'}} to="#">Условия оферты</Link>
                         </div>
                         <div className="footer-elem-3">
                             <div className="footer-elem-3-item1">© {new Date().getFullYear()} HELI technology ltd.</div>

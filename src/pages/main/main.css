@@ -525,6 +525,10 @@ ul {
     filter: grayscale(100%);
 }
 
+input:required {
+    color: red;
+}
+
 .cont-1-4-img-run:hover {
     filter: none;
 }

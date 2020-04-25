@@ -9,10 +9,9 @@ import "./main.css";
 import InputMask from 'react-input-mask';
 
 import Header from "../../components/Header/Header.jsx"
+import Footer from "../../components/Footer/Footer.jsx"
 
 import doctor_main from "../../assets/img/doctor-main.png"
-import app_store from "../../assets/img/app-store.png"
-import app_google from "../../assets/img/app-google.png"
 import logo1 from "../../assets/img/logo1.png"
 import doctor from "../../assets/img/doctor.png"
 import heart from "../../assets/img/heart.png"
@@ -40,9 +39,7 @@ import runing1 from "../../assets/img/runing1.png"
 import working1 from "../../assets/img/working1.png"
 import hill1 from "../../assets/img/hill1.png"
 import sleeping1 from "../../assets/img/sleeping1.png"
-
-import emailjs from 'emailjs-com';
-
+import HeliBand from "../../components/HeliBand/HeliBand";
 
 class Main extends React.Component {
     constructor(props) {
@@ -227,44 +224,7 @@ class Main extends React.Component {
 
                 {/*<input type="button" onClick={this.sendEmail} value="Send" />*/}
 
-                <div className="content-main-block-4">
-                    <div className='content-block-4-text'>
-                        <span style={{fontSize: '82px', color: '#FF0020'}}>HELI BAND</span>
-                        <span style={{color: '#31383D', fontSize: '31px', marginBottom: '2vh'}}>Пользуйтесь где вам удобно</span>
-                        <span style={{color: '#565A5E', fontSize: '21px', lineHeight: '38px'}}>
-                            Наша экосистема это новый взгляд на вашу диагностику здоровья. Удобный умный браслет
-                            даст возможность следить за вашим здоровьем в любом месте и в любое время, а искусственный
-                            интеллект вовремя оповестит об изменениях в организме.
-                        </span>
-                    </div>
-                    <div className="cont-1-4">
-                        <div>
-                            <span
-                                style={{position: 'absolute', margin: '76vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>&#8594; На пробежке</span>
-                            <img src={runing1} className="cont-1-4-img-run" alt=""/>
-                        </div>
-                        <div>
-                            <span
-                                style={{position: 'absolute', margin: '76vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>&#8594; Когда спите</span>
-                            <img src={sleeping1} className="cont-1-4-img-sleep" alt=""/>
-
-                        </div>
-                        <div>
-                            <span
-                                style={{position: 'absolute', margin: '128vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>&#8594; Когда вы болеете</span>
-                            <img src={hill1} className="cont-1-4-img-hill" alt=""/>
-
-                        </div>
-
-                    </div>
-
-                    <span style={{position: 'absolute', margin: '132vh 0 0 10vh', color: '#fff', fontSize: '3vh'}}>&#8594; Когда вы работаете</span>
-                    <img src={working1} className="cont-1-4-img-work" alt=""/>
-
-                    <div>
-                        <img className="blockLogoHeli" src={logo1} alt=""/>
-                    </div>
-                </div>
+                <HeliBand />
 
 
                 <div className="content-main-block-5">
@@ -447,55 +407,7 @@ class Main extends React.Component {
                             </div>
                         </div>
                     </div>
-
-                    <div className="footer">
-                        <div className="footer-elem-1">
-                            <img className="footerLogo" src={logo1} alt=""/>
-
-                            <div style={{display: 'flex', flexDirection: 'row'}}>
-                                <img className="footer-icon" src={vk2} alt=""/>
-                                <img className="footer-icon" style={{margin: '0 1vh 0 1vh'}} src={twitter2} alt=""/>
-                                <img className="footer-icon" src={facebook2} alt=""/>
-                            </div>
-
-                            <div className="footer-block-text"
-                                 style={{display: 'flex', flexDirection: 'column', color: '#31383D'}}>
-                                <span style={{marginBottom: '0.5vh'}}>info@heli.com</span>
-                                <span>8 (900) 000-00-00</span>
-                            </div>
-                        </div>
-
-                        <div className="footer-elem-2">
-                            {
-                                this.state.openPopup &&
-                                <div id="modal" className="modal" onClick={this.hidePopup}>
-                                    <div id="modalContent" className="modal__content"/>
-                                    <div><span className="modal__close" id="close">&times;</span></div>
-                                </div>
-                            }
-                            <button onClick={this.showPopup}>Политика
-                                конфиденциальности
-                            </button>
-                            <span style={{marginRight: '1vh', marginLeft: '1vh'}}>|</span>
-                            <Link style={{color: '#31383D'}} to="#">Условия использования</Link>
-                            <span style={{marginRight: '1vh', marginLeft: '1vh'}}>|</span>
-                            <Link style={{color: '#31383D'}} to="#">Условия оферты</Link>
-                        </div>
-
-                        <div className="footer-elem-3">
-                            <span
-                                className="footer-elem-3-item">© {new Date().getFullYear()} HELI technology ltd.</span>
-                            <span className="footer-elem-3-item" style={{color: '#31383D', width: '40vw'}}>
-                                Информация, представленная на сайте, не может быть использована для 
-                                постановки диагноза, назначения лечения и не заменяет прием врача.
-                            </span>
-
-                            <div style={{display: 'flex', flexDirection: 'column', textAlign: 'left'}}>
-                                <span style={{marginBottom: '11vh'}}>При поддержке:</span>
-                                <a className="footer-elem-3-logo"><img className="footer-logojs" src={jscorplogos}/></a>
-                            </div>
-                        </div>
-                    </div>
+                    <Footer />
                 </div>
 
 

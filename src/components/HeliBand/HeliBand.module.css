@@ -1,0 +1,118 @@
+.heliBandWrapper {
+    display: grid;
+    grid-template-areas: 'run head head head' 'run sleep sleep hill' 'work work logo hill';
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 215px 405px 405px;
+}
+
+.head {
+    position: relative;
+    grid-area: head;
+    margin-left: 20px;
+}
+
+.run {
+    position: relative;
+    grid-area: run
+}
+
+.run:hover .row {
+    display: inline-block;
+}
+
+.sleep {
+    position: relative;
+    grid-area: sleep;
+}
+
+.sleep:hover .row {
+    display: inline-block;
+}
+
+.hill {
+    position: relative;
+    grid-area: hill;
+}
+
+.hill:hover .row {
+    display: inline-block;
+}
+
+.work {
+    position: relative;
+    grid-area: work;
+}
+
+.work:hover .row {
+    display: inline-block;
+}
+
+.logo {
+    grid-area: logo;
+    padding: 150px 24px;
+}
+
+.caption {
+    margin: 0;
+    font-size: 57px;
+    color: #FF0020;
+}
+
+.subCaption {
+    color: #31383D;
+    font-size: 31px;
+    margin: 0;
+}
+
+.description {
+    color: #565A5E;
+    font-size: 21px;
+    line-height: 29px;
+}
+
+.list_item {
+    position: absolute;
+    color: #fff;
+    font-size: 3vh;
+    z-index: 12;
+}
+.list_item_run {
+    bottom: 20px;
+    left: 50px;
+}
+
+.list_item_sleep {
+    bottom: 20px;
+    left: 50px;
+}
+
+.list_item_hill {
+    bottom: 20px;
+    left: 50px;
+}
+
+.list_item_work {
+    bottom: 20px;
+    left: 50px;
+}
+
+.image {
+    filter: grayscale(100%);
+    height: 100%;
+    width: 100%;
+}
+
+.imageLogo {
+    height: 100%;
+    width: 100%;
+}
+
+.image:hover {
+    filter: none;
+}
+.row {
+    display: none;
+}
+
+
+

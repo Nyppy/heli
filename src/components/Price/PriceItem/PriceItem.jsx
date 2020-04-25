@@ -1,4 +1,5 @@
 import React from "react";
+import icon from '../../../assets/img/icon.png'
 
 const advantages = [
     'Снятия показателей здоровья',
@@ -17,13 +18,11 @@ const PriceItem = (props) => {
         customStyle,
         blockBox,
         blockPriceImg,
-        advantages,
-        footnote,
     } = props;
 
 
     return <div className={blockBox} style={customStyle}>
-        <img src="../../../assets/img/icon.png"  className={blockPriceImg} />
+        <img src={icon} className={blockPriceImg} />
         <p className="blockHeader">{head}</p>
         <p className="blockPriceR">₽<span className="blockPrice">{price}</span></p>
         <span className="blockTermsInfo">{term}</span>
