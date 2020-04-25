@@ -298,7 +298,7 @@ class Main extends React.Component {
                     <span ref={this.message_send}
                           style={{margin: '10px 0 10px 0', display: 'none'}}>Заявка отправлена!</span>
                     <form onSubmit={this.save} className="form-elem-7">
-                        <div>
+                        <div style={{marginLeft: '20px'}}>
                         <input className='input-form-7 input-form-7-user' defaultValue={this.state.name} required
                                onChange={this.onChangeName} placeholder="Имя *" type="text"/>
                         <InputMask className='input-form-7 input-form-7-2 input-form-7-phone' mask="8(999)999-99-99" ref={this.phone}

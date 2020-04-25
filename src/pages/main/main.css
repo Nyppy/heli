@@ -232,7 +232,7 @@ ul {
     background-size: cover;
     background-image: url('../../assets/img/braslet.png');
     border-radius: 10px;
-    padding: 24px;
+    padding: 20px;
 }
 
 .blockPriceImg {
@@ -313,7 +313,7 @@ ul {
 }
 
 .blockPriceSecondary {
-    padding: 35px;
+    padding: 56px;
     box-sizing: border-box;
     width: 398px;
     height: 460px;
@@ -338,7 +338,7 @@ ul {
     background-color: #3E474C;
     width: 223px;
     height: 46px;
-    margin: 10px auto;
+    margin: 0 auto;
     /*padding: 1vh 3.5vh 1vh 3.5vh;*/
     border-radius: 20px;
     color: #fff;
@@ -845,6 +845,7 @@ input:required {
     width: 753px;
     height: 69px;
     text-align: left;
+    margin-bottom: 20px;
 }
 
 .blockConditions {
