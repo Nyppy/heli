@@ -10,6 +10,7 @@ import InputMask from 'react-input-mask';
 
 import Header from "../../components/Header/Header.jsx"
 import Footer from "../../components/Footer/Footer.jsx"
+import Slider from "../../components/Slider/Slider";
 
 import doctor_main from "../../assets/img/doctor-main.png"
 import logo1 from "../../assets/img/logo1.png"
@@ -225,7 +226,7 @@ class Main extends React.Component {
                 {/*<input type="button" onClick={this.sendEmail} value="Send" />*/}
 
                 <HeliBand />
-
+                <Slider/>
 
                 <div className="content-main-block-5">
                     <div className='main-elem-block-5-1'>

@@ -1058,8 +1058,8 @@ input:required {
 
     .block-price-1, .block-price-2, .block-price-3 {
         position: relative;
-        width: 75vw;
-        height: 62vh;
+        width: 88vw;
+        height: 66vh;
         justify-content: space-between;
         margin-bottom: 16px;
     }
@@ -1120,7 +1120,7 @@ input:required {
 
     .elem-block-3 {
         width: 88vw;
-        height: 88px;
+        height: 121px;
         margin-top: 20px;
     }
 
