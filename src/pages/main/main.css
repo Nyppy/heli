@@ -702,6 +702,72 @@ input:required {
     align-items: center;
     justify-content: center;
 }
+.content-block-5 {
+    margin: 200px 0;
+}
+.container-block-5 {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.content-block-5__inner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.content-block-5__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-block-5__title {
+    font-family: "GothamPro-Bold",sans-serif;
+    font-size: 47px;
+    line-height: 5.2px;
+    letter-spacing: -1px;
+    margin-bottom: 78px;
+    color:#31383D;
+}
+
+.content-block-5__item {
+    position: relative;
+    margin-right: 56px;
+    transition: .3s all linear;
+
+
+}
+
+.content-block-5__item:hover {
+    transform: translatey(10px);
+}
+.content-block-5__item:last-child {
+    margin-right: 0;
+    margin-left: 50px;
+}
+.content-block-5__edinorog {
+    width: 235px;
+    height: 50px;
+}
+
+.content-block-5__img {
+    position: absolute;
+    z-index: 5;
+    top: -15%;
+    left: -42%;
+}
+.content-block-5__text {
+    width: 100%;
+    max-width: 205px;
+    font-size: 13px;
+    font-family: "GothamPro-Bold", sans-serif;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-align: left;
+    z-index: 5;
+    text-decoration: none;
+    color: #080808;
+
+}
 
 .block6-h-text {
     text-align: left;

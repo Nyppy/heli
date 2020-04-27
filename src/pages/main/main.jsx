@@ -25,7 +25,7 @@ import cardiogram from "../../assets/img/cardiogram.png"
 
 import pc from "../../assets/img/pc.png"
 import guy from "../../assets/img/guy.png"
-import facebook2 from "../../assets/img/facebook2.png"
+import habr from "../../assets/img/habr.png"
 import twitter2 from "../../assets/img/twitter2.png"
 import vk2 from "../../assets/img/vk2.png"
 import jscorplogos from "../../assets/img/jscorplogos.png"
@@ -36,10 +36,10 @@ import rev3 from "../../assets/img/rev3.png"
 import rev4 from "../../assets/img/rev4.png"
 import rev5 from "../../assets/img/rev5.png"
 import rev6 from "../../assets/img/rev6.png"
-import runing1 from "../../assets/img/runing1.png"
-import working1 from "../../assets/img/working1.png"
-import hill1 from "../../assets/img/hill1.png"
-import sleeping1 from "../../assets/img/sleeping1.png"
+import regnum from "../../assets/img/regnum.png"
+import edinorog from "../../assets/img/edinorog.png"
+import digital from "../../assets/img/digital.png"
+import admin from "../../assets/img/admin.png"
 import HeliBand from "../../components/HeliBand/HeliBand";
 
 class Main extends React.Component {
@@ -404,6 +404,27 @@ class Main extends React.Component {
                                     <p className="imageBoxText">
                                         C HELI мой день эффективнее. Я получаю рекомендации, как улучшить свое здоровье.
                                     </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={"content-block-5"}>
+                        <div className={"container-block-5"}>
+                            <div className={"content-block-5__inner"}>
+                                <div className={"content-block-5__title"}>
+                                    О нас в сети
+                                </div>
+                                <div className={"content-block-5__wrapper"}>
+                                    <a className={"content-block-5__item"} href="https://habr.com/ru/post/495362/" target={"_blank"}><img src={habr} alt="habr"/></a>
+                                    <a className={"content-block-5__item"} href="https://regnum.ru/news/society/2893845.html" target={"_blank"}><img src={regnum} alt="regnum"/></a>
+                                    <a className={"content-block-5__item"} href="https://leadersofdigital.ru/db/novosti/9485e7b24b1170e1" target={"_blank"}><img src={digital} alt="digital"/></a>
+                                    <a className={"content-block-5__item"} href="https://t.me/Theedinorogblog/1118" target={"_blank"}><img className={"content-block-5__edinorog"} src={edinorog} alt="edinorog"/></a>
+                                    <a className={"content-block-5__item"} href="https://adm.rkursk.ru/index.php?id=13&mat_id=105426&query=HELI" target={"_blank"}>
+                                        <img className={"content-block-5__img"} src={admin} alt="admin"/>
+                                        <div className={"content-block-5__text"}>
+                                            Админстрация Курской области
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
