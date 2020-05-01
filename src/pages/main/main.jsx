@@ -246,19 +246,18 @@ class Main extends React.Component {
                                 проще, чем когда-либо.
                             </p>
 
+                            <button className="block5Button">Присоединиться
+                            </button>
+
                         </div>
 
                         <img src={pc} alt=""/>
-                    </div>
-                    <div className="">
-                        <button className="block5Button">Присоединиться
-                        </button>
                     </div>
 
                     <div className='main-elem-block-5-2'>
                         <img src={guy} alt=""/>
 
-                        <div className="block-5-1">
+                        <div className="block-5-1-2">
                             <div className="block5-1-h">
                                 <p className="content-main-block-5-h">
                                     Снижаем риск госпитализации <span style={{color: '#FF0020'}}>COVID-19 </span>
