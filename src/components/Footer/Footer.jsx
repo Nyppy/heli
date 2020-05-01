@@ -20,7 +20,7 @@ class Main extends Component {
     state={
         policy:false,
         conditions:false,
-        offer:false
+        offer:false,
     }
 
 
@@ -32,8 +32,6 @@ class Main extends Component {
             offer:false
         })
     )
-
-
 
 
     render() {
@@ -54,28 +52,29 @@ class Main extends Component {
             modalContent = <OfferComponent/>
         }
 
-        if(policy || conditions || offer) {
-            return (
-                <Modal
-                    modalContent = {modalContent}
-                    onCloseModal ={this.onCloseModal}
-                />
-            )
+
+        let modalWindow
+        if (policy || conditions || offer) {
+            modalWindow =  <Modal modalContent = {modalContent} onCloseModal ={this.onCloseModal}/>
+
         }
 
 
+
         return (
-            <footer>
+            <React.Fragment>
+                {modalWindow}
+                <footer>
                 <div className={"container-footer"}>
                     <div className="footer-wrapper">
                         <div className="footer-elem-1">
                             <img className="footerLogo" src={logo} alt=""/>
 
                             <div className={"footer-elem-1__items"}>
-                                <a className={"footer-elem-1__item"} href="#"><FaVk className={"footer-elem-1__icon"}/></a>
-                                <a className={"footer-elem-1__item"} href="#"><FaInstagram className={"footer-elem-1__icon"}/></a>
-                                <a className={"footer-elem-1__item"} href="#"><FaFacebookF className={"footer-elem-1__icon"}/></a>
-                                <a className={"footer-elem-1__item"} href="#"><FaTelegramPlane className={"footer-elem-1__icon"}/></a>
+                                <a className={"footer-elem-1__item"} href="#" rel="noreferrer noopener"><FaVk className={"footer-elem-1__icon"}/></a>
+                                <a className={"footer-elem-1__item"} href="#" rel="noreferrer noopener"><FaInstagram className={"footer-elem-1__icon"}/></a>
+                                <a className={"footer-elem-1__item"} href="#" rel="noreferrer noopener"><FaFacebookF className={"footer-elem-1__icon"}/></a>
+                                <a className={"footer-elem-1__item"} href="#" rel="noreferrer noopener"><FaTelegramPlane className={"footer-elem-1__icon"}/></a>
                             </div>
 
                             <div className={"footer-elem-1__info"}>
@@ -85,11 +84,7 @@ class Main extends Component {
                         </div>
 
                         <div className="footer-elem-2">
-                                {/*<Modal  text={"Политика конфиденциальности"}/>*/}
-                            {/*<span>|</span>*/}
-                                {/*<Modal  text={"Условия использования"}/>*/}
-                            {/*<span>|</span>*/}
-                                {/*<Modal  text={"Условия оферты"}/>*/}
+
                             <button className={"footer-elem-2__item"} onClick={()=>this.setState({ policy: true })} >
                                 <div className={"footer-elem-2__items"}>
                                     Политика конфиденциальности
@@ -117,16 +112,15 @@ class Main extends Component {
                                 <div className={"footer-jscorp"}>
                                     <div className={"jscorp-bgr"}>
                                     <div className={"jscorp"}>
-                                         <a href="https://jscorp.ru/" className="footer-elem-3-logo" target={'_blank'}><img className="footer-logojs" src={jscorplogos}/></a>
+                                         <a href="https://jscorp.ru/" className="footer-elem-3-logo" target={'_blank'} rel="noreferrer noopener"><img className="footer-logojs" src={jscorplogos}/></a>
                                     </div>
                                     </div>
                                 </div>
                         </div>
                     </div>
                 </div>
-            </footer>
-
-
+                </footer>
+            </React.Fragment>
         )
     }
 }

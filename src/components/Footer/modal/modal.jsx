@@ -40,15 +40,12 @@ import './modal.css'
 
      render() {
 
-
-
          return (
              <div className={"modal"}>
                  <div
                      className="modal-body"
                      ref={node => (this.modal = node)}
                  >
-
                      <button
                          type="button"
                          className="btn-close"

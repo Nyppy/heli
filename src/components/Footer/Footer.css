@@ -257,7 +257,9 @@ footer {
 
 
 /*modal*/
-
+.modal-show {
+    display: none;
+}
 
 
 

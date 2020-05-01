@@ -1,8 +1,7 @@
 import React,{Component} from "react"
 import Header from '../../components/Header/Header'
 import '../../pages/doctors/main.css'
-import Modal from '../../components/Footer/modal/modal'
-
+import Popup from 'reactjs-popup'
 import doctor from  '../../assets/img/doctors_main.png'
 import img1 from '../../assets/img/3299743.png'
 import img2 from '../../assets/img/614.png'
@@ -13,7 +12,7 @@ import admin from '../../assets/img/admin.png'
 import edinorog from '../../assets/img/edinorog.png'
 import Footer from "../../components/Footer/Footer";
 import Feedback from "./forms/Feedback";
-import Submitted from "./forms/submitted";
+
 
 class Doctors extends Component {
 
@@ -25,43 +24,35 @@ class Doctors extends Component {
         city:'',
         information:'',
         feedback:false
+
     }
 
+    openModal =()=> {
+        this.setState({ feedback: true });
+    }
 
+    closeModal =()=> {
+        this.setState({ feedback: false });
+    }
 
-
-
-    onCloseModal = () => (
+    handleUserChange=(ev)=> {
         this.setState({
-            feedback:false,
-            submitted:false
-
+            [ev.target.name]:ev.target.value,
         })
-    )
+    }
 
-
-
-
-
-    // handleUserChange=(ev)=> {
-    //         this.setState({
-    //             [ev.target.name]:ev.target.value,
-    //             })
-    // }
-    //
-    // save = (ev) => {
-    //     ev.preventDefault()
-    //     this.setState({
-    //         ...this.state,
-    //         username:'',
-    //         surname: '',
-    //         email:'',
-    //         specialization:'',
-    //         city:'',
-    //         information:''
-    //
-    //     })
-    // }
+    save = (ev) => {
+        ev.preventDefault()
+        this.setState({
+            ...this.state,
+            username:'',
+            surname: '',
+            email:'',
+            specialization:'',
+            city:'',
+            information:''
+        })
+    }
 
     sendEmail =(type) => {
         let data = {
@@ -75,40 +66,28 @@ class Doctors extends Component {
                 type: type
             }
         }
-
     }
-
-
 
     render () {
 
-        const {feedback,submitted}= this.state
-
-
+        const {feedback}= this.state
         let modalContent
         if(feedback) {
-            modalContent = <Feedback />
+            modalContent = <Feedback  onClose ={this.closeModal} />
         }
-        else if(submitted) {
-            modalContent = <Submitted/>
-        }
-
-
-        if(feedback || submitted) {
-            return (
-                <Modal
-                    modalContent = {modalContent}
-                    onCloseModal ={this.onCloseModal}
-                />
-            )
-        }
-
-
-
-
         return (
             <div className={"wrapper-doctors"}>
                 <Header />
+                <Popup
+                    open={feedback}
+                    closeOnDocumentClick
+                    onClose={this.closeModal}
+                >
+                    <div className="modal-main">
+                        <button className="close-btn" onClick={this.closeModal}></button>
+                        { modalContent}
+                    </div>
+                </Popup>
                 <div className={'content-block-1 content-block-1__option'}>
                     <div className={'container'}>
                         <div className={'content-block-1__inner'}>
@@ -127,7 +106,7 @@ class Doctors extends Component {
                                         использовать свое время и консультировать
                                         большее количество ваших пациентов.
                                          </div>
-                                        <button type="sabmit"  className={"form__btn"}  onClick={()=>this.setState({ submitted: true })}>Присоединиться</button>
+                                        <button type="submit"  className={"form__btn"}  onClick={()=>this.openModal()}>Присоединиться</button>
                                  </div>
                             </div>
                         </div>
@@ -290,11 +269,11 @@ class Doctors extends Component {
                                  О нас в сети
                              </div>
                             <div className={"content-block-5__wrapper"}>
-                                       <a className={"content-block-5__item"} href="https://habr.com/ru/post/495362/" target={"_blank"}><img src={habr} alt="habr"/></a>
-                                       <a className={"content-block-5__item"} href="https://regnum.ru/news/society/2893845.html" target={"_blank"}><img src={regnum} alt="regnum"/></a>
-                                       <a className={"content-block-5__item"} href="https://leadersofdigital.ru/db/novosti/9485e7b24b1170e1" target={"_blank"}><img src={digital} alt="digital"/></a>
-                                       <a className={"content-block-5__item"} href="https://t.me/Theedinorogblog/1118" target={"_blank"}><img className={"content-block-5__edinorog"} src={edinorog} alt="edinorog"/></a>
-                                       <a className={"content-block-5__item"} href="https://adm.rkursk.ru/index.php?id=13&mat_id=105426&query=HELI" target={"_blank"}>
+                                       <a className={"content-block-5__item"} href="https://habr.com/ru/post/495362/" target={"_blank"} rel="noreferrer noopener"><img src={habr} alt="habr"/></a>
+                                       <a className={"content-block-5__item"} href="https://regnum.ru/news/society/2893845.html" target={"_blank"} rel="noreferrer noopener"><img src={regnum} alt="regnum"/></a>
+                                       <a className={"content-block-5__item"} href="https://leadersofdigital.ru/db/novosti/9485e7b24b1170e1" target={"_blank"} rel="noreferrer noopener"><img src={digital} alt="digital"/></a>
+                                       <a className={"content-block-5__item"} href="https://t.me/Theedinorogblog/1118" target={"_blank"} rel="noreferrer noopener"><img className={"content-block-5__edinorog"} src={edinorog} alt="edinorog"/></a>
+                                       <a className={"content-block-5__item"} href="https://adm.rkursk.ru/index.php?id=13&mat_id=105426&query=HELI" target={"_blank"} rel="noreferrer noopener">
                                            <img className={"content-block-5__img"} src={admin} alt="admin"/>
                                           <div className={"content-block-5__text"}>
                                               Админстрация Курской области
