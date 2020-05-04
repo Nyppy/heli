@@ -35,6 +35,6 @@
 
 @media screen and (max-width: 991px) {
     .carrousel_wrapper {
-        display: block;
+        display: none;
     }
 }

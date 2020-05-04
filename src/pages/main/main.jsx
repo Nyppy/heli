@@ -419,9 +419,11 @@ class Main extends React.Component {
                                     <a className={"content-block-5__item"} href="https://leadersofdigital.ru/db/novosti/9485e7b24b1170e1" target={"_blank"}><img src={digital} alt="digital"/></a>
                                     <a className={"content-block-5__item"} href="https://t.me/Theedinorogblog/1118" target={"_blank"}><img className={"content-block-5__edinorog"} src={edinorog} alt="edinorog"/></a>
                                     <a className={"content-block-5__item"} href="https://adm.rkursk.ru/index.php?id=13&mat_id=105426&query=HELI" target={"_blank"}>
+                                        <div className={"content-block-5__item"}>
                                         <img className={"content-block-5__img"} src={admin} alt="admin"/>
                                         <div className={"content-block-5__text"}>
                                             Админстрация Курской области
+                                        </div>
                                         </div>
                                     </a>
                                 </div>

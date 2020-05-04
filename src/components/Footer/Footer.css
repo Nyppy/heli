@@ -2,12 +2,14 @@
 * {
     box-sizing: border-box;
 }
+
 a {
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
-div,p,footer,span,Link {
+
+div, p, footer, span, Link {
     margin: 0;
     padding: 0;
 }
@@ -20,25 +22,19 @@ div,p,footer,span,Link {
 }
 
 footer {
-
     border-top: 1px solid #E8E8E8;
-    padding-top: 41px;
     padding-bottom: 47px;
+    padding-top: 20px;
     padding-left: 15px;
     padding-right: 15px;
-
-
-
 }
 
-
-
-
-
-
 .footer-wrapper {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-areas: "l i o"
+    "policy using offer"
+    "copy info jscorp";
+    grid-template-rows: 7vw 3vw 2vw;
 }
 
 .footerLogo {
@@ -48,31 +44,44 @@ footer {
 }
 
 .footer-elem-1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-areas: "l i o";
     margin-bottom: 61px;
 }
+
 .footer-elem-1__info {
+    grid-area: o;
     max-width: 161px;
     width: 100%;
     text-align: right;
 
 
 }
+
 .footer-elem-1__info p {
 
 }
 
+.policy {
+    grid-area: policy;
+}
+
+.using {
+    grid-area: using;
+}
+
+.offer {
+    grid-area: offer;
+}
+
 .footer-elem-2 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    display: grid;
     border-top: 1px solid #E8E8E8;
     padding-top: 17px;
     margin-bottom: 31px;
 
 }
+
 .footer-elem-2__item:last-child {
     margin-right: 0;
 }
@@ -83,6 +92,7 @@ footer {
     background-color: #FFFFFF;
     cursor: pointer;
 }
+
 .footer-elem-2__items {
     position: relative;
     padding: 10px 5px;
@@ -92,7 +102,7 @@ footer {
 .footer-elem-2__items::before {
     content: "";
     position: absolute;
-    top:0;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
@@ -102,10 +112,11 @@ footer {
     transition: 0.3s linear;
     transform: scaleX(0);
 }
+
 .footer-elem-2__items::after {
     content: "";
     position: absolute;
-    top:0;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
@@ -129,14 +140,18 @@ footer {
     font-family: "GothamPro-Medium", sans-serif;
     line-height: 1.9px;
 }
+
 .footer-elem-2__item:hover {
     color: #FF0020;
 }
+
 .footer-elem-2__item:focus {
     color: #DB0520;
 }
+
 .footer-elem-2 span {
-    padding-left:5px ;
+    grid-area: line;
+    padding-left: 5px;
     margin-right: 18px;
     text-decoration: none;
     color: #31383D;
@@ -144,13 +159,13 @@ footer {
     font-family: "GothamPro-Medium", sans-serif;
 
 }
+
 .footer-elem-2 span:last-child {
     margin-right: 0;
 }
+
 .footer-elem-3 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
 }
 
 .footer-jscorp {
@@ -158,6 +173,7 @@ footer {
     justify-content: flex-end;
     position: relative;
 }
+
 .jscorp-bgr {
     background: #DD1733;
     width: 57px;
@@ -165,11 +181,12 @@ footer {
     outline: none;
     position: absolute;
     right: 0;
-    top:130%;
+    top: 130%;
     bottom: 0;
     z-index: 9;
 
 }
+
 .footer-elem-3-logo {
     background: #DD1733;
     outline: none;
@@ -190,6 +207,7 @@ footer {
     font-size: 12px;
     margin-right: 80px;
 }
+
 .footer-elem-3-logo {
     padding: 2px;
 }
@@ -205,13 +223,13 @@ footer {
 }
 
 .footerLogo {
+    grid-area: l;
     width: 6.5vw;
     height: 6vh;
 }
 
 .footer-elem-1 {
-    display: flex;
-    flex-direction: row;
+    display: grid;
     font-size: 16px;
     justify-content: space-between;
     width: 75vw;
@@ -220,8 +238,8 @@ footer {
 }
 
 .footer-elem-2 {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-areas: 'policy line using line offer';
     font-size: 16px;
     width: 75vw;
     margin-top: 1vh;
@@ -229,14 +247,12 @@ footer {
 }
 
 .footer-elem-3 {
-    display: flex;
+    display: grid;
     position: relative;
-    justify-content: space-between;
     font-size: 19px;
     flex-direction: row;
     width: 75vw;
     margin-top: 4vh;
-    /*margin-bottom: 2vh;*/
     align-items: center;
     color: #31383D;
 }
@@ -251,17 +267,24 @@ footer {
 }
 
 .footer-elem-3-item1 {
+    grid-area: copy;
     max-width: 291px;
     width: 100%;
     font-family: "GothamPro", sans-serif;
     font-size: 12px;
 
 }
+
 .footer-elem-3-item2 {
+    grid-area: info;
     max-width: 465px;
     width: 100%;
     font-family: "GothamPro", sans-serif;
     font-size: 12px;
+}
+
+.footer-jscorp {
+    grid-area: jscorp;
 }
 
 
@@ -273,19 +296,23 @@ footer {
 .footerLogo {
 
 }
+
 .footer-elem-1__item {
     margin-right: 10px;
 
 }
+
 .footer-elem-1__item:last-child {
     margin-right: 0;
 }
 
 .footer-elem-1__items {
+    grid-area: i;
     display: flex;
     margin-left: 40px;
 
 }
+
 .footer-elem-1__item {
     display: flex;
     justify-content: center;
@@ -297,10 +324,12 @@ footer {
     background-color: #FF0020;
     transition: 0.2s all linear;
 }
+
 .footer-elem-1__item:hover {
     background-color: #DD1733;
     transform: scale(1.1);
 }
+
 .footer-elem-1__icon {
     width: 21px;
     height: 21px;
@@ -308,6 +337,81 @@ footer {
 
 }
 
+@media screen and (max-width: 991px) {
+    .footer-wrapper {
+        grid-template-areas: "l"
+        "policy"
+        "using"
+        "offer"
+        "o"
+        "info"
+        "i"
+        "copy"
+        "jscorp";
+        grid-template-rows: auto;
+    }
+
+    .footer-elem-1 {
+        display: grid;
+        grid-template-areas: "l" "i" "o";
+    }
+
+    .footer-jscorp {
+        justify-content: center;
+    }
+
+    .jscorp-bgr {
+        right: auto;
+    }
+
+    .footer-elem-1__items {
+        margin: 10px auto;
+    }
+
+    .footerLogo {
+        margin: 20px auto;
+        width: 36vw;
+        height: auto;
+    }
+
+    .footer-elem-1__info {
+        grid-area: o;
+        max-width: 161px;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .policy {
+        margin: 0 auto;
+    }
+
+    .using {
+        margin: 10px auto;
+    }
+
+    .offer {
+        margin: 0 auto 10px;
+    }
+
+    .policy span {
+        display: none
+    }
+
+    .using span {
+        display: none
+    }
+
+    .footer-elem-3-item2 {
+        text-align: center;
+        margin: 10px auto;
+        width: 90%
+    }
+
+    .footer-elem-3-item1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
 
 
 /*modal*/

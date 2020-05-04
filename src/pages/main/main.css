@@ -729,9 +729,8 @@ ul {
 
 .content-block-5__item {
     position: relative;
-    margin-right: 56px;
+    margin: 0 auto 20px 20px;
     transition: .3s all linear;
-    margin-bottom: 20px;
 }
 
 .content-block-5__item:hover {
@@ -739,7 +738,7 @@ ul {
 }
 .content-block-5__item:last-child {
     margin-right: 0;
-    margin-left: 50px;
+    margin-left: 74px;
 }
 .content-block-5__edinorog {
     width: 235px;
@@ -1005,6 +1004,9 @@ ul {
 
 
 @media screen and (max-width: 991px) {
+    .content-page-main {
+        width: 100%;
+    }
 
     header-menu-elem:nth-child(2) {
         margin-right: 4vh !important;
@@ -1017,11 +1019,13 @@ ul {
 
     .main-content-button {
         width: 80vw;
-        margin-top: 10px;
+        margin: 10px auto;
     }
 
     .content-main-block-1 {
+        width: 90vw;
         grid-template-areas: "dt" "d";
+        margin: 63px auto 0;
     }
 
     .info-main-block-1-h-text {
@@ -1191,6 +1195,10 @@ ul {
         width: 88vw;
         height: 121px;
         margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .content-block-5__item {
+        margin: 0 auto 20px;
     }
 
     .content-block-5__wrapper {
@@ -1245,16 +1253,17 @@ ul {
     .main-elem-block-5-1 {
         grid-template-areas: "p" "pt";
         width: 90vw;
+        margin-top: 3vh;
     }
 
     .block-5-1-h {
         font-family: 'GothamPro-Bold', sans-serif;
         width: 90vw;
         font-size: 27px;
-        line-height: 37px;
+        line-height: 27px;
         text-align: center;
         font-weight: 600;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .block-5-1-text {

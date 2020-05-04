@@ -54,20 +54,19 @@
 
 .caption {
     margin: 0;
-    font-size: 57px;
+    font-size: 53px;
     color: #FF0020;
 }
 
 .subCaption {
     color: #31383D;
-    font-size: 31px;
+    font-size: 20px;
     margin: 0;
 }
 
 .description {
     color: #565A5E;
-    font-size: 21px;
-    line-height: 29px;
+    font-size: 17px;
 }
 
 .list_item {
@@ -112,6 +111,17 @@
 }
 .row {
     display: none;
+}
+
+@media screen and (max-width: 991px) {
+    .heliBandWrapper {
+        display: grid;
+        grid-template-areas: 'head'
+        'run' 'sleep'
+        'hill' 'work' 'logo';
+        grid-template-columns: auto;
+        grid-template-rows: 278px 452px 168px 498px 177px 0;
+    }
 }
 
 
