@@ -181,13 +181,13 @@ class Doctors extends Component {
                                         АКТИВНОСТЬ
                                     </div>
                                 </div>
-                                <div className={"content-block-4__item"}>
-                                    <img src={img1} alt=""/>
-                                    <div className={"content-block-4__text"}>
-                                        эмоциональное
-                                        состояние
-                                    </div>
-                                </div>
+                                {/*<div className={"content-block-4__item"}>*/}
+                                    {/*<img src={img1} alt=""/>*/}
+                                    {/*<div className={"content-block-4__text"}>*/}
+                                        {/*эмоциональное*/}
+                                        {/*состояние*/}
+                                    {/*</div>*/}
+                                {/*</div>*/}
                                 <div className={"content-block-4__item"}>
                                     <img src={img1} alt=""/>
                                     <div className={"content-block-4__text"}>
@@ -210,55 +210,54 @@ class Doctors extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className={"content-block-4__elements"}>
-                                    <div className={"content-block-4__element"}>
-                                        <div className={"content-block-4__img"}>
-                                            <div className={"content-block-4__item"}>
-                                                <img src={img1} alt=""/>
-                                                <div className={"content-block-4__text"}>
-                                                    Семейный
-                                                    доктор
-                                                </div>
-                                            </div>
-                                            <div className={"content-block-4__item"}>
-                                                <img src={img1} alt=""/>
-                                                <div className={"content-block-4__text"}>
-                                                    корпоративный
-                                                    доктор
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className={"content-block-4__title  content-block-4__BUSINESS"}>
-                                            Подключиться к HELI FAMILY
-                                            или HELI  BUSINESS
-                                        </div>
-                                        <form  className={"form"} onSubmit={this.save}>
-                                            <input className={"input input-option"} type="text" placeholder={"Доктор"}  value={this.state.username} onChange={this.handleUserChange} name="username"/>
-                                            <input className={"input input-option"} type="text" placeholder={"HALI FAMILY"} value={this.state.surname}   onChange={this.handleUserChange} name={"surname"}/>
-                                            <input className={"input input-option"} type="text" placeholder={"Имя"}  value={this.state.email}   onChange={this.handleUserChange} name={"email"}/>
-                                            <input className={"input input-option"} type="text" placeholder={"Фамилия"} value={this.state.specialization}  onChange={this.handleUserChange} name={"specialization"}/>
-                                            <input className={"input input-option"} type="text" placeholder={"Специальность"} value={this.state.city}    onChange={this.handleUserChange} name={"city"}/>
-                                            <input className={"input input-option"} type="text" placeholder={"Город"} value={this.state.information}   onChange={this.handleUserChange} name={"information"}/>
-                                            <input className={"input input-option"} type="text" placeholder={"Телефон"} value={this.state.information}   onChange={this.handleUserChange} name={"information"}/>
-                                            <div className={"content-checkbox"}>
-                                                <input className={"checkbox"} type="checkbox" id={"checkbox-id1"} name={"checkbox"}/>
-                                                <label className={"label"} htmlFor="checkbox-id1">
-                                                    принимаю условия <span>политики конфиденциальности</span>
-                                                </label>
-                                            </div>
-                                            <button type="sabmit"  className={"form__btn"} onClick={this.sendEmail} >Присоединиться</button>
-                                            {/*<a href={"#"} className="main-content-button content-block-3__button">Присоединиться</a>*/}
-                                        </form>
-                                    </div>
-                                    <div className={"content-block-4__element2"}>
-                                        <img src={img2} alt=""/>
-                                        <div className={"content-block-4__text2"}>
-                                            Наблюдайте сразу за всей семьей
-                                            или целой компанией
-                                        </div>
-                                    </div>
-                            </div>
-
+                            {/*<div className={"content-block-4__elements"}>*/}
+                                    {/*<div className={"content-block-4__element"}>*/}
+                                        {/*<div className={"content-block-4__img"}>*/}
+                                            {/*<div className={"content-block-4__item"}>*/}
+                                                {/*<img src={img1} alt=""/>*/}
+                                                {/*<div className={"content-block-4__text"}>*/}
+                                                    {/*Семейный*/}
+                                                    {/*доктор*/}
+                                                {/*</div>*/}
+                                            {/*</div>*/}
+                                            {/*<div className={"content-block-4__item"}>*/}
+                                                {/*<img src={img1} alt=""/>*/}
+                                                {/*<div className={"content-block-4__text"}>*/}
+                                                    {/*корпоративный*/}
+                                                    {/*доктор*/}
+                                                {/*</div>*/}
+                                            {/*</div>*/}
+                                        {/*</div>*/}
+                                        {/*<div className={"content-block-4__title  content-block-4__BUSINESS"}>*/}
+                                            {/*Подключиться к HELI FAMILY*/}
+                                            {/*или HELI  BUSINESS*/}
+                                        {/*</div>*/}
+                                        {/*<form  className={"form"} onSubmit={this.save}>*/}
+                                            {/*<input className={"input input-option"} type="text" placeholder={"Доктор"}  value={this.state.username} onChange={this.handleUserChange} name="username"/>*/}
+                                            {/*<input className={"input input-option"} type="text" placeholder={"HALI FAMILY"} value={this.state.surname}   onChange={this.handleUserChange} name={"surname"}/>*/}
+                                            {/*<input className={"input input-option"} type="text" placeholder={"Имя"}  value={this.state.email}   onChange={this.handleUserChange} name={"email"}/>*/}
+                                            {/*<input className={"input input-option"} type="text" placeholder={"Фамилия"} value={this.state.specialization}  onChange={this.handleUserChange} name={"specialization"}/>*/}
+                                            {/*<input className={"input input-option"} type="text" placeholder={"Специальность"} value={this.state.city}    onChange={this.handleUserChange} name={"city"}/>*/}
+                                            {/*<input className={"input input-option"} type="text" placeholder={"Город"} value={this.state.information}   onChange={this.handleUserChange} name={"information"}/>*/}
+                                            {/*<input className={"input input-option"} type="text" placeholder={"Телефон"} value={this.state.information}   onChange={this.handleUserChange} name={"information"}/>*/}
+                                            {/*<div className={"content-checkbox"}>*/}
+                                                {/*<input className={"checkbox"} type="checkbox" id={"checkbox-id1"} name={"checkbox"}/>*/}
+                                                {/*<label className={"label"} htmlFor="checkbox-id1">*/}
+                                                    {/*принимаю условия <span>политики конфиденциальности</span>*/}
+                                                {/*</label>*/}
+                                            {/*</div>*/}
+                                            {/*<button type="sabmit"  className={"form__btn"} onClick={this.sendEmail} >Присоединиться</button>*/}
+                                            {/*/!*<a href={"#"} className="main-content-button content-block-3__button">Присоединиться</a>*!/*/}
+                                        {/*</form>*/}
+                                    {/*</div>*/}
+                                    {/*<div className={"content-block-4__element2"}>*/}
+                                        {/*<img src={img2} alt=""/>*/}
+                                        {/*<div className={"content-block-4__text2"}>*/}
+                                            {/*Наблюдайте сразу за всей семьей*/}
+                                            {/*или целой компанией*/}
+                                        {/*</div>*/}
+                                    {/*</div>*/}
+                            {/*</div>*/}
                         </div>
                     </div>
                 </div>

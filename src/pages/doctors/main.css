@@ -63,7 +63,7 @@ img {
 
 /*block-1*/
 .content-block-1 {
-    height: 88vh;
+
 }
 .content-block-1__option {
     padding: 0 30px 0 30px;
@@ -73,8 +73,6 @@ img {
     justify-content: center;
     align-items: center;
     margin-right: 130px;
-    height: 100%;
-    max-height: 1020px;
 }
 .content-block-1__inner {
     height: auto;
@@ -89,6 +87,7 @@ img {
     max-width: 746px;
     width: 100%;
     margin-right: 100px;
+
 
 
 }
@@ -692,9 +691,19 @@ img {
         font-size: 16px;
         margin-bottom: 43px;
     }
+    .content-block-3__step1 {
+        margin-bottom: 10px;
+    }
+    .form {
+        margin-bottom: 10px;
+    }
+    .content-checkbox {
+        margin-bottom: 20px;
+    }
 
 }
 @media (max-width: 1125px) {
+    .content-block-1__wrapper {}
     .content-block-1__title {
         max-width: 420px;
         font-size: 22px;
@@ -717,6 +726,7 @@ img {
         margin-right: 0;
 
     }
+
 }
 
 @media (max-width: 768px) {

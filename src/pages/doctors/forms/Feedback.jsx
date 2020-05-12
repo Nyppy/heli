@@ -27,7 +27,7 @@ export default class Feedback extends Component {
             email:'',
             city:''
         })
-        console.log('__1', this.state)
+
     }
     sendEmail =(type) => {
         let data = {
