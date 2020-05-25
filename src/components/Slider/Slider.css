@@ -1,0 +1,40 @@
+/*.event_name {*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    width: 400px;*/
+/*    height: 160px;*/
+/*    -webkit-transform: translate(-50%, -50%);*/
+/*    transform: translate(-50%, -50%);*/
+/*    border: 2px solid white;*/
+/*}*/
+
+.event_name .wrapper {
+    display: none;
+    border: 2px solid white;
+    height: 121px;
+    margin: 6px;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    padding: 21px 70px 0px 70px;
+    text-transform: uppercase;
+}
+.carrousel_wrapper {
+    display: none;
+    height:700px;
+    overflow: hidden;
+}
+
+.carrousel_image {
+    height:700px;
+    width: 700px;
+    background-size: cover !important;
+}
+
+@media screen and (max-width: 991px) {
+    .carrousel_wrapper {
+        display: none;
+    }
+}

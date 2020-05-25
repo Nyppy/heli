@@ -29,7 +29,7 @@ class Main extends React.Component {
             <footer>
                 <div className={"container-footer"}>
                     <div className="footer-wrapper">
-                        <div className="footer-elem-1">
+                        {/*<div className="footer-elem-1">*/}
                             <img className="footerLogo" src={logo} alt=""/>
 
                             <div className={"footer-elem-1__items"}>
@@ -43,9 +43,9 @@ class Main extends React.Component {
                                 <p>office@jscorp.ru</p>
                                 <span>+79192105102</span>
                             </div>
-                        </div>
+                        {/*</div>*/}
 
-                        <div className="footer-elem-2">
+                        {/*<div className="footer-elem-2">*/}
                             {
                                 this.state.openPopup &&
                                 <div id="modal" className="modal" onClick={this.hidePopup}>
@@ -53,15 +53,19 @@ class Main extends React.Component {
                                     <div><span className="modal__close" id="close">&times;</span></div>
                                 </div>
                             }
+                            <div className="policy">
                             <Link onClick={this.showPopup}>Политика
                                 конфиденциальности
                             </Link>
                             <span style={{marginRight: '1vh', marginLeft: '1vh'}}>|</span>
-                            <Link  onClick={this.showPopup} style={{color: '#31383D'}} to="#">Условия использования</Link>
+                            </div>
+                            <div  className="using">
+                            <Link onClick={this.showPopup} style={{color: '#31383D'}} to="#">Условия использования</Link>
                             <span style={{marginRight: '1vh', marginLeft: '1vh'}}>|</span>
-                            <Link  onClick={this.showPopup} style={{color: '#31383D'}} to="#">Условия оферты</Link>
-                        </div>
-                        <div className="footer-elem-3">
+                            </div>
+                            <Link className="offer" onClick={this.showPopup} style={{color: '#31383D'}} to="#">Условия оферты</Link>
+                        {/*</div>*/}
+                        {/*<div className="footer-elem-3">*/}
                             <div className="footer-elem-3-item1">© {new Date().getFullYear()} HELI technology ltd.</div>
                             <div className="footer-elem-3-item2">
                                 Информация, представленная на сайте, не может быть использована для
@@ -74,7 +78,7 @@ class Main extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        {/*</div>*/}
                     </div>
                 </div>
             </footer>

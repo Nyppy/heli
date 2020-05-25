@@ -1,8 +1,6 @@
 import {Link} from "react-router-dom";
 import React from "react";
 import PriceItem from "./PriceItem/PriceItem";
-import car from "../../assets/img/car.png";
-import back from "../../assets/img/back.png"
 
 const Price = (props) => {
     return (

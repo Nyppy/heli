@@ -10,6 +10,7 @@ import InputMask from 'react-input-mask';
 
 import Header from "../../components/Header/Header.jsx"
 import Footer from "../../components/Footer/Footer.jsx"
+import Slider from "../../components/Slider/Slider";
 
 import doctor_main from "../../assets/img/doctor-main.png"
 import logo1 from "../../assets/img/logo1.png"
@@ -24,7 +25,7 @@ import cardiogram from "../../assets/img/cardiogram.png"
 
 import pc from "../../assets/img/pc.png"
 import guy from "../../assets/img/guy.png"
-import facebook2 from "../../assets/img/facebook2.png"
+import habr from "../../assets/img/habr.png"
 import twitter2 from "../../assets/img/twitter2.png"
 import vk2 from "../../assets/img/vk2.png"
 import jscorplogos from "../../assets/img/jscorplogos.png"
@@ -35,10 +36,10 @@ import rev3 from "../../assets/img/rev3.png"
 import rev4 from "../../assets/img/rev4.png"
 import rev5 from "../../assets/img/rev5.png"
 import rev6 from "../../assets/img/rev6.png"
-import runing1 from "../../assets/img/runing1.png"
-import working1 from "../../assets/img/working1.png"
-import hill1 from "../../assets/img/hill1.png"
-import sleeping1 from "../../assets/img/sleeping1.png"
+import regnum from "../../assets/img/regnum.png"
+import edinorog from "../../assets/img/edinorog.png"
+import digital from "../../assets/img/digital.png"
+import admin from "../../assets/img/admin.png"
 import HeliBand from "../../components/HeliBand/HeliBand";
 
 class Main extends React.Component {
@@ -225,7 +226,7 @@ class Main extends React.Component {
                 {/*<input type="button" onClick={this.sendEmail} value="Send" />*/}
 
                 <HeliBand />
-
+                <Slider/>
 
                 <div className="content-main-block-5">
                     <div className='main-elem-block-5-1'>
@@ -245,19 +246,18 @@ class Main extends React.Component {
                                 проще, чем когда-либо.
                             </p>
 
+                            <button className="block5Button">Присоединиться
+                            </button>
+
                         </div>
 
                         <img src={pc} alt=""/>
-                    </div>
-                    <div className="">
-                        <button className="block5Button">Присоединиться
-                        </button>
                     </div>
 
                     <div className='main-elem-block-5-2'>
                         <img src={guy} alt=""/>
 
-                        <div className="block-5-1">
+                        <div className="block-5-1-2">
                             <div className="block5-1-h">
                                 <p className="content-main-block-5-h">
                                     Снижаем риск госпитализации <span style={{color: '#FF0020'}}>COVID-19 </span>
@@ -403,6 +403,29 @@ class Main extends React.Component {
                                     <p className="imageBoxText">
                                         C HELI мой день эффективнее. Я получаю рекомендации, как улучшить свое здоровье.
                                     </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={"content-block-5"}>
+                        <div className={"container-block-5"}>
+                            <div className={"content-block-5__inner"}>
+                                <div className={"content-block-5__title"}>
+                                    О нас в сети
+                                </div>
+                                <div className={"content-block-5__wrapper"}>
+                                    <a className={"content-block-5__item"} href="https://habr.com/ru/post/495362/" target={"_blank"}><img src={habr} alt="habr"/></a>
+                                    <a className={"content-block-5__item"} href="https://regnum.ru/news/society/2893845.html" target={"_blank"}><img src={regnum} alt="regnum"/></a>
+                                    <a className={"content-block-5__item"} href="https://leadersofdigital.ru/db/novosti/9485e7b24b1170e1" target={"_blank"}><img src={digital} alt="digital"/></a>
+                                    <a className={"content-block-5__item"} href="https://t.me/Theedinorogblog/1118" target={"_blank"}><img className={"content-block-5__edinorog"} src={edinorog} alt="edinorog"/></a>
+                                    <a className={"content-block-5__item"} href="https://adm.rkursk.ru/index.php?id=13&mat_id=105426&query=HELI" target={"_blank"}>
+                                        <div className={"content-block-5__item"}>
+                                        <img className={"content-block-5__img"} src={admin} alt="admin"/>
+                                        <div className={"content-block-5__text"}>
+                                            Админстрация Курской области
+                                        </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
